@@ -6,6 +6,18 @@
             $('.share-wrap').fadeToggle('slow');
         });
     }
+    var QRCode = function(){
+        $('.qrcode').each(function(index,el){
+			var url = $(this).data('url');
+			if($.fn.qrcode){
+				$(this).qrcode({
+					text:url,
+					width:150,
+					height:150,
+				});
+			}
+		});
+    }
     var sidebaraffix = function(){
         if($('#sidebar').height()&&xb.site_sh){
             if($('#main').height()>$('#sidebar').height()){
@@ -259,6 +271,7 @@
         sidebaraffix();
         showPhotos();
         OwOcfg();
+        QRCode();
     }
     $(function(){
         gotop();
@@ -271,6 +284,7 @@
         donateConfig();
         showlove();
         shareMenu();
+        QRCode();
         OwOcfg();
         wechatpic();
         if($('div').hasClass('aplayer-footer')) APF();
@@ -387,6 +401,6 @@ window.onload = function(){
     var page_load_time = now-performance.timing.navigationStart;
     console.clear();
     console.log('项目托管:https://github.com/xb2016/kratos-pjax');
-    console.log('%cwww.fczbl.vip','font-size:2em');
+    console.log('%cmoedog.org','font-size:2em');
     console.log('%c页面加载完毕消耗了'+Math.round(performance.now()*100)/100+'ms','background:#fff;color:#333;text-shadow:0 0 2px #eee,0 0 3px #eee,0 0 3px #eee,0 0 2px #eee,0 0 3px #eee;');
 };

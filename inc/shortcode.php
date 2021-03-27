@@ -111,6 +111,13 @@ function hide($atts,$content=null,$code=""){
     return $content;
 }
 add_shortcode('hide','hide');
+function heimu($atts,$content=null,$code=""){
+    $return = '<span class="heimu">';
+    $return .= $content;
+    $return .= '</span>';
+    return $return;
+}
+add_shortcode('heimu','heimu');
 function successbox($atts,$content=null,$code=""){
     extract(shortcode_atts(array("title"=>__('标题内容','moedog')),$atts));
     $return = '<div class="panel panel-success"><div class="panel-heading"><h3 class="panel-title">';
@@ -186,14 +193,14 @@ function youtube($atts,$content=null,$code=""){
 }
 add_shortcode('youtube','youtube');
 function bilibili($atts,$content=null,$code=""){
-    extract(shortcode_atts(array("cid"=>'0'),$atts));
+    extract(shortcode_atts(array("danmaku"=>'1'),$atts));
     extract(shortcode_atts(array("page"=>'1'),$atts));
-    $return = '<div class="video-container"><iframe src="https://player.bilibili.com/player.html?aid=';
+    $return = '<div class="video-container"><iframe src="https://player.bilibili.com/player.html?bvid=';
     $return .= $content;
-    $return .= '&cid=';
-    $return .= $cid;
     $return .= '&page=';
     $return .= $page;
+    $return .= '&high_quality=1&danmaku=';
+    $return .= $danmaku;
     $return .= '" allowtransparency="true" width="100%" height="498" scrolling="no" frameborder="0" ></iframe></div>';
     return $return;
 }
@@ -219,6 +226,7 @@ function register_button($buttons){
     array_push($buttons," ","highlight");
     array_push($buttons," ","accordion");
     array_push($buttons," ","hide");
+    array_push($buttons," ","heimu");
     array_push($buttons," ","kbd");
     array_push($buttons," ","mark");
     array_push($buttons," ","striped");
@@ -248,6 +256,7 @@ function add_plugin($plugin_array){
     $plugin_array['highlight'] = get_bloginfo('template_url').'/inc/buttons/more.js';
     $plugin_array['accordion'] = get_bloginfo('template_url').'/inc/buttons/more.js';
     $plugin_array['hide'] = get_bloginfo('template_url').'/inc/buttons/more.js';
+    $plugin_array['heimu'] = get_bloginfo('template_url').'/inc/buttons/more.js';
     $plugin_array['kbd'] = get_bloginfo('template_url').'/inc/buttons/more.js';
     $plugin_array['mark'] = get_bloginfo('template_url').'/inc/buttons/more.js';
     $plugin_array['striped'] = get_bloginfo('template_url').'/inc/buttons/more.js';

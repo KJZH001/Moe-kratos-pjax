@@ -179,6 +179,21 @@
         },
     });
     tinymce.PluginManager.add('hide', tinymce.plugins.hide);
+    tinymce.create('tinymce.plugins.heimu', {
+        init : function(ed, url) {
+            ed.addButton('heimu', {
+                title : '黑幕',
+                image : url+'/images/heimu.png',
+                onclick : function() {
+                     ed.selection.setContent('[heimu]' + ed.selection.getContent() + '[/heimu]');
+                }
+            });
+        },
+        createControl : function(n, cm) {
+            return null;
+        },
+    });
+    tinymce.PluginManager.add('heimu', tinymce.plugins.heimu);
     tinymce.create('tinymce.plugins.kbd', {
         init : function(ed, url) {
             ed.addButton('kbd', {
@@ -320,7 +335,7 @@
                 title : '哔哩哔哩',
                 image : url+'/images/bilibili.png',
                 onclick : function() {
-                     ed.selection.setContent('[bilibili cid="" page="1"]' + ed.selection.getContent() + '[/bilibili]');
+                     ed.selection.setContent('[bilibili danmaku="1" page="1"]' + ed.selection.getContent() + '[/bilibili]');
                 }
             });
         },

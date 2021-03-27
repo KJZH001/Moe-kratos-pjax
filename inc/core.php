@@ -220,7 +220,7 @@ function kratos_description(){
     if(is_home()||is_front_page()){echo trim(kratos_option('site_description'));}
     elseif(is_category()){$description = strip_tags(category_description());echo trim($description);}
     elseif(is_single()){ 
-        if(get_the_excerpt()){echo get_the_excerpt();}
+        if(has_excerpt() && get_the_excerpt()){echo get_the_excerpt();}
         else{global $post;$description = trim(str_replace(array("\r\n","\r","\n","　"," ")," ",str_replace("\"","'",strip_tags(do_shortcode($post->post_content)))));echo mb_substr($description,0,220,'utf-8');}
     }
     elseif(is_search()){echo '“';the_search_query();global $wp_query;echo '”'.sprintf(__('为您找到结果 %s 个','moedog'),$wp_query->found_posts);}
@@ -329,7 +329,6 @@ function cmhello_users_search_order($obj){
 }
 //Enable comments <img>
 function sig_allowed_html_tags_in_comments(){
-   define('CUSTOM_TAGS',true);
    global $allowedtags;
    $allowedtags = array(
       'img'=> array(
@@ -349,6 +348,13 @@ function kratos_comment_err($a){
     echo $a;
     exit;
 }
+function spam_protection($commentdata){
+    if(!is_user_logged_in()){
+        if($_POST['co_num1']+$_POST['co_num2']-3!=$_POST['code']) kratos_comment_err(__('验证码错误','moedog'));
+    }
+    return $commentdata;
+}
+add_filter('pre_comment_on_post','spam_protection');
 function kratos_comment_callback(){
     $comment = wp_handle_comment_submission(wp_unslash($_POST));
     if(is_wp_error($comment)){
@@ -558,6 +564,7 @@ function comment_author_link_window(){
         $return = '<a href="'.$url.'" target="_blank" rel="nofollow">'.$author.'</a>';
     return $return;
 }
+//这个好像是后台的notice通知
 add_filter('get_comment_author_link','comment_author_link_window');
 //Notice ***PLEASE DO NOT EDIT THIS 请不要修改此内容***
 function kratos_admin_notice(){
@@ -572,3 +579,6 @@ function kratos_welcome_notice(){
 }
 add_action('admin_notices','kratos_admin_notice');
 if(kratos_option('kratos_notice')=="welcome") add_action('welcome_panel','kratos_welcome_notice');
+
+//更新内容
+//add_filter('get_comment_author_link','comment_author_link_window');

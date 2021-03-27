@@ -197,9 +197,9 @@ function optionsframework_options(){
         'type'=>'checkbox');
     $options[] = array(
         'name'=>__('歌单JSON地址','moedog'),
-        'desc'=>__('借助API可解析网易云歌单，如https://api.fczbl.vip/163/?type=playlist&id=2003373695','moedog'),
+        'desc'=>__('借助API可解析网易云歌单，参考https://github.com/injahow/meting','moedog'),
         'id'=>'ap_json',
-        'std'=>'https://api.fczbl.vip/163/?type=playlist&id=2003373695',
+        'std'=>'',
         'type'=>'text');
     $options[] = array(
         'name'=>__('自动播放','moedog'),

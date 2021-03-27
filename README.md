@@ -1,11 +1,11 @@
 <p align="center">
-<img src="https://img.fczbl.vip/images/2018/10/21/kratos-demo.jpg" alt="KRATOS">
+<img src="https://img.moedog.org/images/2019/08/21/kratos1.jpg" alt="KRATOS"/>
 </p>
 
 <p align="center">
-<a href="https://www.fczbl.vip"><img alt="Author" src="https://img.shields.io/badge/Author-Moedog-blue.svg?style=flat-square"></a>
-<a href="https://github.com/xb2016/kratos-pjax/releases"><img alt="Version" height="20" src="https://badge.fury.io/gh/xb2016%2Fkratos-pjax.svg"></a>
-<img alt="License" src="https://img.shields.io/badge/license-GPL3-red.svg"/>
+<a href="https://moedog.org"><img alt="Author" src="https://img.shields.io/badge/Author-Moedog-red.svg?style=flat-square"/></a>
+<a href="https://github.com/xb2016/kratos-pjax/releases"><img alt="Version" src="https://img.shields.io/github/release/xb2016/kratos-pjax.svg?style=flat-square"/></a>
+<img alt="License" src="https://img.shields.io/github/license/xb2016/kratos-pjax.svg?style=flat-square"/>
 </p>
 
  > :icecream: Wow, such a lovely WordPress theme
@@ -20,10 +20,12 @@ This is a **secondary development** version of Kratos. For the original version,
 
 Star this project please, thank you!
 
+任何人都可以**免费使用**此主题，但希望可以保留主题页脚的版权信息，捐赠与 star 纯属**自愿**，所以不用再问我能不能用了。同时这是一个**自用性质**的主题，我自己需要的功能都已加进主题了，写的也很乱，所以可能无法兼容一些插件。如果遇到问题，请先查看**使用文档**，还不行请求助谷歌，如果此问题在我的博客站点一样**复现**了，请提交 issue (但不保证解决)。有关插件兼容问题和自定义修改问题就**不用**再联系我了，**请自行取舍主题与插件**。关于主题定制问题请基于原主题，联系主题原作者，谢谢。
+
 ## Supports
 
 **Docs**
-- [https://www.fczbl.vip/787.html](https://www.fczbl.vip/787.html)
+- [https://moedog.org/787.html](https://moedog.org/787.html)
 
 **Suggestions and BUG report**
 - [https://github.com/xb2016/kratos-pjax/issues](https://github.com/xb2016/kratos-pjax/issues)
@@ -44,6 +46,7 @@ We encourage everyone to help with localization. The following is how to do:
   - **zh_CN** [Moedog](https://github.com/xb2016)
   - **en_US** [Moedog](https://github.com/xb2016), [hifocus](https://github.com/hifocus)
   - **ru_RU** [JuniorDEV](https://github.com/jun-dev)
+  - **zh_TW** [Leko](https://github.com/lekoOwO)
 
 ## Donate
 
@@ -74,4 +77,4 @@ I accept donations through: Alipay / Wechat Pay / QQ Pay , thank you!
 
 **Kratos-pjax** © [Vtrois](https://github.com/Vtrois), [Moedog](https://github.com/xb2016), Released under the [GPL-3.0](./LICENSE) License.<br>
 
-> Blog [fczbl.vip](https://www.fczbl.vip) · GitHub [@xb2016](https://github.com/xb2016) · Twitter [@fczbl](https://twitter.com/fczbl) · QQGroup [51880737](https://jq.qq.com/?_wv=1027&k=5iwrHo3)
+> Blog [moedog.org](https://moedog.org) · GitHub [@xb2016](https://github.com/xb2016) · Twitter [@moesdog](https://twitter.com/moesdog) · Telegram [@xb2016](https://t.me/xb2016)
