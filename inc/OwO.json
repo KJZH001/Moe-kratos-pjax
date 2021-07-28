@@ -518,5 +518,111 @@
                 "text": "摸摸头"
             }
         ]
+    },
+    "蛆音娘": {
+        "type": "image",
+        "container": [
+            {
+                "desc": "':qy_afraid:'",
+                "icon": "/static/images/smilies/qy_afraid.gif",
+                "text": "蛆音娘_害怕"
+            },
+            {
+                "desc":"':qy_angry:'",
+                "icon":"/static/images/smilies/qy_angry.gif",
+                "text":"蛆音娘_生气"
+            },
+            {
+                "desc":"':qy_chigua:'",
+                "icon":"/static/images/smilies/qy_chigua.gif",
+                "text":"蛆音娘_吃瓜"
+            },
+            {
+                "desc":"':qy_cry:'",
+                "icon":"/static/images/smilies/qy_cry.gif",
+                "text":"蛆音娘_大哭"
+            },
+            {
+                "desc":"':qy_die:'",
+                "icon":"/static/images/smilies/qy_die.gif",
+                "text":"蛆音娘_die"
+            },
+            {
+                "desc":"':qy_fue:'",
+                "icon":"/static/images/smilies/qy_fue.gif",
+                "text":"蛆音娘_扶额"
+            },
+            {
+                "desc":"':qy_happy:'",
+                "icon":"/static/images/smilies/qy_happy.gif",
+                "text":"蛆音娘_大笑"
+            },
+            {
+                "desc":"':qy_heng:'",
+                "icon":"/static/images/smilies/qy_heng.gif",
+                "text":"蛆音娘_哼"
+            },
+            {
+                "desc":"':qy_huaj:'",
+                "icon":"/static/images/smilies/qy_huaj.gif",
+                "text":"蛆音娘_滑稽"
+            },
+            {
+                "desc":"':qy_moe:'",
+                "icon":"/static/images/smilies/qy_moe.gif",
+                "text":"蛆音娘_萌"
+            },
+            {
+                "desc":"':qy_ok:'",
+                "icon":"/static/images/smilies/qy_ok.gif",
+                "text":"蛆音娘_OK"
+            },
+            {
+                "desc":"':qy_quest:'",
+                "icon":"/static/images/smilies/qy_quest.gif",
+                "text":"蛆音娘_疑问"
+            },
+            {
+                "desc":"':qy_see:'",
+                "icon":"/static/images/smilies/qy_see.gif",
+                "text":"蛆音娘_偷看"
+            },
+            {
+                "desc":"':qy_sleep:'",
+                "icon":"/static/images/smilies/qy_sleep.gif",
+                "text":"蛆音娘_睡觉觉咯"
+            },
+            {
+                "desc":"':qy_soap:'",
+                "icon":"/static/images/smilies/qy_soap.gif",
+                "text":"蛆音娘_肥♂皂"
+            },
+            {
+                "desc":"':qy_surprised:'",
+                "icon":"/static/images/smilies/qy_surprised.gif",
+                "text":"蛆音娘_吃惊"
+            },
+            {
+                "desc":"':qy_tuxie:'",
+                "icon":"/static/images/smilies/qy_tuxie.gif",
+                "text":"蛆音娘_吐血"
+            },
+            {
+                "desc":"':qy_witty:'",
+                "icon":"/static/images/smilies/qy_witty.gif",
+                "text":"蛆音娘_聪明"
+            },
+            {
+                "desc":"':qy_wuyv:'",
+                "icon":"/static/images/smilies/qy_wuyv.gif",
+                "text":"蛆音娘_无语"
+            },
+            {
+                "desc":"':qy_yaot:'",
+                "icon":"/static/images/smilies/qy_yaot.gif",
+                "text":"蛆音娘_摇头"
+            }
+
+        ]
     }
 }
