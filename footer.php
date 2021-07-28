@@ -63,7 +63,7 @@
         </script>
         <?php } ?>
         <!-- umm统计平台 -->
-        <script async defer data-website-id="9f966136-a24b-43ed-bdfb-fad880845462" 
-        src="https://umami.moe.tips/umami.js"></script>
+        <!--<script async defer data-website-id="9f966136-a24b-43ed-bdfb-fad880845462" -->
+        <!--src="https://umami.moe.tips/umami.js"></script>-->
     </body>
 </html>
