@@ -400,7 +400,8 @@ window.onload = function(){
     var now = new Date().getTime();
     var page_load_time = now-performance.timing.navigationStart;
     console.clear();
-    console.log('项目托管:https://github.com/xb2016/kratos-pjax');
-    console.log('%cmoedog.org','font-size:2em');
+    console.log('项目托管:https://github.com/KJZH001/Moe-kratos-pjax');
+    console.log('%cblog.moeworld.tech','font-size:2em');
+    console.log('THEME KRATOS MADE BY VTROIS MODIFIED BY MOEDOG & XiaoKong');
     console.log('%c页面加载完毕消耗了'+Math.round(performance.now()*100)/100+'ms','background:#fff;color:#333;text-shadow:0 0 2px #eee,0 0 3px #eee,0 0 3px #eee,0 0 2px #eee,0 0 3px #eee;');
 };
