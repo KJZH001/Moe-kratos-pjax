@@ -292,8 +292,8 @@ add_filter("mce_buttons_2","add_more_buttons");
 function fa_get_wpsmiliestrans(){
     global $wpsmiliestrans;
     $wpsmilies = array_unique($wpsmiliestrans);
-    //if(kratos_option('owo_out')) $owodir = 'https://cdn.jsdelivr.net/gh/KJZH001/Moe-kratos-pjax@'.KRATOS_VERSION; else $owodir = get_bloginfo('template_directory');
-    if(kratos_option('owo_out')) $owodir = 'https://cdn.jsdelivr.net/gh/KJZH001/Moe-kratos-pjax@master'; else $owodir = get_bloginfo('template_directory');
+    //if(kratos_option('owo_out')) $owodir = 'https://cdn-js.moeworld.top/gh/KJZH001/Moe-kratos-pjax@'.KRATOS_VERSION; else $owodir = get_bloginfo('template_directory');
+    if(kratos_option('owo_out')) $owodir = 'https://cdn-js.moeworld.top/gh/KJZH001/Moe-kratos-pjax@master'; else $owodir = get_bloginfo('template_directory');
         foreach($wpsmilies as $alt => $src_path){
         $traimgna = substr($alt,1,-1);
         $output .= '<a class="add-smily" data-smilies="'.$alt.'"><img src="'.$owodir.'/static/images/smilies/'.$traimgna.'.png"></a>';
