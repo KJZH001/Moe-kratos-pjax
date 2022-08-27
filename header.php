@@ -69,8 +69,8 @@
                                 <li><a href="https://blog.moeworld.tech/friendshiplink/" one-link-mark="yes"><i class="fa fa-mars"></i> 友链</a></li>
                                 <li><a one-link-mark="yes"><i class="fa fa-cogs"></i> 服务</a>
                                 <ul class="sub-menu">
-                                    <li><a href="https://blog.moeworld.tech/rcraft-api/" one-link-mark="yes">Api接口</a></li>
-                                    <li><a href="http://mikutap.moeworld.top/" one-link-mark="yes">Mikutap</a></li>
+                                    <!--<li><a href="https://blog.moeworld.tech/rcraft-api/" one-link-mark="yes">Api接口</a></li>-->
+                                    <!--<li><a href="http://mikutap.moeworld.top/" one-link-mark="yes">Mikutap</a></li>-->
                                     <li><a href="https://status.moeworld.top/" one-link-mark="yes">监控</a></li>
                                 </ul>
                                 </li>
