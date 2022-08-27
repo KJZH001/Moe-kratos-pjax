@@ -47,7 +47,7 @@
                                 <?php $defaults = array('theme_location'=>'header_menu','container'=>'nav','container_id'=>'kratos-menu-wrap','menu_class'=>'sf-menu','menu_id'=>'kratos-primary-menu',);
                                 //wp_nav_menu($defaults); ?>
                                 
-                                <!-- 暂时性修复 2021/02/16 -->
+                                <!-- 暂时性修复 2021/02/16 
                                 <nav id="kratos-menu-wrap" class="menu-%e9%bb%98%e8%ae%a4%e8%8f%9c%e5%8d%95-container"><ul id="kratos-primary-menu" class="sf-menu"><li class="current-menu-item"><a href="https://blog.moeworld.tech" aria-current="page" one-link-mark="yes"><i class="fa fa-home"></i> 首页</a></li>
                                 <li><a href="https://blog.moeworld.tech/archives/" one-link-mark="yes"><i class="fa fa-pencil"></i> 分类</a></li>
                                 <li><a href="https://blog.moeworld.tech/friendshiplink/" one-link-mark="yes"><i class="fa fa-mars"></i> 友链</a></li>
@@ -61,8 +61,26 @@
                                 <li><a href="https://blog.moeworld.tech/guestbook/" one-link-mark="yes"><i class="fa fa-pencil"></i> 留言板</a></li>
                                 <li><a href="https://about.moeworld.top" one-link-mark="yes" target="_blank"><i class="fa fa-rocket"></i> 关于</a></li>
                                 <li><a href="https://travellings.now.sh/" one-link-mark="yes" target="_blank"><i class="fa fa-paper-plane" aria-hidden="true"></i> Travelling</li>
-                                </ul></nav>
+                                </ul></nav>-->
                                 
+                                <!-- 暂时性修复 2022.08.27 -->
+                                <nav id="kratos-menu-wrap" class="menu-%e9%bb%98%e8%ae%a4%e8%8f%9c%e5%8d%95-container"><ul id="kratos-primary-menu" class="sf-menu"><li class="current-menu-item"><a href="https://blog.moeworld.tech" aria-current="page" one-link-mark="yes"><i class="fa fa-home"></i> 首页</a></li>
+                                <li><a href="https://blog.moeworld.tech/archives/" one-link-mark="yes"><i class="fa fa-pencil"></i> 分类</a></li>
+                                <li><a href="https://blog.moeworld.tech/friendshiplink/" one-link-mark="yes"><i class="fa fa-mars"></i> 友链</a></li>
+                                <li><a one-link-mark="yes"><i class="fa fa-cogs"></i> 服务</a>
+                                <ul class="sub-menu">
+                                    <li><a href="https://blog.moeworld.tech/rcraft-api/" one-link-mark="yes">Api接口</a></li>
+                                    <li><a href="http://mikutap.moeworld.top/" one-link-mark="yes">Mikutap</a></li>
+                                    <li><a href="https://status.moeworld.top/" one-link-mark="yes">监控</a></li>
+                                </ul>
+                                </li>
+                                <li><a href="https://blog.moeworld.tech/guestbook/" one-link-mark="yes"><i class="fa fa-pencil"></i> 留言板</a></li>
+                                <li><a href="https://about.moeworld.top" one-link-mark="yes" target="_blank"><i class="fa fa-rocket"></i> 关于</a></li>
+                                <li><a href="https://travellings.link" one-link-mark="yes" target="_blank"><i class="fa fa-paper-plane"></i> 开往</a></li>
+                                </ul></nav>
+
+
+
                             </div>
                         </div>
                     </header>
