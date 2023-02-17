@@ -624,5 +624,26 @@
             }
 
         ]
+    },
+    "没做好的新表情": {
+        "type": "image",
+        "container": [
+            {
+                "desc": "':qy_afraid:'",
+                "icon": "/static/images/smilies/qy_afraid.gif",
+                "text": "蛆音娘_害怕"
+            },
+            {
+                "desc":"':qy_angry:'",
+                "icon":"/static/images/smilies/qy_angry.gif",
+                "text":"蛆音娘_生气"
+            },
+            {
+                "desc":"':qy_chigua:'",
+                "icon":"/static/images/smilies/qy_chigua.gif",
+                "text":"蛆音娘_吃瓜"
+            }
+
+        ]
     }
 }
