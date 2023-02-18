@@ -629,32 +629,32 @@
         "type": "image",
         "container": [
             {
-                "desc": ":lqy_question:",
+                "desc": "':lqy_question:'",
                 "icon": "/static/images/smilies/10001.1.6063507425417614E9.jpeg",
                 "text": "留清月_问号"
             },
             {
-                "desc": ":lqy_speechless:",
+                "desc": "':lqy_speechless:'",
                 "icon": "/static/images/smilies/10002.1.6063507364518287E9.jpeg",
                 "text": "留清月_无语子"
             },
             {
-                "desc": ":lqy_canttalk:",
+                "desc": "':lqy_canttalk:'",
                 "icon": "/static/images/smilies/10003.1.6063507449046478E9.jpeg",
                 "text": "留清月_憋不出话"
             },
             {
-                "desc": ":lqy_black:",
+                "desc": "':lqy_black:'",
                 "icon": "/static/images/smilies/10004.1.6063507410935416E9.jpeg",
                 "text": "留清月_黑化"
             },
             {
-                "desc": ":lqy_more:",
+                "desc": "':lqy_more:'",
                 "icon": "/static/images/smilies/10005.1.606350743074853E9.jpeg",
                 "text": "留清月_多来点"
             },
             {
-                "desc": ":lqy_kill:",
+                "desc": "':lqy_kill:'",
                 "icon": "/static/images/smilies/10006.1.6063507416954522E9.jpeg",
                 "text": "留清月_做掉他"
             }
