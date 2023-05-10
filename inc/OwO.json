@@ -659,5 +659,60 @@
                 "text": "留清月_做掉他"
             }
         ]
+    },
+    "2233幻星集": {
+        "type": "image",
+        "container": [
+            {
+                "desc": "':hxj_666:'",
+                "icon": "/static/images/smilies/幻星集_666.png",
+                "text": "幻星集_666"
+            },
+            {
+                "desc": "':hxj_Love:'",
+                "icon": "/static/images/smilies/幻星集_Love.png",
+                "text": "幻星集_Love"
+            },
+            {
+                "desc": "':hxj_NoDotDotDot:'",
+                "icon": "/static/images/smilies/幻星集_No.....png",
+                "text": "幻星集_No....."
+            },
+            {
+                "desc": "':hxj_NextTimeForSure:'",
+                "icon": "/static/images/smilies/幻星集_下次一定.png",
+                "text": "幻星集_下次一定"
+            },
+            {
+                "desc": "':hxj_IamAwesome:'",
+                "icon": "/static/images/smilies/幻星集_不愧是我.png",
+                "text": "幻星集_不愧是我"
+            },
+            {
+                "desc": "':hxj_ImDead:'",
+                "icon": "/static/images/smilies/幻星集_啊我死了.png",
+                "text": "幻星集_啊我死了"
+            },
+            {
+                "desc": "':hxj_LetsDoIt:'",
+                "icon": "/static/images/smilies/幻星集_奥利给.png",
+                "text": "幻星集_奥利给"
+            },
+            {
+                "desc": "':hxj_IGotIt:'",
+                "icon": "/static/images/smilies/幻星集_我觉得行.png",
+                "text": "幻星集_我觉得行"
+            },
+            {
+                "desc": "':hxj_ThrowFlowers:'",
+                "icon": "/static/images/smilies/幻星集_撒花.png",
+                "text": "幻星集_撒花"
+            },
+            {
+                "desc": "':hxj_QuestionMark:'",
+                "icon": "/static/images/smilies/幻星集_问号.png",
+                "text": "幻星集_问号"
+            }
+        ]
     }
 }
