@@ -176,6 +176,16 @@ function smilies_reset(){
     ':lqy_black:' => '10004.1.6063507410935416E9.jpeg',
     ':lqy_more:' => '10005.1.606350743074853E9.jpeg',
     ':lqy_kill:' => '10006.1.6063507416954522E9.jpeg',
+    ':hxj_666:' => '/static/images/smilies/幻星集_666.png',
+    ':hxj_Love:' => '/static/images/smilies/幻星集_Love.png',
+    ':hxj_NoDotDotDot:' => '/static/images/smilies/幻星集_No.....png',
+    ':hxj_NextTimeForSure:' => '/static/images/smilies/幻星集_下次一定.png',
+    ':hxj_IamAwesome:' => '/static/images/smilies/幻星集_不愧是我.png',
+    ':hxj_ImDead:' => '/static/images/smilies/幻星集_啊我死了.png',
+    ':hxj_LetsDoIt:' => '/static/images/smilies/幻星集_奥利给.png',
+    ':hxj_IGotIt:' => '/static/images/smilies/幻星集_我觉得行.png',
+    ':hxj_ThrowFlowers:' => '/static/images/smilies/幻星集_撒花.png',
+    ':hxj_QuestionMark:' => '/static/images/smilies/幻星集_问号.png',
     );
 }
 smilies_reset();
