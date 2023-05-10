@@ -65,17 +65,60 @@
                                 
                                 <!-- 暂时性修复 2022.08.27 -->
                                 <nav id="kratos-menu-wrap" class="menu-%e9%bb%98%e8%ae%a4%e8%8f%9c%e5%8d%95-container"><ul id="kratos-primary-menu" class="sf-menu"><li class="current-menu-item"><a href="https://blog.moeworld.tech" aria-current="page" one-link-mark="yes"><i class="fa fa-home"></i> 首页</a></li>
-                                <li><a href="https://blog.moeworld.tech/archives/" one-link-mark="yes"><i class="fa fa-pencil"></i> 分类</a></li>
-                                <li><a href="https://blog.moeworld.tech/friendshiplink/" one-link-mark="yes"><i class="fa fa-mars"></i> 友链</a></li>
-                                <li><a one-link-mark="yes"><i class="fa fa-cogs"></i> 服务</a>
-                                <ul class="sub-menu">
-                                    <!--<li><a href="https://blog.moeworld.tech/rcraft-api/" one-link-mark="yes">Api接口</a></li>-->
-                                    <!--<li><a href="http://mikutap.moeworld.top/" one-link-mark="yes">Mikutap</a></li>-->
-                                    <li><a href="https://status.moeworld.top/" one-link-mark="yes">监控</a></li>
-                                </ul>
+                                <li>
+                                    <a href="https://blog.moeworld.tech/archives/" one-link-mark="yes"><i class="fa fa-pencil"></i> 分类</a>
+                                    <ul class="sub-menu">
+                                    <li><a href="https://blog.moeworld.tech/category/laboratory/" one-link-mark="yes">实验室</a></li>
+                                    <li><a href="https://blog.moeworld.tech/category/server/" one-link-mark="yes">服务器</a></li>
+                                        <li><a href="https://blog.moeworld.tech/category/%E5%BC%80%E5%8F%91/" one-link-mark="yes">实用教程</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="https://blog.moeworld.tech/category/%e5%bc%80%e5%8f%91/" one-link-mark="yes">开发</a></li>
+                                                <li><a href="https://blog.moeworld.tech/category/%e5%bc%80%e5%8f%91/system/" one-link-mark="yes">系统</a></li>
+                                                <li><a href="https://blog.moeworld.tech/category/yingjian/" one-link-mark="yes">硬件</a></li>
+                                                <li><a href="https://blog.moeworld.tech/category/%e5%bc%80%e5%8f%91/php/" one-link-mark="yes">php</a></li>
+                                                <li><a href="https://blog.moeworld.tech/category/%e5%bc%80%e5%8f%91/iapp/" one-link-mark="yes">iApp</a></li>
+                                                <li><a href="https://blog.moeworld.tech/category/%e5%bc%80%e5%8f%91/wordpress/" one-link-mark="yes">WorldPress</a></li>
+                                                <li><a href="https://blog.moeworld.tech/category/%e5%bc%80%e5%8f%91/java-android/" one-link-mark="yes">Java&Android</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="https://blog.moeworld.tech/category/daily/" one-link-mark="yes">日常杂谈</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="https://blog.moeworld.tech/category/daily/%e5%a4%a7%e5%ad%a6/" one-link-mark="yes">大学</a></li>
+                                                <li><a href="https://blog.moeworld.tech/category/daily/%e9%ab%98%e4%b8%ad/" one-link-mark="yes">高中</a></li>
+                                                <li><a href="https://blog.moeworld.tech/category/%e8%8a%82%e6%97%a5/" one-link-mark="yes">节日</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="https://blog.moeworld.tech/archives/" one-link-mark="yes">文章归档</a></li>
+                                        <li><a href="https://blog.moeworld.tech/sitemap.html" one-link-mark="yes">站点地图</a></li>
+                                    </ul>
                                 </li>
-                                <li><a href="https://blog.moeworld.tech/guestbook/" one-link-mark="yes"><i class="fa fa-pencil"></i> 留言板</a></li>
-                                <li><a href="https://about.moeworld.top" one-link-mark="yes" target="_blank"><i class="fa fa-rocket"></i> 关于</a></li>
+
+                                <li><a one-link-mark="yes"><i class="fa fa-cogs"></i> 工具</a>
+                                    <ul class="sub-menu">
+                                        <!--<li><a href="https://blog.moeworld.tech/rcraft-api/" one-link-mark="yes">Api接口</a></li>-->
+                                        <li>
+                                            <a href="https://blog.moeworld.tech/" one-link-mark="yes">站点监控</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="https://uptime.lovemoe.net/" one-link-mark="yes">Kuma</a></li>
+                                                <li><a href="https://status.moeworld.top/" one-link-mark="yes">Uptime</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="https://tiebasign.moeworld.top/" one-link-mark="yes">云签到</a></li>
+                                        <li><a href="https://mikutap.moeworld.top/" one-link-mark="yes">Mikutap</a></li>
+                                        <li><a href="https://outlook.com/?realm=moeworld.top" one-link-mark="yes">域名邮箱</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="https://blog.moeworld.tech/friendshiplink/" one-link-mark="yes"><i class="fa fa-mars"></i> 友链</a></li>
+                                <li><a href="https://blog.moeworld.tech/guestbook/" one-link-mark="yes"><i class="fa fa-pencil"></i> 留言</a></li>
+                                <li>
+                                    <a href="https://about.moeworld.top" one-link-mark="yes" target="_blank"><i class="fa fa-rocket"></i> 关于</a>
+                                    <ul class="sub-menu">
+                                                <li><a href="https://blog.moeworld.tech/about/" one-link-mark="yes">更多</a></li>
+                                                <li><a href="https://blog.moeworld.tech/about-2020/" one-link-mark="yes">更多-2020</a></li>
+                                                <li><a href="https://about.moeworld.top/" one-link-mark="yes">个人页</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="https://travellings.link" one-link-mark="yes" target="_blank"><i class="fa fa-paper-plane"></i> 开往</a></li>
                                 </ul></nav>
 
