@@ -328,6 +328,7 @@ function cmhello_users_search_order($obj){
     }
 }
 //Enable comments <img>
+//也把<br>换行符给放行了吧
 function sig_allowed_html_tags_in_comments(){
    global $allowedtags;
    $allowedtags = array(
@@ -338,6 +339,7 @@ function sig_allowed_html_tags_in_comments(){
          'src' => true,
          'width' => true,
       ),
+      'br'=> array(),
    );
 }
 add_action('init','sig_allowed_html_tags_in_comments',10);
