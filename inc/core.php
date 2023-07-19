@@ -77,7 +77,7 @@ function kratos_excerpt_more($more){return '……';}
 add_filter('excerpt_more','kratos_excerpt_more');
 //Load scripts
 function kratos_theme_scripts(){
-    $url1 = 'https://cdn-js.moeworld.top/gh/KJZH001/Moe-kratos-pjax@'.KRATOS_VERSION;
+    $url1 = 'https://cdnjs.cdn.18g.me/gh/KJZH001/Moe-kratos-pjax@'.KRATOS_VERSION;
     $url2 = get_bloginfo('template_directory');
     if(kratos_option('js_out')) $jsdir = $url1; else $jsdir = $url2;
     if(kratos_option('css_out')) $cssdir = $url1; else $cssdir = $url2;
