@@ -118,7 +118,7 @@ function comment_mail_notify($comment_id){
                                                     <tbody>
                                                         <tr>
                                                         <td align="center" class="padding2"> <img style="border-top-left-radius:4px; border-top-right-radius:4px; vertical-align:-3px;outline: none; border: none; text-decoration: none; -ms-interpolation-mode: bicubic;margin:0;padding:0;display:inline;width:100%;" src="https://img.cdn.loliloli.net/images/2022/06/16/rt6Q.png" class="img"> </td>
-                                                        <!--<td align="center" class="padding2"> <img style="border-top-left-radius:4px; border-top-right-radius:4px; vertical-align:-3px;outline: none; border: none; text-decoration: none; -ms-interpolation-mode: bicubic;margin:0;padding:0;display:inline;width:100%;" src="https://cdnjs.cdn.18g.me/gh/KJZH001/Moe-kratos-pjax/static/images/mail.webp" class="img"> </td>-->
+                                                        <!--<td align="center" class="padding2"> <img style="border-top-left-radius:4px; border-top-right-radius:4px; vertical-align:-3px;outline: none; border: none; text-decoration: none; -ms-interpolation-mode: bicubic;margin:0;padding:0;display:inline;width:100%;" src="https://cdn-js.moeworld.top/gh/KJZH001/Moe-kratos-pjax/static/images/mail.webp" class="img"> </td>-->
                                                         </tr>
                                                     </tbody>
                                                 </table>

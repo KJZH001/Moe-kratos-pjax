@@ -69,7 +69,7 @@ return $o;
 //Comments face
 add_filter('smilies_src','custom_smilies_src',1,10);
 function custom_smilies_src($img_src,$img,$siteurl){
-    if(kratos_option('owo_out')) $owodir = 'https://cdnjs.cdn.18g.me/gh/KJZH001/Moe-kratos-pjax@'.KRATOS_VERSION; else $owodir = get_bloginfo('template_directory');
+    if(kratos_option('owo_out')) $owodir = 'https://cdn-js.moeworld.top/gh/KJZH001/Moe-kratos-pjax@'.KRATOS_VERSION; else $owodir = get_bloginfo('template_directory');
     return $owodir.'/static/images/smilies/'.$img;
 }
 function smilies_reset(){
