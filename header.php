@@ -32,6 +32,15 @@
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8801574545913691"
      crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y9MJ3H1DDW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Y9MJ3H1DDW');
+    </script>
   </head>
     <?php flush(); ?>
     <body <?php if(kratos_option('background_mode')=='image') echo 'class="custom-background"'; ?>>
