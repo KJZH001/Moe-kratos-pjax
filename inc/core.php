@@ -569,18 +569,18 @@ function comment_author_link_window(){
 //这个好像是后台的notice通知
 add_filter('get_comment_author_link','comment_author_link_window');
 //Notice ***PLEASE DO NOT EDIT THIS 请不要修改此内容***
-function kratos_admin_notice(){
-    global $noticeinfo;
-    $noticeinfo = wp_remote_retrieve_body(wp_remote_get('https://api.fczbl.vip/kratos_notice/?v='.KRATOS_VERSION));
-    if(!is_wp_error($noticeinfo)&&$noticeinfo) $noticeinfo = '<style type="text/css">.about-description a{text-decoration:none}</style><div class="notice notice-info"><p class="about-description">'.$noticeinfo.'</p></div>';
-    if(kratos_option('kratos_notice')=='global'&&current_user_can('manage_options')) echo $noticeinfo;
-}
-function kratos_welcome_notice(){
-    global $noticeinfo;
-    if(current_user_can('manage_options')) echo $noticeinfo;
-}
-add_action('admin_notices','kratos_admin_notice');
-if(kratos_option('kratos_notice')=="welcome") add_action('welcome_panel','kratos_welcome_notice');
+// function kratos_admin_notice(){
+//     global $noticeinfo;
+//     $noticeinfo = wp_remote_retrieve_body(wp_remote_get('https://127.0.0.1/api.fczbl.vip/kratos_notice/?v='.KRATOS_VERSION));
+//     if(!is_wp_error($noticeinfo)&&$noticeinfo) $noticeinfo = '<style type="text/css">.about-description a{text-decoration:none}</style><div class="notice notice-info"><p class="about-description">'.$noticeinfo.'</p></div>';
+//     if(kratos_option('kratos_notice')=='global'&&current_user_can('manage_options')) echo $noticeinfo;
+// }
+// function kratos_welcome_notice(){
+//     global $noticeinfo;
+//     if(current_user_can('manage_options')) echo $noticeinfo;
+// }
+// add_action('admin_notices','kratos_admin_notice');
+// if(kratos_option('kratos_notice')=="welcome") add_action('welcome_panel','kratos_welcome_notice');
 
 //更新内容
 //add_filter('get_comment_author_link','comment_author_link_window');
