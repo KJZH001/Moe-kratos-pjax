@@ -30,8 +30,8 @@
         if(kratos_option('add_css')) echo kratos_option('add_css'); ?>
     </style>
     <!-- Google AdSense -->
-    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8801574545913691" -->
-     crossorigin="anonymous"></script>
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8801574545913691"
+     crossorigin="anonymous"></script> -->
     <!-- Google tag (gtag.js) Analytics-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y9MJ3H1DDW"></script>
     <script>
