@@ -119,7 +119,8 @@
                                         <li><a href="https://tiebasign.moeworld.top/" one-link-mark="yes">云签到</a></li>
                                         <li><a href="https://mikutap.moeworld.top/" one-link-mark="yes">Mikutap</a></li>
                                         <li><a href="https://outlook.com/?realm=moeworld.top" one-link-mark="yes">域名邮箱</a></li>
-                                        <li><a href="https://blog.moeworld.tech/fortuneupup：测测今天的运势吧/" one-link-mark="yes">幸运抽签</a></li>
+                                        <li><a href="https://blog.moeworld.tech/fortuneupup：测测今天的运势吧/" one-link-mark="yes" target="_blank">
+                                            幸运抽签</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="https://blog.moeworld.tech/friendshiplink/" one-link-mark="yes"><i class="fa fa-mars"></i> 友链</a></li>
