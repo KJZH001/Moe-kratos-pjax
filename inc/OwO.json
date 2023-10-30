@@ -739,11 +739,6 @@
                 "text": "随稽应变"
             }, 
             {
-                "desc": "':蠕动:'", 
-                "icon": "/static/images/smilies/goodboyboy-huaji/蠕动.gif", 
-                "text": "蠕动"
-            }, 
-            {
                 "desc": "':束手无稽:'", 
                 "icon": "/static/images/smilies/goodboyboy-huaji/束手无稽.jpg", 
                 "text": "束手无稽"
@@ -787,16 +782,6 @@
                 "desc": "':梆:'", 
                 "icon": "/static/images/smilies/goodboyboy-huaji/梆.jpg", 
                 "text": "梆"
-            }, 
-            {
-                "desc": "':吃鱼摆摆:'", 
-                "icon": "/static/images/smilies/goodboyboy-huaji/吃鱼摆摆.gif", 
-                "text": "吃鱼摆摆"
-            }, 
-            {
-                "desc": "':跃跃欲试 3:'", 
-                "icon": "/static/images/smilies/goodboyboy-huaji/跃跃欲试_3.gif", 
-                "text": "跃跃欲试 3"
             }, 
             {
                 "desc": "':突然滑稽:'", 
@@ -849,11 +834,6 @@
                 "text": "地稽"
             }, 
             {
-                "desc": "':老阔有点扣:'", 
-                "icon": "/static/images/smilies/goodboyboy-huaji/老阔有点扣.gif", 
-                "text": "老阔有点扣"
-            }, 
-            {
                 "desc": "':啊哈哈:'", 
                 "icon": "/static/images/smilies/goodboyboy-huaji/啊哈哈.jpg", 
                 "text": "啊哈哈"
@@ -872,11 +852,6 @@
                 "desc": "':紧张:'", 
                 "icon": "/static/images/smilies/goodboyboy-huaji/紧张.jpg", 
                 "text": "紧张"
-            }, 
-            {
-                "desc": "':摇摆稽:'", 
-                "icon": "/static/images/smilies/goodboyboy-huaji/摇摆稽.gif", 
-                "text": "摇摆稽"
             }, 
             {
                 "desc": "':又不是不能用:'", 
@@ -919,11 +894,6 @@
                 "text": "地稽委屈"
             }, 
             {
-                "desc": "':地稽抚摸:'", 
-                "icon": "/static/images/smilies/goodboyboy-huaji/地稽抚摸.gif", 
-                "text": "地稽抚摸"
-            }, 
-            {
                 "desc": "':绝望:'", 
                 "icon": "/static/images/smilies/goodboyboy-huaji/绝望.jpg", 
                 "text": "绝望"
@@ -942,11 +912,6 @@
                 "desc": "':喝酒:'", 
                 "icon": "/static/images/smilies/goodboyboy-huaji/喝酒.jpg", 
                 "text": "喝酒"
-            }, 
-            {
-                "desc": "':老衲摆摊算命:'", 
-                "icon": "/static/images/smilies/goodboyboy-huaji/老衲摆摊算命.gif", 
-                "text": "老衲摆摊算命"
             }, 
             {
                 "desc": "':老哥，稳:'", 
@@ -972,21 +937,6 @@
                 "desc": "':跃跃欲试 2:'", 
                 "icon": "/static/images/smilies/goodboyboy-huaji/跃跃欲试_2.jpg", 
                 "text": "跃跃欲试 2"
-            }, 
-            {
-                "desc": "':满脑子骚操作:'", 
-                "icon": "/static/images/smilies/goodboyboy-huaji/满脑子骚操作.gif", 
-                "text": "满脑子骚操作"
-            }, 
-            {
-                "desc": "':稽之舞:'", 
-                "icon": "/static/images/smilies/goodboyboy-huaji/稽之舞.gif", 
-                "text": "稽之舞"
-            }, 
-            {
-                "desc": "':将稽就稽:'", 
-                "icon": "/static/images/smilies/goodboyboy-huaji/将稽就稽.gif", 
-                "text": "将稽就稽"
             }
         ]
     }
