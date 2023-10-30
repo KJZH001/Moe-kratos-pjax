@@ -714,5 +714,280 @@
                 "text": "幻星集_问号"
             }
         ]
+    },
+    "滑稽1": {
+        "type": "image", 
+        "container": [
+            {
+                "desc": "':原味稽:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/原味稽.png", 
+                "text": "原味稽"
+            }, 
+            {
+                "desc": "':还是算了:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/还是算了.png", 
+                "text": "还是算了"
+            }, 
+            {
+                "desc": "':蓝纹稽:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/蓝纹稽.jpg", 
+                "text": "蓝纹稽"
+            }, 
+            {
+                "desc": "':随稽应变:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/随稽应变.jpg", 
+                "text": "随稽应变"
+            }, 
+            {
+                "desc": "':蠕动:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/蠕动.gif", 
+                "text": "蠕动"
+            }, 
+            {
+                "desc": "':束手无稽:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/束手无稽.jpg", 
+                "text": "束手无稽"
+            }, 
+            {
+                "desc": "':微笑默叹以为妙绝:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/微笑默叹以为妙绝.png", 
+                "text": "微笑默叹以为妙绝"
+            }, 
+            {
+                "desc": "':喝嘤料:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/喝嘤料.jpg", 
+                "text": "喝嘤料"
+            }, 
+            {
+                "desc": "':暗中观察:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/暗中观察.jpg", 
+                "text": "暗中观察"
+            }, 
+            {
+                "desc": "':高兴:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/高兴.jpg", 
+                "text": "高兴"
+            }, 
+            {
+                "desc": "':惊稽:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/惊稽.jpg", 
+                "text": "惊稽"
+            }, 
+            {
+                "desc": "':可这和我的帅有什么关系:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/可这和我的帅有什么关系.jpg", 
+                "text": "可这和我的帅有什么关系"
+            }, 
+            {
+                "desc": "':狱稽:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/狱稽.jpg", 
+                "text": "狱稽"
+            }, 
+            {
+                "desc": "':梆:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/梆.jpg", 
+                "text": "梆"
+            }, 
+            {
+                "desc": "':吃鱼摆摆:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/吃鱼摆摆.gif", 
+                "text": "吃鱼摆摆"
+            }, 
+            {
+                "desc": "':跃跃欲试 3:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/跃跃欲试_3.gif", 
+                "text": "跃跃欲试 3"
+            }, 
+            {
+                "desc": "':突然滑稽:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/突然滑稽.jpg", 
+                "text": "突然滑稽"
+            }, 
+            {
+                "desc": "':扶墙怂:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/扶墙怂.jpg", 
+                "text": "扶墙怂"
+            }, 
+            {
+                "desc": "':阔以:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/阔以.jpg", 
+                "text": "阔以"
+            }, 
+            {
+                "desc": "':不得行:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/不得行.jpg", 
+                "text": "不得行"
+            }, 
+            {
+                "desc": "':少儿不宜:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/少儿不宜.jpg", 
+                "text": "少儿不宜"
+            }, 
+            {
+                "desc": "':稽日可期:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/稽日可期.jpg", 
+                "text": "稽日可期"
+            }, 
+            {
+                "desc": "':哎:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/哎.jpg", 
+                "text": "哎"
+            }, 
+            {
+                "desc": "':别看丢人:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/别看丢人.jpg", 
+                "text": "别看丢人"
+            }, 
+            {
+                "desc": "':地稽 2:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/地稽_2.jpg", 
+                "text": "地稽 2"
+            }, 
+            {
+                "desc": "':地稽:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/地稽.jpg", 
+                "text": "地稽"
+            }, 
+            {
+                "desc": "':老阔有点扣:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/老阔有点扣.gif", 
+                "text": "老阔有点扣"
+            }, 
+            {
+                "desc": "':啊哈哈:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/啊哈哈.jpg", 
+                "text": "啊哈哈"
+            }, 
+            {
+                "desc": "':无稽可奈:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/无稽可奈.jpg", 
+                "text": "无稽可奈"
+            }, 
+            {
+                "desc": "':老实巴交:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/老实巴交.jpg", 
+                "text": "老实巴交"
+            }, 
+            {
+                "desc": "':紧张:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/紧张.jpg", 
+                "text": "紧张"
+            }, 
+            {
+                "desc": "':摇摆稽:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/摇摆稽.gif", 
+                "text": "摇摆稽"
+            }, 
+            {
+                "desc": "':又不是不能用:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/又不是不能用.jpg", 
+                "text": "又不是不能用"
+            }, 
+            {
+                "desc": "':一时滑稽:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/一时滑稽.jpg", 
+                "text": "一时滑稽"
+            }, 
+            {
+                "desc": "':无法接受:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/无法接受.jpg", 
+                "text": "无法接受"
+            }, 
+            {
+                "desc": "':嘤雄豪稽:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/嘤雄豪稽.jpg", 
+                "text": "嘤雄豪稽"
+            }, 
+            {
+                "desc": "':相视双稽:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/相视双稽.jpg", 
+                "text": "相视双稽"
+            }, 
+            {
+                "desc": "':稽皮发麻:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/稽皮发麻.jpg", 
+                "text": "稽皮发麻"
+            }, 
+            {
+                "desc": "':地稽 3:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/地稽_3.jpg", 
+                "text": "地稽 3"
+            }, 
+            {
+                "desc": "':地稽委屈:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/地稽委屈.jpg", 
+                "text": "地稽委屈"
+            }, 
+            {
+                "desc": "':地稽抚摸:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/地稽抚摸.gif", 
+                "text": "地稽抚摸"
+            }, 
+            {
+                "desc": "':绝望:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/绝望.jpg", 
+                "text": "绝望"
+            }, 
+            {
+                "desc": "':气稽败坏:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/气稽败坏.jpg", 
+                "text": "气稽败坏"
+            }, 
+            {
+                "desc": "':当场去世:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/当场去世.jpg", 
+                "text": "当场去世"
+            }, 
+            {
+                "desc": "':喝酒:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/喝酒.jpg", 
+                "text": "喝酒"
+            }, 
+            {
+                "desc": "':老衲摆摊算命:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/老衲摆摊算命.gif", 
+                "text": "老衲摆摊算命"
+            }, 
+            {
+                "desc": "':老哥，稳:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/老哥，稳.jpg", 
+                "text": "老哥，稳"
+            }, 
+            {
+                "desc": "':自闭稽:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/自闭稽.jpg", 
+                "text": "自闭稽"
+            }, 
+            {
+                "desc": "':无话可说:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/无话可说.jpg", 
+                "text": "无话可说"
+            }, 
+            {
+                "desc": "':跃跃欲试:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/跃跃欲试.jpg", 
+                "text": "跃跃欲试"
+            }, 
+            {
+                "desc": "':跃跃欲试 2:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/跃跃欲试_2.jpg", 
+                "text": "跃跃欲试 2"
+            }, 
+            {
+                "desc": "':满脑子骚操作:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/满脑子骚操作.gif", 
+                "text": "满脑子骚操作"
+            }, 
+            {
+                "desc": "':稽之舞:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/稽之舞.gif", 
+                "text": "稽之舞"
+            }, 
+            {
+                "desc": "':将稽就稽:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/将稽就稽.gif", 
+                "text": "将稽就稽"
+            }
+        ]
     }
 }
