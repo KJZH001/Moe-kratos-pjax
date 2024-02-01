@@ -110,15 +110,15 @@
                                     <ul class="sub-menu">
                                         <!--<li><a href="https://blog.moeworld.tech/rcraft-api/" one-link-mark="yes">Api接口</a></li>-->
                                         <li>
-                                            <a href="https://blog.moeworld.tech/" one-link-mark="yes">站点监控</a>
+                                            <a href="https://blog.moeworld.tech/" one-link-mark="yes" target="_blank">站点监控</a>
                                             <ul class="sub-menu">
-                                                <li><a href="https://uptime.lovemoe.net/" one-link-mark="yes">Kuma</a></li>
-                                                <li><a href="https://status.moeworld.top/" one-link-mark="yes">Uptime</a></li>
+                                                <li><a href="https://uptime.lovemoe.net/" one-link-mark="yes" target="_blank">Kuma</a></li>
+                                                <li><a href="https://status.moeworld.top/" one-link-mark="yes" target="_blank">Uptime</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="https://tiebasign.moeworld.top/" one-link-mark="yes">云签到</a></li>
-                                        <li><a href="https://mikutap.moeworld.top/" one-link-mark="yes">Mikutap</a></li>
-                                        <li><a href="https://outlook.com/?realm=moeworld.top" one-link-mark="yes">域名邮箱</a></li>
+                                        <li><a href="https://tiebasign.moeworld.top/" one-link-mark="yes" target="_blank">云签到</a></li>
+                                        <li><a href="https://mikutap.moeworld.top/" one-link-mark="yes" target="_blank">Mikutap</a></li>
+                                        <li><a href="https://outlook.com/?realm=moeworld.top" one-link-mark="yes" target="_blank">域名邮箱</a></li>
                                         <li><a href="https://blog.moeworld.tech/fortuneupup：测测今天的运势吧/" one-link-mark="yes" target="_blank">
                                             幸运抽签</a></li>
                                     </ul>
@@ -130,7 +130,7 @@
                                     <ul class="sub-menu">
                                                 <li><a href="https://blog.moeworld.tech/about/" one-link-mark="yes">更多</a></li>
                                                 <li><a href="https://blog.moeworld.tech/about-2020/" one-link-mark="yes">更多-2020</a></li>
-                                                <li><a href="https://about.moeworld.top/" one-link-mark="yes">个人页</a></li>
+                                                <li><a href="https://about.moeworld.top/" one-link-mark="yes" target="_blank">个人页</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="https://travellings.link" one-link-mark="yes" target="_blank"><i class="fa fa-paper-plane"></i> 开往</a></li>
