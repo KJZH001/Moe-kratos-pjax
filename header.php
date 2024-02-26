@@ -126,7 +126,20 @@
                                 <li><a href="https://blog.moeworld.tech/friendshiplink/" one-link-mark="yes"><i class="fa fa-mars"></i> 友链</a></li>
                                 <li><a href="https://blog.moeworld.tech/guestbook/" one-link-mark="yes"><i class="fa fa-pencil"></i> 留言</a></li>
                                 <li><a href="https://travellings.link" one-link-mark="yes" target="_blank"><i class="fa fa-paper-plane"></i> 开往</a></li>
-                                <li><a href="https://blog.moeworld.tech/订阅本站/" one-link-mark="yes"><i class="fa fa-rss-square"></i> 订阅</a></li>
+                                <li>
+                                    <a href="https://blog.moeworld.tech/订阅本站/" one-link-mark="yes"><i class="fa fa-rss-square"></i> 订阅</a>
+                                    <ul class="sub-menu">
+                                                <li><a href="https://blog.moeworld.tech/feed/" one-link-mark="yes" target="_blank">原生RSS</a></li>
+                                                <li><a href="https://rss.moeworld.tech/" one-link-mark="yes" target="_blank">RSSHub</a></li>
+                                                <li><a href="https://blog.moeworld.tech/article_json.php" 
+                                                        one-link-mark="yes" target="_blank">Json API</a></li>
+                                                <li><a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=tkyHXGo3TtbM8NPi6ti6LR3_Ufv8MtKO&authKey=2nCz6u1d%2Be%2FvumpuFryDAAn5Jf98cyqpdKh%2BXXxbO18p6T5jjH%2FjvbZixEAaIVFu&noverify=0&group_code=923991620" 
+                                                one-link-mark="yes" target="_blank">QQ群</a></li>
+                                                <li><a href="https://mp.weixin.qq.com/s/1LTNOCJYxeZnwMjiG2JlaA" one-link-mark="yes" target="_blank">微信公众号</a></li>
+                                                <li><a href="https://t.me/akatsukisora" one-link-mark="yes" target="_blank">TG频道</a></li>
+                                                <li><a href="https://t.me/amesekai" one-link-mark="yes" target="_blank">TG群组</a></li>
+                                            </ul>
+                                </li>
                                 <li>
                                     <a href="https://about.moeworld.top" one-link-mark="yes" target="_blank"><i class="fa fa-rocket"></i> 关于</a>
                                     <ul class="sub-menu">
