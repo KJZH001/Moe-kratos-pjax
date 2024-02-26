@@ -121,6 +121,7 @@
                                         <li><a href="https://outlook.com/?realm=moeworld.top" one-link-mark="yes" target="_blank">域名邮箱</a></li>
                                         <li><a href="https://blog.moeworld.tech/fortuneupup：测测今天的运势吧/" one-link-mark="yes" target="_blank">
                                             幸运抽签</a></li>
+                                        <li><a href="https://afdian.net/a/kjzh001" one-link-mark="yes" target="_blank"><i class="fa fa-shopping-cart"></i> 爱发电</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="https://blog.moeworld.tech/friendshiplink/" one-link-mark="yes"><i class="fa fa-mars"></i> 友链</a></li>
