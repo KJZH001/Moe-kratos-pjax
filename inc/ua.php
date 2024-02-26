@@ -141,7 +141,7 @@ function user_agent_show(){
     }elseif(preg_match('/Windows/i',$useragent)||preg_match('/WinNT/i',$useragent)||preg_match('/Win32/i',$useragent)){
         $title = 'Windows';
         if(preg_match('/Windows NT 10.0/i',$useragent)||preg_match('/Windows NT 6.4/i',$useragent)){
-            $version = '10';
+            $version = '10/11';
             $code = 'win-6';
         }elseif(preg_match('/Windows NT 6.3/i',$useragent)){
             $version = '8.1';
