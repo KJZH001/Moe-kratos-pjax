@@ -73,6 +73,7 @@
                                                 <li><a href="https://blog.moeworld.tech/category/yingjian/" one-link-mark="yes">硬件</a></li>
                                                 <li><a href="https://blog.moeworld.tech/category/%e5%bc%80%e5%8f%91/php/" one-link-mark="yes">php</a></li>
                                                 <li><a href="https://blog.moeworld.tech/category/%e5%bc%80%e5%8f%91/iapp/" one-link-mark="yes">iApp</a></li>
+                                                <li><a href="https://blog.moeworld.tech/category/%e5%bc%80%e5%8f%91/python/" one-link-mark="yes">Python</a></li>
                                                 <li><a href="https://blog.moeworld.tech/category/%e5%bc%80%e5%8f%91/wordpress/" one-link-mark="yes">WorldPress</a></li>
                                                 <li><a href="https://blog.moeworld.tech/category/%e5%bc%80%e5%8f%91/java-android/" one-link-mark="yes">Java&Android</a></li>
                                             </ul>
