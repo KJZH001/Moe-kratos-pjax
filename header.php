@@ -97,7 +97,8 @@
                                             <a href="https://blog.moeworld.tech/" one-link-mark="yes" target="_blank">站点监控</a>
                                             <ul class="sub-menu">
                                                 <li><a href="https://uptime.lovemoe.net/" one-link-mark="yes" target="_blank">Kuma</a></li>
-                                                <li><a href="https://status.moeworld.top/" one-link-mark="yes" target="_blank">Uptime</a></li>
+                                                <li><a href="https://status.moeworld.top/" one-link-mark="yes" target="_blank">Uptime Selfhost</a></li>
+                                                <li><a href="https://stats.uptimerobot.com/J75mgc8yjM" one-link-mark="yes" target="_blank">Uptime Official</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="https://tiebasign.moeworld.top/" one-link-mark="yes" target="_blank">云签到</a></li>
