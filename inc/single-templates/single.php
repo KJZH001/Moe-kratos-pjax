@@ -58,6 +58,20 @@
             <div class="nav-previous clearfix">
                 <a title="<?php echo $prev_post->post_title;?>" href="<?php echo get_permalink($prev_post->ID); ?>">&lt; <?php _e('上一篇','moedog'); ?></a>
             </div>
+            <!-- 广告测试单元-文章横向 -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6472836894788623"
+                crossorigin="anonymous"></script>
+            <!-- 底部横向广告 -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-6472836894788623"
+                data-ad-slot="4637088625"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <!-- 广告测试单元-文章横向 结束 -->
             <?php }
             $next_post = get_next_post();
             if(!empty($next_post)){ ?>
