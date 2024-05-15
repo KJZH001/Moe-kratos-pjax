@@ -504,5 +504,6 @@ function kratos_register_widgets(){
     register_widget('kratos_widget_posts'); 
     register_widget('kratos_widget_comments'); 
     // Moe-kratos by晓空 增加的组件
+    register_widget('kratos_widget_googleAd'); 
 }
 add_action('widgets_init','kratos_register_widgets');
