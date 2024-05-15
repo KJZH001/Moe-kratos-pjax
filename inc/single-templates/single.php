@@ -58,7 +58,27 @@
             <div class="nav-previous clearfix">
                 <a title="<?php echo $prev_post->post_title;?>" href="<?php echo get_permalink($prev_post->ID); ?>">&lt; <?php _e('上一篇','moedog'); ?></a>
             </div>
-            <!-- 广告测试单元-文章横向 -->
+            <?php }
+            $next_post = get_next_post();
+            if(!empty($next_post)){ ?>
+            <div class="nav-next">
+                <a title="<?php echo $next_post->post_title; ?>" href="<?php echo get_permalink($next_post->ID); ?>"><?php _e('下一篇','moedog'); ?> &gt;</a>
+            </div>
+            <?php } ?>
+        </nav>
+        <!-- 广告测试单元-文章横向 -->
+        <div style="margin-top: 15px;
+                    background-color: #fff;
+                    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+                    border-radius: 0;
+                    padding: 14px 14px 14px 14px;
+                    background-color: rgba(253, 253, 253, .85) !important;
+                    height:120px">
+            <h4 style="font-size: 18px;
+                    color: #666;
+                    margin-top: 5px;">
+                赞助商广告
+            </h4>
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6472836894788623"
                 crossorigin="anonymous"></script>
             <!-- 底部横向广告 -->
@@ -71,15 +91,8 @@
             <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
-            <!-- 广告测试单元-文章横向 结束 -->
-            <?php }
-            $next_post = get_next_post();
-            if(!empty($next_post)){ ?>
-            <div class="nav-next">
-                <a title="<?php echo $next_post->post_title; ?>" href="<?php echo get_permalink($next_post->ID); ?>"><?php _e('下一篇','moedog'); ?> &gt;</a>
-            </div>
-            <?php } ?>
-        </nav>
+        </div>
+        <!-- 广告测试单元-文章横向 结束 -->
         <?php comments_template(); ?>
     </article>
     <?php } ?>
