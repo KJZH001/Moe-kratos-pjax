@@ -72,8 +72,7 @@
                     box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
                     border-radius: 0;
                     padding: 14px 14px 14px 14px;
-                    background-color: rgba(253, 253, 253, .85) !important;
-                    height:120px">
+                    background-color: rgba(253, 253, 253, .85) !important;">
             <h4 style="font-size: 18px;
                     color: #666;
                     margin-top: 5px;">

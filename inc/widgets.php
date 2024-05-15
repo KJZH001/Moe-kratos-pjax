@@ -144,6 +144,57 @@ class kratos_widget_ad extends WP_Widget {
             </p><?php
     }
 }
+
+// 谷歌广告 qwq
+class kratos_widget_googleAd extends WP_Widget {
+    function __construct() {
+        $widget_ops = array(
+            'classname'  => 'widget_kratos_googleAd',
+            'name'       => __('谷歌广告位','moedog'),
+            'description'=> __('Moe-Kratos主题特色组件 - 谷歌广告位','moedog')
+        );
+        parent::__construct(false,false,$widget_ops);
+    }
+    function widget($args,$instance){
+        extract($args);
+        $aurl = $instance['aurl']?$instance['aurl']:'';
+        $title = $instance['title']?$instance['title']:'';
+        $imgurl = $instance['imgurl']?$instance['imgurl']:'';
+        echo $before_widget;
+        if(!empty($title)){ ?>
+            <h4 class="widget-title"><?php echo $title; ?></h4><?php
+        }
+        if(!empty($imgurl)){ ?>
+            <a href="<?php echo $aurl; ?>" target="_blank">
+                <img class="carousel-inner img-responsive img-rounded" src="<?php echo $imgurl; ?>" />
+            </a><?php
+        }
+        echo $after_widget;
+    }
+    function update($new_instance,$old_instance){
+        return $new_instance;
+    }
+    function form($instance){
+        @$title = esc_attr($instance['title']);
+        @$aurl = esc_attr($instance['aurl']);
+        @$imgurl = esc_attr($instance['imgurl']); ?>
+            <p>
+                <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('标题(可留空)：','moedog'); ?>
+                    <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
+                </label>
+            </p>
+            <p>
+                <label for="<?php echo $this->get_field_id('aurl'); ?>"><?php _e('链接：','moedog'); ?>
+                    <input class="widefat" id="<?php echo $this->get_field_id('aurl'); ?>" name="<?php echo $this->get_field_name('aurl'); ?>" type="text" value="<?php echo $aurl; ?>" />
+                </label>
+            </p>
+            <p>
+                <label for="<?php echo $this->get_field_id('imgurl'); ?>"><?php _e('图片：','moedog'); ?>
+                    <input class="widefat" id="<?php echo $this->get_field_id('imgurl'); ?>" name="<?php echo $this->get_field_name('imgurl'); ?>" type="text" value="<?php echo $imgurl; ?>" />
+                </label>
+            </p><?php
+    }
+}
 class kratos_widget_about extends WP_Widget {
     function __construct() {
         $widget_ops = array(
@@ -452,5 +503,6 @@ function kratos_register_widgets(){
     register_widget('kratos_widget_tags'); 
     register_widget('kratos_widget_posts'); 
     register_widget('kratos_widget_comments'); 
+    // Moe-kratos by晓空 增加的组件
 }
 add_action('widgets_init','kratos_register_widgets');
