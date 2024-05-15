@@ -157,8 +157,8 @@ class kratos_widget_googleAd extends WP_Widget {
     }
     function widget($args,$instance){
         extract($args);
-        $aurl = $instance['aurl']?$instance['aurl']:'';
         $title = $instance['title']?$instance['title']:'';
+        $aurl = $instance['aurl']?$instance['aurl']:'';
         $imgurl = $instance['imgurl']?$instance['imgurl']:'';
         echo $before_widget;
         if(!empty($title)){ ?>
