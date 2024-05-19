@@ -167,7 +167,7 @@ class kratos_widget_googleAd extends WP_Widget {
         if(!empty($customer_html)){ ?>
             <p style="margin: 0 0 0px;
                         color: #888;
-                        font-size: 12px;">
+                        font-size: 14px;">
                     此处可能会显示来自Google的广告
                 </p><?php
              echo $customer_html; 
