@@ -78,6 +78,11 @@
                     margin-top: 5px;">
                 赞助商广告
             </h4>
+            <p style="margin: 0 0 0px;
+                    color: #888;
+                    font-size: 16px;">
+                如果您的网络和设备条件允许，这里可能会显示来自Google的广告
+            </p>
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6472836894788623"
                 crossorigin="anonymous"></script>
             <!-- 底部横向广告 -->
