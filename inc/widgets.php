@@ -186,7 +186,7 @@ class kratos_widget_googleAd extends WP_Widget {
                 </label>
             </p>
             <p>
-                <label for="<?php echo $this->get_field_id('customer_html'); ?>"><?php _e('谷歌广告代码(可留空)：','moedog'); ?>
+                <label for="<?php echo $this->get_field_id('customer_html'); ?>"><?php _e('谷歌广告代码(可留空且无需导入adsjs)：','moedog'); ?>
                     <textarea class="widefat" id="<?php echo $this->get_field_id('customer_html'); ?>" name="<?php echo $this->get_field_name('customer_html'); ?>" rows="5"><?php echo $customer_html; ?></textarea>
                 </label>
             </p><?php
