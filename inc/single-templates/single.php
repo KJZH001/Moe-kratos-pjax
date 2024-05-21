@@ -86,7 +86,8 @@
             window.addEventListener("scroll", function() {
                 (0 != document.documentElement.scrollTop && !1 === lazyadsense || 0 != document.body.scrollTop && !1 === lazyadsense) && (! function() {
                     var e = document.createElement("script");
-                    e.id = "g_ads_js", e.type = "text/javascript", e.async = "async", e.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+                    // e.id = "g_ads_js", e.type = "text/javascript", e.async = "async", e.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+                    e.id = "g_ads_js", e.type = "text/javascript", e.async = "async", e.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6472836894788623";
                     var a = document.getElementsByTagName("script")[0];
                     a.parentNode.insertBefore(e, a)
 
