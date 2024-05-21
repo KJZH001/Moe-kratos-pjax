@@ -88,9 +88,11 @@
                 crossorigin="anonymous"></script>
             <!-- 底部横向广告 -->
             <ins class="adsbygoogle"
-                style="display:inline-block;width:728px;height:90px"
+                style="display:block"
                 data-ad-client="ca-pub-6472836894788623"
-                data-ad-slot="4637088625"></ins>
+                data-ad-slot="4637088625"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
             <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
