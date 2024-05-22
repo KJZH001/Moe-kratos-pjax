@@ -73,40 +73,6 @@
                     border-radius: 0;
                     padding: 14px 14px 14px 14px;
                     background-color: rgba(253, 253, 253, .85) !important;">
-            <!-- 延迟加载Google Adsense_https://kerrynotes.com/implement-lazy-load-google-adsense/-->
-            <!-- 
-                滚动页面时再加载Google Adsense 
-                此部分代码只需加载一次
-                广告的原始位置只需保留ins部分即可
-                2024.5.21 晓空
-            -->
-            <script type='text/javascript'> 
-            /* 延迟加载 AdSense JS */
-            var lazyadsense = !1;
-            window.addEventListener("scroll", function() {
-                (0 != document.documentElement.scrollTop && !1 === lazyadsense || 0 != document.body.scrollTop && !1 === lazyadsense) && (! function() {
-                    var e = document.createElement("script");
-                    // e.id = "g_ads_js", e.type = "text/javascript", e.async = "async", e.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
-                    e.id = "g_ads_js", e.type = "text/javascript", e.async = "async", e.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6472836894788623";
-                    var a = document.getElementsByTagName("script")[0];
-                    a.parentNode.insertBefore(e, a)
-
-                    /* 以下为自动广告专用，如果没有开启，请删除*/
-                    // var gads = document.getElementById("g_ads_js")
-                    // gads.setAttribute("data-ad-client", "ca-pub-6472836894788623");
-
-                }(), lazyadsense = !0)
-            }, !0);
-            </script>
-
-            <!-- 延迟加载广告推送 -->
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).onload = function () {
-                    [].forEach.call(document.getElementsByClassName('adsbygoogle'), function () {
-                        adsbygoogle.push({})
-                    })
-                }
-            </script>
             <h4 style="font-size: 18px;
                     color: #666;
                     margin-top: 5px;">
@@ -118,6 +84,7 @@
                 如果您的网络和设备条件允许，这里可能会显示来自Google的广告
             </p>
             <!-- 开始粘贴来自谷歌的代码 -->
+            <!-- 广告代码被移动至footer中 -->
             <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6472836894788623"
                 crossorigin="anonymous"></script> -->
             <!-- 底部横向广告 -->
