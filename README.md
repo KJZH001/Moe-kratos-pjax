@@ -51,7 +51,7 @@
 ## 捐赠
 
 我接受通过支付宝 / 微信支付 / QQ 支付的捐赠，谢谢！
-- [晓空-https://about.moeworld.top/](https://about.moeworld.top/) ：二维码位于`DONATE`中
+- [晓空-https://about.moeworld.top](https://about.moeworld.top/) ：二维码位于`DONATE`中
 - [上游作者 MoeDog-https://pay.fczbl.vip](https://pay.fczbl.vip)
 
 ## 使用的开源项目
