@@ -937,6 +937,16 @@
                 "desc": "':跃跃欲试 2:'", 
                 "icon": "/static/images/smilies/goodboyboy-huaji/跃跃欲试_2.jpg", 
                 "text": "跃跃欲试 2"
+            },
+            {
+                "desc": "':稽之舞:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/稽之舞.gif", 
+                "text": "稽之舞"
+            },
+            {
+                "desc": "':将稽就稽:'", 
+                "icon": "/static/images/smilies/goodboyboy-huaji/将稽就稽.gif", 
+                "text": "将稽就稽"
             }
         ]
     }
