@@ -7,6 +7,30 @@ $default_id = NULL;
 $r18 = false;
 
 //----------------------------------------
+//----------------允许跨域----------------
+
+// header('Access-Control-Allow-Origin: *'); 
+// header('Access-Control-Allow-Origin: moeworld.top,*.moeworld.top,moeworld.tech,*.moeworld.tech'); 
+
+// $allowed_domains = array(
+//     'moeworld.top',
+//     'moeworld.tech'
+// );
+
+// $origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
+
+// if (in_array(parse_url($origin, PHP_URL_HOST), $allowed_domains)) {
+//     header('Access-Control-Allow-Origin: ' . $origin);
+//     header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+//     header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
+// }
+// else
+// {
+//     // echo "不允许跨域的访问<br>";
+//     // echo $_SERVER['HTTP_ORIGIN'];
+// }
+
+//----------------------------------------
 
 //获取参数
 $person_ = getParam("p");
