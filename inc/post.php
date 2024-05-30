@@ -201,7 +201,7 @@ function smilies_reset(){
     ':狱稽:' => 'goodboyboy-huaji/狱稽.jpg',
     ':梆:' => 'goodboyboy-huaji/梆.jpg',
     ':吃鱼摆摆:' => 'goodboyboy-huaji/吃鱼摆摆.gif',
-    ':跃跃欲试 3:' => 'goodboyboy-huaji/跃跃欲试_3.gif',
+    ':跃跃欲试_3:' => 'goodboyboy-huaji/跃跃欲试_3.gif',
     ':突然滑稽:' => 'goodboyboy-huaji/突然滑稽.jpg',
     ':扶墙怂:' => 'goodboyboy-huaji/扶墙怂.jpg',
     ':阔以:' => 'goodboyboy-huaji/阔以.jpg',
