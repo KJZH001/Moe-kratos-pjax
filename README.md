@@ -4,7 +4,7 @@
 
 <p align="center">
 <a href="https://blog.moeworld.tech"><img alt="作者" src="https://img.shields.io/badge/作者-晓空-red.svg?style=flat-square"/></a>
-<a href="https://github.com/xb2016/kratos-pjax/releases"><img alt="版本" src="https://img.shields.io/github/release/xb2016/kratos-pjax.svg?style=flat-square"/></a>
+<a href="https://github.com/KJZH001/Moe-kratos-pjax/releases"><img alt="版本" src="https://img.shields.io/github/release/KJZH001/Moe-kratos-pjax.svg?style=flat-square"/></a>
 <img alt="许可" src="https://img.shields.io/github/license/xb2016/kratos-pjax.svg?style=flat-square"/>
 </p>
 
