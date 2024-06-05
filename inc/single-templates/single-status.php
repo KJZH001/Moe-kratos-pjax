@@ -32,6 +32,40 @@
             </div>
             <?php } ?>
         </nav>
+        <!-- 广告测试单元-文章横向 -->
+        <div style="margin-top: 15px;
+                    background-color: #fff;
+                    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+                    border-radius: 0;
+                    padding: 14px 14px 14px 14px;
+                    background-color: rgba(253, 253, 253, .85) !important;">
+            <h4 style="font-size: 18px;
+                    color: #666;
+                    margin-top: 5px;">
+                赞助商广告
+            </h4>
+            <p style="margin: 0 0 0px;
+                    color: #888;
+                    font-size: 16px;">
+                如果您的网络和设备条件允许，这里可能会显示来自Google的广告
+            </p>
+            <!-- 开始粘贴来自谷歌的代码 -->
+            <!-- 广告代码被移动至footer中 -->
+            <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6472836894788623"
+                crossorigin="anonymous"></script> -->
+            <!-- 底部横向广告 -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-6472836894788623"
+                data-ad-slot="4637088625"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <!-- <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script> -->
+            <!-- 结束粘贴来自谷歌的代码 -->
+        </div>
+        <!-- 广告测试单元-文章横向 结束 -->
         <?php comments_template(); ?>
     </article>
     <?php } ?>
