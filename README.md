@@ -87,6 +87,6 @@
 
 ## 作者
 
-**Kratos-pjax** © [Vtrois](https://github.com/Vtrois), [Moedog](https://github.com/xb2016), 根据 [GPL-3.0](./LICENSE) 许可证发布。<br>
+**Moe-Kratos-pjax** © [Vtrois](https://github.com/Vtrois), [Moedog](https://github.com/xb2016), [晓空](https://github.com/kjzh001)，根据 [GPL-3.0](./LICENSE) 许可证发布。<br>
 
-> 博客 [moedog.org](https://moedog.org) · GitHub [@xb2016](https://github.com/xb2016) · Twitter [@moesdog](https://twitter.com/moesdog) · Telegram [@xb2016](https://t.me/xb2016)
+> 博客 [blog.moeworld.tech](https://blog.moeworld.tech) · GitHub [@KJZH001](https://github.com/KJZH001) · Twitter [MoeSakura](https://twitter.com/RPT0001) · Telegram [@akatsukisora](https://t.me/akatsukisora)
