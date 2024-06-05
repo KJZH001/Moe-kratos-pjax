@@ -299,7 +299,6 @@
         wechatpic();
         if($('div').hasClass('aplayer-footer')) APF();
         if($('div').hasClass('xb-snow')) SnowF();
-        pushGoogeAds();
     });
 }());
 //comment ajax

@@ -88,13 +88,13 @@
             }, !0);
             </script>
             <!-- 延迟加载广告推送 -->
-            <!-- <script>
+            <script>
                 (adsbygoogle = window.adsbygoogle || []).onload = function () {
                     [].forEach.call(document.getElementsByClassName('adsbygoogle'), function () {
                         adsbygoogle.push({})
                     })
                 }
-            </script> -->
+            </script>
         <!-- Adsense 全局代码 结束 -->
     </body>
 </html>
