@@ -18,6 +18,14 @@
 			}
 		});
     }
+    // pjax重载谷歌广告
+    var pushGoogeAds = function(){
+        (adsbygoogle = window.adsbygoogle || []).onload = function () {
+            [].forEach.call(document.getElementsByClassName('adsbygoogle'), function () {
+                adsbygoogle.push({})
+            })
+        }
+    }
     var sidebaraffix = function(){
         if($('#sidebar').height()&&xb.site_sh){
             if($('#main').height()>$('#sidebar').height()){
@@ -272,7 +280,9 @@
         showPhotos();
         OwOcfg();
         QRCode();
+        pushGoogeAds();
     }
+    // 初始化
     $(function(){
         gotop();
         sidebaraffix();
@@ -289,6 +299,7 @@
         wechatpic();
         if($('div').hasClass('aplayer-footer')) APF();
         if($('div').hasClass('xb-snow')) SnowF();
+        pushGoogeAds();
     });
 }());
 //comment ajax
