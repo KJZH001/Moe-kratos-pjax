@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-<a href="https://moedog.org"><img alt="作者" src="https://img.shields.io/badge/作者-Moedog-red.svg?style=flat-square"/></a>
+<a href="https://blog.moeworld.tech"><img alt="作者" src="https://img.shields.io/badge/作者-晓空-red.svg?style=flat-square"/></a>
 <a href="https://github.com/xb2016/kratos-pjax/releases"><img alt="版本" src="https://img.shields.io/github/release/xb2016/kratos-pjax.svg?style=flat-square"/></a>
 <img alt="许可" src="https://img.shields.io/github/license/xb2016/kratos-pjax.svg?style=flat-square"/>
 </p>
@@ -12,15 +12,27 @@
 
 ## 介绍
 
-**Kratos:** 一个简洁、简单且响应迅速的 WordPress 博客主题，基于 [Bootstrap](https://github.com/twbs/bootstrap) 和 [Font Awesome](https://github.com/FortAwesome/Font-Awesome)。
+**Kratos:** 一个简洁、简单且快速的 WordPress 博客主题，基于 [Bootstrap](https://github.com/twbs/bootstrap) 和 [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
 
-这是 Kratos 的**二次开发**版本。要获取原始版本，请访问 [https://github.com/Vtrois/Kratos](https://github.com/Vtrois/Kratos)。
+**Kratos-pjax** :icecream: Wow, such a lovely WordPress theme! Based on Kratos-V2 and Modfiy by MoeDog
 
-## 开始前
+这是 Kratos-pjax 的**二次开发**版本。要获取原始版本，请访问 [Vtrois/Kratos](https://github.com/Vtrois/Kratos) 以及 [xb2016/Kratos-pjax](https://github.com/xb2016/Kratos-pjax)
+
+## 在开始之前
 
 请给这个项目一个星标，谢谢！
 
-任何人都可以**免费使用**这个主题，但希望可以保留主题页脚的版权信息。捐赠和星标都是**自愿的**，所以不用再问我是否可以使用了。这也是一个**自用性质**的主题，我自己需要的功能都已加入了，代码写得也很乱，所以可能无法兼容一些插件。如果遇到问题，请先查看**使用文档**，如果不行再求助谷歌。如果在我的博客站点上遇到同样的问题，请提交 issue（但不保证解决）。关于插件兼容问题和自定义修改问题就**不用**再联系我了，**请自行选择主题与插件**。关于主题定制问题，请基于原主题联系主题原作者，谢谢。
+任何人都可以**免费使用**这个主题，但希望可以保留主题页脚的版权信息。
+
+捐赠和星标都是**自愿的**，所以不用再问我是否可以使用了。
+
+这也是一个**自用性质**的主题，我自己需要的功能都已加入了，代码写得也很乱，所以可能无法兼容一些插件。
+
+如果遇到问题，请先查看**使用文档**，如果不行再求助谷歌。如果在我的博客站点上遇到同样的问题，请提交 issue（但不保证解决）。
+
+关于插件兼容问题和自定义修改问题就**不用**再联系我了，**请自行选择主题与插件**。
+
+关于主题定制问题，请基于原主题联系主题原作者，谢谢。
 
 ## 支持
 
