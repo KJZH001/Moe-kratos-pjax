@@ -69,6 +69,7 @@
 ## 使用的开源项目
 
 - [Kratos](https://github.com/Vtrois/Kratos)
+- [Kratos-pjax](https://github.com/xb2016/kratos-pjax)
 - [Bootstrap](https://github.com/twbs/bootstrap)
 - [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
 - [OwO](https://github.com/diygod/owo)
