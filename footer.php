@@ -69,6 +69,8 @@
                 广告的原始位置只需保留ins部分即可
                 2024.5.21 晓空
             -->
+            <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6472836894788623"
+                 crossorigin="anonymous"></script> -->
             <script type='text/javascript'> 
             /* 延迟加载 AdSense JS */
             var lazyadsense = !1;
