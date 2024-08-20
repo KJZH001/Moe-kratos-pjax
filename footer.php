@@ -29,6 +29,24 @@
                                     <input type="text" name="s" id="search" placeholder="Search..." style="display:none"/>
                                 </form>
                             </div>
+                            <!--
+                                Leaflow 对话
+                                需要配合Leaflow插件使用
+                                https://github.com/KJZH001/wp-amber.git
+                            -->
+                            <div class="moe-leaflow-box" id="moe-leaflow-amber-show-chat-button">
+                                <span class="fa fa-reddit"></span>
+                            </div>
+                            <style>
+                                .moe-leaflow-box 
+                                {
+                                    /* bottom: 230px; //230会把管理员编辑文章的按钮给正好盖住了= = */
+                                    bottom: 280px;
+                                    background: #848484;
+                                    display: table;
+                                    opacity: .7;
+                                }
+                            </style>
                         </div>
                         <?php if(kratos_option('site_girl')&&!wp_is_mobile()){ ?>
                         <div class="waifu">
