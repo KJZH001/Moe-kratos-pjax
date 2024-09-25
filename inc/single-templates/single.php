@@ -87,13 +87,13 @@
             <!-- 广告代码被移动至footer中 -->
             <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6472836894788623"
                 crossorigin="anonymous"></script> -->
-            <!-- 底部横向广告 -->
-            <ins class="adsbygoogle"
+            <!-- 底部横向广告 全局一次性推送ads只需要保留ins标签即可-->
+            <!-- <ins class="adsbygoogle"
                 style="display:block"
                 data-ad-client="ca-pub-6472836894788623"
                 data-ad-slot="4637088625"
                 data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
+                data-full-width-responsive="true"></ins> -->
             <!-- <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script> -->
