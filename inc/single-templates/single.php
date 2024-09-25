@@ -98,6 +98,10 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script> -->
             <!-- 结束粘贴来自谷歌的代码 -->
+            <!-- 第三方的广告 -->
+            <a href="https://52.cola52.site/#/register?code=EouHPd4L">
+                <img src="https://blog.moeworld.tech/wp-content/uploads/2024/09/可乐云_AD横_watermark.jpg" style="max-width: 100%; height: auto;">
+            </a>
         </div>
         <!-- 广告测试单元-文章横向 结束 -->
         <?php comments_template(); ?>
