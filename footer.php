@@ -34,8 +34,8 @@
                                 需要配合Leaflow插件使用
                                 https://github.com/KJZH001/wp-amber.git
                             -->
-                            <div class="moe-leaflow-box" id="moe-leaflow-amber-show-chat-button">
-                                <span class="fa fa-reddit"></span>
+                            <!-- <div class="moe-leaflow-box" id="moe-leaflow-amber-show-chat-button">
+                                <span class="fa fa-reddit"></span> -->
                             </div>
                             <style>
                                 .moe-leaflow-box 
