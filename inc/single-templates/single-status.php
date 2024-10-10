@@ -65,7 +65,7 @@
             </script> -->
             <!-- 结束粘贴来自谷歌的代码 -->
             <!-- 第三方的广告 -->
-            <a href="https://52.cola52.site/#/register?code=EouHPd4L" one-link-mark="yes" target="_blank">
+            <a href="https://su.colac.fun?path=register&code=EouHPd4L" one-link-mark="yes" target="_blank">
                 <img src="https://blog.moeworld.tech/wp-content/uploads/2024/09/可乐云_AD横_watermark.jpg" style="max-width: 100%; height: auto;">
             </a>
         </div>
