@@ -112,7 +112,11 @@
                                 </li>
                                 <li><a href="https://blog.moeworld.tech/friendshiplink/" one-link-mark="yes"><i class="fa fa-mars"></i> 友链</a></li>
                                 <li><a href="https://blog.moeworld.tech/guestbook/" one-link-mark="yes"><i class="fa fa-pencil"></i> 留言</a></li>
-                                <li><a href="https://travellings.link" one-link-mark="yes" target="_blank"><i class="fa fa-paper-plane"></i> 开往</a></li>
+                                <li><a href="https://travellings.link" one-link-mark="yes" target="_blank"><i class="fa fa-paper-plane"></i> 开往</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="https://foreverblog.cn/go.html" one-link-mark="yes" target="_blank">虫洞</a></li>
+                                    </ul>
+                                </li>
                                 <li>
                                     <a href="https://blog.moeworld.tech/订阅本站/" one-link-mark="yes"><i class="fa fa-rss-square"></i> 订阅</a>
                                     <ul class="sub-menu">    
