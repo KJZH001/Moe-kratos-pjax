@@ -115,6 +115,7 @@
                                 <li><a href="https://travellings.link" one-link-mark="yes" target="_blank"><i class="fa fa-paper-plane"></i> 开往</a>
                                     <ul class="sub-menu">
                                         <li><a href="https://foreverblog.cn/go.html" one-link-mark="yes" target="_blank">虫洞</a></li>
+                                        <li><a href="https://bf.zzxworld.com/s/1353" one-link-mark="yes" target="_blank">BlogFinder</a></li>
                                     </ul>
                                 </li>
                                 <li>
