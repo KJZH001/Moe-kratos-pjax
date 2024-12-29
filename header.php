@@ -34,6 +34,29 @@
      crossorigin="anonymous"></script> -->
     <!-- Google tag (gtag.js) Analytics-->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y9MJ3H1DDW"></script> -->
+    <!-- 
+        接住谷歌广告的错误信息，免得打印的到处都是 
+        如果需要调试错误信息，请对这部分注释
+    -->
+    <script>
+        window.addEventListener('error', function(event) {
+            if (
+                event.message && event.message.includes('adsbygoogle.push') || 
+                (event.filename && event.filename.includes('adsbygoogle'))
+            ) {
+                console.warn('Suppressed Google AdSense error:', event.message || event.filename);
+                event.preventDefault();
+            }
+        });
+
+        window.addEventListener('unhandledrejection', function(event) {
+            if (event.reason && event.reason.toString().includes('adsbygoogle.push')) {
+                console.warn('Suppressed Google AdSense unhandled rejection:', event.reason);
+                event.preventDefault();
+            }
+        });
+    </script>
+    <!-- Google Adsense 结束 -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
