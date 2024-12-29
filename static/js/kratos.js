@@ -429,3 +429,30 @@ window.onload = function(){
     console.log('THEME KRATOS MADE BY VTROIS MODIFIED BY MOEDOG & XiaoKong');
     console.log('%c页面加载完毕消耗了'+Math.round(performance.now()*100)/100+'ms','background:#fff;color:#333;text-shadow:0 0 2px #eee,0 0 3px #eee,0 0 3px #eee,0 0 2px #eee,0 0 3px #eee;');
 };
+
+
+/*
+// now-performance.timing.navigationStart已经被标记弃用
+// 先扔这里，目前没时间管 2024.12.29
+
+// 获取页面加载时间的新方法
+const navigationEntry = performance.getEntriesByType('navigation')[0]; // 获取 PerformanceNavigationTiming 实例
+const page_load_time = navigationEntry ? navigationEntry.loadEventEnd - navigationEntry.startTime : null;
+
+// 打印页面加载时间
+if (page_load_time !== null) {
+    console.log(
+        `%c页面加载完毕消耗了 ${Math.round(page_load_time * 100) / 100} ms`,
+        'background:#fff;color:#333;text-shadow:0 0 2px #eee,0 0 3px #eee,0 0 3px #eee,0 0 2px #eee,0 0 3px #eee;'
+    );
+} else {
+    console.log('%c无法计算页面加载时间', 'color: red;');
+}
+
+// 或保持与 performance.now() 的调用一致
+const now_time = Math.round(performance.now() * 100) / 100;
+console.log(
+    `%c页面当前时间消耗了 ${now_time} ms`,
+    'background:#fff;color:#333;text-shadow:0 0 2px #eee,0 0 3px #eee,0 0 3px #eee,0 0 2px #eee,0 0 3px #eee;'
+);
+*/
