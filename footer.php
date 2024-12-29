@@ -115,7 +115,27 @@
                     })
                 }
             </script>
+            <!-- 
+                接住谷歌广告的错误信息，免得打印的到处都是 
+                如果需要调试错误信息，请对这部分注释
+            -->
+            <script>
+                window.addEventListener('error', function(event) 
+                {
+                    // 判断是否为谷歌广告的异常
+                    if (
+                        event.message && event.message.includes('adsbygoogle.push') || 
+                        (event.filename && event.filename.includes('adsbygoogle'))
+                    ) {
+                        console.warn('Suppressed Google AdSense error:', event.message || event.filename);
+                        event.preventDefault(); // 阻止错误向上传播
+                    }
+                });
+
+            </script>
+
         <!-- Adsense 全局代码 结束 -->
+
         <!-- 图片 lazyload 检查 -->
          <script>
             // 重载layload图片 在全局范围重新定义一次
