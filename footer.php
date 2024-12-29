@@ -118,6 +118,17 @@
         <!-- Adsense 全局代码 结束 -->
         <!-- 图片 lazyload 检查 -->
          <script>
+            // 重载layload图片 在全局范围重新定义一次
+            var lazyloadImageReload = function() {
+                const lazyImages = document.querySelectorAll('img[data-src]');
+                lazyImages.forEach(img => {
+                    if (img.getBoundingClientRect().top <= window.innerHeight && img.getBoundingClientRect().bottom >= 0) {
+                        img.src = img.getAttribute('data-src');
+                        img.removeAttribute('data-src');
+                    }
+                });
+            };
+
             // 在滚动事件中绑定懒加载逻辑
             // 强制每0.2秒检查一次，防止重复检查影响性能
             window.addEventListener('scroll', function() 
@@ -132,7 +143,7 @@
             {
                 if (!throttleTimeout) {
                     throttleTimeout = setTimeout(function() {
-                        window.lazyloadImageReload();
+                        lazyloadImageReload();
                         throttleTimeout = null;
 
                         // 如果所有图片都已经懒加载完成，移除滚动事件监听器
@@ -148,7 +159,7 @@
                 但是咱感觉应该没必要吧？
             */ 
             // window.addEventListener('load', function() {
-            //     window.lazyloadImageReload();
+            //     lazyloadImageReload();
             // });
 
          </script>

@@ -37,8 +37,6 @@
             }
         });
     };
-    // 将函数暴露到全局作用域
-    window.lazyloadImageReload = lazyloadImageReload;
 
     var sidebaraffix = function(){
         if($('#sidebar').height()&&xb.site_sh){
