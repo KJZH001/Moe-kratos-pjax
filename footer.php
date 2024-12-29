@@ -109,10 +109,17 @@
             </script>
             <!-- 延迟加载广告推送 -->
             <script>
-                (adsbygoogle = window.adsbygoogle || []).onload = function () {
-                    [].forEach.call(document.getElementsByClassName('adsbygoogle'), function () {
-                        adsbygoogle.push({})
-                    })
+                try 
+                {
+                    (adsbygoogle = window.adsbygoogle || []).onload = function () {
+                        [].forEach.call(document.getElementsByClassName('adsbygoogle'), function () {
+                            adsbygoogle.push({})
+                        })
+                    }
+                } 
+                catch (error) 
+                {
+                    console.warn('Suppressed Google AdSense error:', error.message);
                 }
             </script>
 
