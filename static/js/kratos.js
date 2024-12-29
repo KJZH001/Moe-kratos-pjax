@@ -31,12 +31,14 @@
     var lazyloadImageReload = function() {
         const lazyImages = document.querySelectorAll('img[data-src]');
         lazyImages.forEach(img => {
-            if (img.getBoundingClientRect().top <= window.innerHeight) {
+            if (img.getBoundingClientRect().top <= window.innerHeight && img.getBoundingClientRect().bottom >= 0) {
                 img.src = img.getAttribute('data-src');
                 img.removeAttribute('data-src');
             }
         });
-    }
+    };
+    // 将函数暴露到全局作用域
+    window.lazyloadImageReload = lazyloadImageReload;
 
     var sidebaraffix = function(){
         if($('#sidebar').height()&&xb.site_sh){
