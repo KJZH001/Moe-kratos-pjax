@@ -27,7 +27,7 @@
 </div>
 <?php }else{ ?>
 <div class="kratos-entry-border-new clearfix">
-    <?php if(is_sticky()) echo '<img class="stickyimg" src="'.get_bloginfo('template_directory').'/static/images/sticky.png" loading="lazy" />'; ?>
+    <?php if(is_sticky()) echo '<img class="stickyimg" data-src="'.get_bloginfo('template_directory').'/static/images/sticky.png" loading="lazy" />'; ?>
     <div class="kratos-entry-thumb-new">
         <?php kratos_blog_thumbnail_new() ?>
     </div>

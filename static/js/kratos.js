@@ -26,6 +26,18 @@
             })
         }
     }
+
+    // 重载layload图片
+    var lazyloadImageReload = function() {
+        const lazyImages = document.querySelectorAll('img[data-src]');
+        lazyImages.forEach(img => {
+            if (img.getBoundingClientRect().top <= window.innerHeight) {
+                img.src = img.getAttribute('data-src');
+                img.removeAttribute('data-src');
+            }
+        });
+    }
+
     var sidebaraffix = function(){
         if($('#sidebar').height()&&xb.site_sh){
             if($('#main').height()>$('#sidebar').height()){
@@ -281,6 +293,7 @@
         OwOcfg();
         QRCode();
         pushGoogeAds();
+        lazyloadImageReload();
     }
     // 初始化
     $(function(){
@@ -297,6 +310,7 @@
         QRCode();
         OwOcfg();
         wechatpic();
+        lazyloadImageReload();
         if($('div').hasClass('aplayer-footer')) APF();
         if($('div').hasClass('xb-snow')) SnowF();
     });
@@ -409,7 +423,7 @@ if(xb.copy) document.body.oncopy=function(){alert('已复制所选内容。请�
 window.onload = function(){
     var now = new Date().getTime();
     var page_load_time = now-performance.timing.navigationStart;
-    console.clear();
+    // console.clear();
     console.log('项目托管:https://github.com/KJZH001/Moe-kratos-pjax');
     console.log('%cblog.moeworld.tech','font-size:2em');
     console.log('THEME KRATOS MADE BY VTROIS MODIFIED BY MOEDOG & XiaoKong');

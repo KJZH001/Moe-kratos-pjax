@@ -64,20 +64,20 @@ function kratos_blog_thumbnail_new(){
     $img_url = $img_url[0];
     $title = get_the_title();
     if(has_post_thumbnail()){
-        echo '<a href="'.get_permalink().'"><img src="'.$img_url.'" alt="'.$title.'"></a>';
+        echo '<a href="'.get_permalink().'"><img data-src="'.$img_url.'" alt="'.$title.'" loading="lazy" ></a>';
     }else{
         $content = $post->post_content;
-        $img_preg = "/<img(.*?)src=\"(.+?)\".*?>/";
+        $img_preg = "/<img(.*?)data-src=\"(.+?)\".*?>/";
         preg_match($img_preg,$content,$img_src);
         $img_count=count($img_src)-1;
         if(isset($img_src[$img_count]))
         $img_val = $img_src[$img_count];
         if(!empty($img_val)&&!post_password_required()){
-            echo '<a href="'.get_permalink().'"><img src="'.$img_val.'" alt="'.$title.'" loading="lazy" ></a>';
+            echo '<a href="'.get_permalink().'"><img data-src="'.$img_val.'" alt="'.$title.'" loading="lazy" ></a>';
         }else if(!kratos_option('default_image')){
             $random = mt_rand(1,20);
-            echo '<a href="'.get_permalink().'"><img src="'.get_bloginfo('template_url').'/static/images/thumb/thumb_'.$random.'.jpg" alt="'.$title.'" loading="lazy" ></a>';
-        }else echo '<a href="'.get_permalink().'"><img src="'.kratos_option('default_image').'" alt="'.$title.'" loading="lazy" ></a>';
+            echo '<a href="'.get_permalink().'"><img data-src="'.get_bloginfo('template_url').'/static/images/thumb/thumb_'.$random.'.jpg" alt="'.$title.'" loading="lazy" ></a>';
+        }else echo '<a href="'.get_permalink().'"><img data-src="'.kratos_option('default_image').'" alt="'.$title.'" loading="lazy" ></a>';
     }
 }
 //Share the thumbnail fetching
