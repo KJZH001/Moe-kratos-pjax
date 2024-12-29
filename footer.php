@@ -119,7 +119,7 @@
                 } 
                 catch (error) 
                 {
-                    console.warn('Suppressed Google AdSense error:', error.message);
+                    console.log('捕获到谷歌广告异常:', error.message);
                 }
             </script>
 

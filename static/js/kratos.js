@@ -30,7 +30,7 @@
         } 
         catch (error) 
         {
-            console.warn('Suppressed Google AdSense error:', error.message);
+            console.log('捕获到谷歌广告异常:', error.message);
         }
     }
 
@@ -430,7 +430,7 @@ if(xb.copy) document.body.oncopy=function(){alert('已复制所选内容。请�
 window.onload = function(){
     var now = new Date().getTime();
     var page_load_time = now-performance.timing.navigationStart;
-    // console.clear();
+    console.clear();
     console.log('项目托管:https://github.com/KJZH001/Moe-kratos-pjax');
     console.log('%cblog.moeworld.tech','font-size:2em');
     console.log('THEME KRATOS MADE BY VTROIS MODIFIED BY MOEDOG & XiaoKong');
