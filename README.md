@@ -14,7 +14,7 @@
 
 **Kratos:** 一个简洁、简单且快速的 WordPress 博客主题，基于 [Bootstrap](https://github.com/twbs/bootstrap) 和 [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
 
-**Kratos-pjax:** :icecream: Wow, such a lovely WordPress theme! Based on Kratos-V2 and Modfiy by MoeDog
+**Moe-kratos-pjax:** :icecream: Wow, such a lovely WordPress theme! Based on Kratos-V2 and Modfiy by MoeDog
 
 这是 Kratos-pjax 的**二次开发**版本。要获取原始版本，请访问 [Vtrois/Kratos](https://github.com/Vtrois/Kratos) 以及 [xb2016/Kratos-pjax](https://github.com/xb2016/Kratos-pjax)
 
@@ -55,8 +55,9 @@
 **文档**
 - [https://moedog.org/787.html](https://moedog.org/787.html)
 
-**建议和 BUG 报告**
-- [https://github.com/xb2016/kratos-pjax/issues](https://github.com/xb2016/kratos-pjax/issues)
+**建议和 BUG 报告<br>注：上游分支已经不再维护，本分支目前也仅接受在本站上复现产生的bug**
+- <del>[https://github.com/xb2016/kratos-pjax/issues](https://github.com/xb2016/kratos-pjax/issues)</del>
+- [https://github.com/KJZH001/Moe-kratos-pjax/issues](https://github.com/KJZH001/Moe-kratos-pjax/issues)
 
 ## 帮助本地化
 
