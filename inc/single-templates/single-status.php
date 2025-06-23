@@ -38,7 +38,7 @@
                     box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
                     border-radius: 0;
                     padding: 14px 14px 14px 14px;
-                    background-color: rgba(253, 253, 253, .85) !important;">
+                    background-color: rgba(253, 253, 253, .85) !important;" id="ad-bottom">
             <h4 style="font-size: 18px;
                     color: #666;
                     margin-top: 5px;">
@@ -47,7 +47,7 @@
             <p style="margin: 0 0 0px;
                     color: #888;
                     font-size: 16px;">
-                如果您的网络和设备条件允许，这里可能会显示来自Google和其他赞助商的广告
+                如果您的网络和设备条件允许，这里可能会显示来自Google或其他赞助商的广告
             </p>
             <!-- 开始粘贴来自谷歌的代码 -->
             <!-- 广告代码被移动至footer中 -->

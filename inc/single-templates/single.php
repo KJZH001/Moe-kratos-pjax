@@ -8,6 +8,29 @@
 <section id="main" class='<?php echo (kratos_option('side_bar')=='center')?'col-md-12':'col-md-8'; ?>'>
     <?php if(have_posts()){the_post();update_post_caches($posts); ?>
     <article>
+        <!-- 广告测试单元-文章横向 -->
+        <div style="margin-top: 15px;
+            margin-bottom: 16px;
+            background-color: #fff;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+            border-radius: 0;
+            padding: 14px 14px 14px 14px;
+            background-color: rgba(253, 253, 253, .85) !important;" id="ad-article-top">
+            <h4 style="font-size: 18px;
+                    color: #666;
+                    margin-top: 5px;">
+                赞助商广告
+            </h4>
+            <p style="margin: 0 0 0px;
+                    color: #888;
+                    font-size: 16px;">
+                如果您的网络和设备条件允许，这里可能会显示来自Google或其他赞助商的广告
+            </p>
+            <a href="https://aigirlfriendstudio.com/?ref_id=e4d2eaab-d922-463b-b59b-c791a6b66a42" one-link-mark="yes" target="_blank">
+                <img src="https://blog.moeworld.tech/wp-content/uploads/2025/06/AI风月-700x160-1.png" style="max-width: 100%; height: auto;">
+            </a>
+        </div>
+        <!-- 广告测试单元-文章横向 结束 -->
         <div class="kratos-hentry kratos-post-inner clearfix">
             <header class="kratos-entry-header">
                 <h1 class="kratos-entry-title text-center"><?php the_title(); ?></h1>
@@ -72,7 +95,7 @@
                     box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
                     border-radius: 0;
                     padding: 14px 14px 14px 14px;
-                    background-color: rgba(253, 253, 253, .85) !important;">
+                    background-color: rgba(253, 253, 253, .85) !important;" id="ad-bottom">
             <h4 style="font-size: 18px;
                     color: #666;
                     margin-top: 5px;">
@@ -81,7 +104,7 @@
             <p style="margin: 0 0 0px;
                     color: #888;
                     font-size: 16px;">
-                如果您的网络和设备条件允许，这里可能会显示来自Google和其他赞助商的广告
+                如果您的网络和设备条件允许，这里可能会显示来自Google或其他赞助商的广告
             </p>
             <!-- 开始粘贴来自谷歌的代码 -->
             <!-- 广告代码被移动至footer中 -->
