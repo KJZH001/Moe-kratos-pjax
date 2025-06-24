@@ -145,8 +145,8 @@
                                 <li>
                                     <a href="javascript:;" one-link-mark="yes" target="_blank"><i class="fa fa-magic"></i> Ai风月</a>
                                     <ul class="sub-menu">
-                                                <li><a href="https://aigirlfriendstudio.com/?ref_id=e4d2eaab-d922-463b-b59b-c791a6b66a42" one-link-mark="yes">大陆服</a></li>
-                                                <li><a href="https://newplace.shop?ref_id=e4d2eaab-d922-463b-b59b-c791a6b66a42" one-link-mark="yes">国际服</a></li>
+                                                <li><a href="https://newplace.shop?ref_id=e4d2eaab-d922-463b-b59b-c791a6b66a42" one-link-mark="yes">大陆服</a></li>
+                                                <li><a href="https://aigirlfriendstudio.com/?ref_id=e4d2eaab-d922-463b-b59b-c791a6b66a42" one-link-mark="yes">国际服</a></li>
                                     </ul>
                                 </li>
                                 </ul></nav>
