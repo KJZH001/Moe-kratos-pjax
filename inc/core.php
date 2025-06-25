@@ -583,3 +583,41 @@ function kratos_welcome_notice(){
 }
 add_action('admin_notices','kratos_admin_notice');
 if(kratos_option('kratos_notice')=="welcome") add_action('welcome_panel','kratos_welcome_notice');
+
+// 在特定情况下隐藏Ads
+function moe_kratos_should_hide_ads(): bool {
+    // ------ 1. 登录状态 ------
+    if ( is_user_logged_in() ) {
+        $user = wp_get_current_user(); // 对象包含 ID／roles
+        // 1.a 隐藏所有已登录用户
+        return true;
+
+        // 1.b 仅隐藏订阅者，管理员照常展示
+        // if ( in_array( 'subscriber', (array) $user->roles, true ) ) {
+        //     return true;
+        // }
+    }
+
+    // ------ 2. 浏览器 UA 检测 ------
+    $ua = $_SERVER['HTTP_USER_AGENT'] ?? '';
+
+    // 微信内置浏览器（包括 PC/移动）
+    if ( stripos( $ua, 'MicroMessenger' ) !== false ) {
+        return true;
+    }
+
+    // QQ 系列浏览器（MQQBrowser 为移动 QQ 内核，QQ/ 为 PC 客户端嵌入）
+    if (
+        stripos( $ua, 'MQQBrowser' ) !== false ||
+        preg_match( '/ QQ\\/[0-9.]+/i', $ua ) ||
+        stripos( $ua, 'QQBrowser' ) !== false
+    ) {
+        return true;
+    }
+
+    // ------ 3. 其他自定义规则可在此追加 ------
+    // 例如基于 wp_is_mobile() 进一步细分
+    // if ( wp_is_mobile() ) { ... }
+
+    return false; // 未命中任何隐藏条件
+}
