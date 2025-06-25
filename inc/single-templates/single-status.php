@@ -32,7 +32,7 @@
             </div>
             <?php } ?>
         </nav>
-        <!-- 广告测试单元-文章横向 -->
+        <!-- 广告单元-文章横向 -->
         <div style="margin-top: 15px;
                     background-color: #fff;
                     box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
@@ -69,7 +69,7 @@
                 <img src="https://blog.moeworld.tech/wp-content/uploads/2024/09/可乐云_AD横_watermark.jpg" style="max-width: 100%; height: auto;">
             </a>
         </div>
-        <!-- 广告测试单元-文章横向 结束 -->
+        <!-- 广告单元-文章横向 结束 -->
         <?php comments_template(); ?>
     </article>
     <?php } ?>

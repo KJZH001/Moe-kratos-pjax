@@ -109,21 +109,6 @@
                         font-size: 16px;">
                     如果您的网络和设备条件允许，这里可能会显示来自Google或其他赞助商的广告
                 </p>
-                <!-- 开始粘贴来自谷歌的代码 -->
-                <!-- 广告代码被移动至footer中 -->
-                <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6472836894788623"
-                    crossorigin="anonymous"></script> -->
-                <!-- 底部横向广告 全局一次性推送ads只需要保留ins标签即可-->
-                <!-- <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-6472836894788623"
-                    data-ad-slot="4637088625"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins> -->
-                <!-- <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script> -->
-                <!-- 结束粘贴来自谷歌的代码 -->
                 <!-- 第三方的广告 -->
                 <a href="https://su.colac.fun?path=register&code=EouHPd4L" one-link-mark="yes" target="_blank">
                     <img src="https://blog.moeworld.tech/wp-content/uploads/2024/09/可乐云_AD横_watermark.jpg" style="max-width: 100%; height: auto;">
