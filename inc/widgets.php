@@ -156,23 +156,26 @@ class kratos_widget_googleAd extends WP_Widget {
         parent::__construct(false,false,$widget_ops);
     }
     function widget($args,$instance){
-        extract($args);
-        $title = $instance['title']?$instance['title']:'';
-        $customer_html = $instance['customer_html']?$instance['customer_html']:'';
-        
-        echo $before_widget;
-        if(!empty($title)){ ?>
-            <h4 class="widget-title"><?php echo $title; ?></h4><?php
+        if ( ! moe_kratos_should_hide_ads() )
+        {
+            extract($args);
+            $title = $instance['title']?$instance['title']:'';
+            $customer_html = $instance['customer_html']?$instance['customer_html']:'';
+            
+            echo $before_widget;
+            if(!empty($title)){ ?>
+                <h4 class="widget-title"><?php echo $title; ?></h4><?php
+            }
+            if(!empty($customer_html)){ ?>
+                <p style="margin: 0 0 0px;
+                            color: #888;
+                            font-size: 14px;">
+                        此处可能会显示来自赞助商的广告
+                    </p><?php
+                 echo $customer_html; 
+            }
+            echo $after_widget;
         }
-        if(!empty($customer_html)){ ?>
-            <p style="margin: 0 0 0px;
-                        color: #888;
-                        font-size: 14px;">
-                    此处可能会显示来自赞助商的广告
-                </p><?php
-             echo $customer_html; 
-        }
-        echo $after_widget;
     }
     function update($new_instance,$old_instance){
         return $new_instance;
