@@ -440,9 +440,23 @@ function user_agent_show(){
 // add_filter('comment_text','user_agent');
 
 // 2025.6.26 能修复评论换行问题的改法1
-function user_agent( $text ) {
-    $ua  = user_agent_show();
-    $txt = convert_smilies( $text );
-    return $ua . wpautop( $txt );   // 用 return 替换所有 echo
+// function user_agent( $text ) {
+//     $ua  = user_agent_show();
+//     $txt = convert_smilies( $text );
+//     return $ua . wpautop( $txt );   // 用 return 替换所有 echo
+// }
+// add_filter('comment_text','user_agent');
+
+/**
+ * 2025.6.26 能修复评论换行问题的改法2
+ * 在评论内容前插入 UA 图标，同时保留换行、段落。
+ */
+function comment_text_with_ua( $text, $comment ) {
+    $ua_html = user_agent_show();          // 生成 UA 图标 / 文本
+    $text    = convert_smilies( $text );   // 保留原作者想要的表情
+    return $ua_html . wpautop( $text );    // 用 wpautop 生成 <p> 与 <br>
 }
-add_filter('comment_text','user_agent');
+
+/* 先移除旧的有问题的钩子，再挂上新的 */
+remove_filter( 'comment_text', 'user_agent', 10 );
+add_filter( 'comment_text', 'comment_text_with_ua', 30, 2 );
