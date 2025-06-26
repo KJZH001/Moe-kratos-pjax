@@ -339,7 +339,7 @@ function sig_allowed_html_tags_in_comments(){
          'src' => true,
          'width' => true,
       ),
-      'br'=> array(),
+    //   'br'=> array(),
    );
 }
 add_action('init','sig_allowed_html_tags_in_comments',10);
