@@ -425,15 +425,24 @@ function user_agent_show(){
         return '<div class="useragent"><img src="'.$uapic.'/static/images/ua/'.$bcode.'.png" style="margin-top:-3px;width:16px;height:16px"> '.$btitle.' <img src="'.$uapic.'/static/images/ua/'.$code.'.png" style="margin-left:5px;margin-top:-3px;width:16px;height:16px"> '.$title.' '.$version.'</div>';
     }else return null;
 }
-function user_agent_display_comment(){
-    global $comment;
-    remove_filter('comment_text','user_agent');
-    apply_filters('get_comment_text',$comment->comment_content);
-    if(empty($_POST['comment_post_ID'])||is_admin()) echo convert_smilies(apply_filters('get_comment_text',$comment->comment_content));
-}
-function user_agent(){
-    echo user_agent_show();
-    user_agent_display_comment();
-    add_filter('comment_text','user_agent');
+// 上游默认
+// function user_agent_display_comment(){
+//     global $comment;
+//     remove_filter('comment_text','user_agent');
+//     apply_filters('get_comment_text',$comment->comment_content);
+//     if(empty($_POST['comment_post_ID'])||is_admin()) echo convert_smilies(apply_filters('get_comment_text',$comment->comment_content));
+// }
+// function user_agent(){
+//     echo user_agent_show();
+//     user_agent_display_comment();
+//     add_filter('comment_text','user_agent');
+// }
+// add_filter('comment_text','user_agent');
+
+// 2025.6.26 能修复评论换行问题的改法1
+function user_agent( $text ) {
+    $ua  = user_agent_show();
+    $txt = convert_smilies( $text );
+    return $ua . wpautop( $txt );   // 用 return 替换所有 echo
 }
 add_filter('comment_text','user_agent');
