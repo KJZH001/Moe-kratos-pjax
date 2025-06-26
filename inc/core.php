@@ -328,7 +328,7 @@ function cmhello_users_search_order($obj){
     }
 }
 //Enable comments <img>
-//也把<br>换行符给放行了吧
+//也把<br>换行符给放行了吧（2025.6.26 由于评论换行问题修好了，所以去掉了）
 function sig_allowed_html_tags_in_comments(){
    global $allowedtags;
    $allowedtags = array(
