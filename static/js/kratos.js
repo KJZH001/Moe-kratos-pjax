@@ -295,6 +295,7 @@
     }
     //pjax reload
     $.fn.kratos_pjax_reload = function(){
+        hljs.highlightAll();
         sidebaraffix();
         showPhotos();
         OwOcfg();
@@ -304,6 +305,7 @@
     }
     // 初始化
     $(function(){
+        hljs.highlightAll();
         gotop();
         sidebaraffix();
         offcanvas();
@@ -407,8 +409,6 @@ jQuery(document).ready(function(jQuery) {
         }
     }
 });
-//highlight
-hljs.initHighlightingOnLoad();
 //time
 var now = new Date();
 function createtime(){

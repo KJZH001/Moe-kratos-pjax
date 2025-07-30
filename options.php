@@ -11,6 +11,7 @@ function optionsframework_options(){
     $options = array();
     $options[] = array(
         'name'=>__('站点配置','moedog'),
+        'id'=>'',
         'type'=>'heading');
     $options[] = array(
         'name'=>__('站点图标','moedog'),
@@ -143,6 +144,7 @@ function optionsframework_options(){
         'type'=>'checkbox');
     $options[] = array(
         'name'=>__('组件配置','moedog'),
+        'id'=>'',
         'type'=>'heading');
     $options[] = array(
         'name'=>__('自定义Font Awesome','moedog'),
@@ -168,22 +170,10 @@ function optionsframework_options(){
         'std'=>'',
         'type'=>'textarea');
     $options[] = array(
-        'name'=>__('主题CSS','moedog'),
-        'desc'=>__('从jsdelivr加载主题CSS','moedog'),
-        'id'=>'css_out',
-        'std'=>'0',
-        'type'=>'checkbox');
-    $options[] = array(
         'name'=>__('附加CSS','moedog'),
         'id'=>'add_css',
         'std'=>'',
         'type'=>'textarea');
-    $options[] = array(
-        'name'=>__('表情包','moedog'),
-        'desc'=>__('从jsdelivr加载主题表情包','moedog'),
-        'id'=>'owo_out',
-        'std'=>'0',
-        'type'=>'checkbox');
     $options[] = array(
         'name'=>__('特色图片(仅针对新式布局)','moedog'),
         'desc'=>__('选择你喜欢的默认特色图片(留空使用随机图片20张)','moedog'),
@@ -258,6 +248,7 @@ function optionsframework_options(){
         'type'=>'upload');
     $options[] = array(
         'name'=>__('SEO配置','moedog'),
+        'id'=>'',
         'type'=>'heading');
     $options[] = array(
         'name'=>__('关键词','moedog'),
@@ -276,6 +267,7 @@ function optionsframework_options(){
         'type'=>'textarea');
     $options[] = array(
         'name'=>__('顶部配置','moedog'),
+        'id'=>'',
         'type'=>'heading');
     $options[] = array(
         'name'=>__('顶部显示模式','moedog'),
@@ -288,7 +280,9 @@ function optionsframework_options(){
             'color'=>__('纯色','moedog')));
     $options[] = array(
         'name'=>__('以下为图片Header的设置','moedog'),
-        'desc'=>__('只有顶部显示模式为图片才有效。','moedog'));
+        'desc'=>__('只有顶部显示模式为图片才有效。','moedog'),
+        'id'=>'',
+        'type'=>'');
     $options[] = array(
         'name'=>__('顶部图片','moedog'),
         'id'=>'background_image',
@@ -319,7 +313,9 @@ function optionsframework_options(){
             'side'=>__('侧栏','moedog')));
     $options[] = array(
         'name'=>__('以下为纯色Header设置','moedog'),
-        'desc'=>__('只有顶部显示模式为纯色才有效。','moedog'));
+        'desc'=>__('只有顶部显示模式为纯色才有效。','moedog'),
+        'id'=>'',
+        'type'=>'');
     $options[] = array(
         'name'=>__('Nav Bar颜色','moedog'),
         'desc'=>__('请使用RGBA格式表示，默认22,23,26,.9','moedog'),
@@ -339,6 +335,7 @@ function optionsframework_options(){
         'type'=>'upload');
     $options[] = array(
         'name'=>__('底部配置','moedog'),
+        'id'=>'',
         'type'=>'heading');
     $options[] = array(
         'name'=>__('建站时间','moedog'),
@@ -411,6 +408,7 @@ function optionsframework_options(){
         'type'=>'text');
     $options[] = array(
         'name'=>__('文章设置','moedog'),
+        'id'=>'',
         'type'=>'heading');
     $options[] = array(
         'name'=>__('文章页面布局','moedog'),
@@ -442,6 +440,7 @@ function optionsframework_options(){
         'type'=>'checkbox');
     $options[] = array(
         'name'=>__('页面设置','moedog'),
+        'id'=>'',
         'type'=>'heading');
     $options[] = array(
         'name'=>__('页面布局','moedog'),
@@ -473,6 +472,7 @@ function optionsframework_options(){
         'type'=>'checkbox');
     $options[] = array(
         'name'=>__('轮播设置','moedog'),
+        'id'=>'',
         'type'=>'heading');
     $options[] = array(
         'name'=>__('主页轮播','moedog'),
@@ -482,7 +482,9 @@ function optionsframework_options(){
         'type'=>'checkbox',);
     $options[] = array(
         'name'=>__('注意：','moedog'),
-        'desc'=>__('图片宽度建议大于750px，所有图片比例须一致','moedog'));
+        'desc'=>__('图片宽度建议大于750px，所有图片比例须一致','moedog'),
+        'id'=>'',
+        'type'=>'');
     $options[] = array(
         'name'=>__('轮播图片-1','moedog'),
         'id'=>'kratos_banner1',
@@ -535,6 +537,7 @@ function optionsframework_options(){
         'type'=>'text');
     $options[] = array(
         'name'=>__('邮件设置','moedog'),
+        'id'=>'',
         'type'=>'heading');
     $options[] = array(
         'name'=>__('SMTP服务','moedog'),
@@ -586,6 +589,7 @@ function optionsframework_options(){
         'type'=>'text');
     $options[] = array(
         'name'=>__('雪花设置','moedog'),
+        'id'=>'',
         'type'=>'heading');
     $options[] = array(
         'name'=>__('站点雪花','moedog'),
@@ -643,6 +647,7 @@ function optionsframework_options(){
         'type'=>'text');
     $options[] = array(
         'name'=>__('注册登录设置','moedog'),
+        'id'=>'',
         'type'=>'heading');
     $options[] = array(
         'name'=>__('注册登录页面背景','moedog'),
@@ -656,7 +661,9 @@ function optionsframework_options(){
         'std'=>'https://cdn-js.moeworld.top/gh/KJZH001/Moe-kratos-pjax@'.KRATOS_VERSION.'/static/images/default-logo.png',
         'type'=>'upload');
     $options[] = array(
-        'name'=>__('以下为用户注册部分的设置','moedog'));
+        'name'=>__('以下为用户注册部分的设置','moedog'),
+        'id'=>'',
+        'type'=>'');
     $options[] = array(
         'name'=>__('使用密码注册','moedog'),
         'desc'=>__('是否允许用户输入密码注册(免邮箱验证)','moedog'),
@@ -691,7 +698,9 @@ function optionsframework_options(){
         'type'=>'text');
     $options[] = array(
         'name'=>__('以下为用户登录限制部分设置','moedog'),
-        'desc'=>__('默认不启用，但是建议手动启用此功能','moedog'));
+        'desc'=>__('默认不启用，但是建议手动启用此功能','moedog'),
+        'id'=>'',
+        'type'=>'');
     $options[] = array(
         'name'=>__('用户登录限制','moedog'),
         'desc'=>__('是否启用登录限制功能(只有启用此项，下面的设置才有效)','moedog'),
