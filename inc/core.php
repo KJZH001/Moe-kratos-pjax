@@ -593,7 +593,8 @@ add_filter('get_comment_author_link','comment_author_link_window');
 function kratos_admin_notice(){
     global $noticeinfo;
     // $noticeinfo = wp_remote_retrieve_body(wp_remote_get('https://api.fczbl.vip/kratos_notice/?v='.KRATOS_VERSION));
-    $noticeinfo = "嗨，欢迎使用 <strong>Kratos</strong> 主题！现在开始创作吧";
+    // $noticeinfo = "嗨，欢迎使用 <strong>Kratos</strong> 主题！现在开始创作吧";
+    $noticeinfo = "嗨！欢迎使用 <strong>Kratos</strong> 主题开始文章创作";
     if(!is_wp_error($noticeinfo)&&$noticeinfo) $noticeinfo = '<style type="text/css">.about-description a{text-decoration:none}</style><div class="notice notice-info"><p class="about-description">'.$noticeinfo.'</p></div>';
     if(kratos_option('kratos_notice')=='global'&&current_user_can('manage_options')) echo $noticeinfo;
 }
