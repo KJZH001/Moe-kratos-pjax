@@ -27,7 +27,7 @@
                         font-size: 16px;">
                     如果您的网络和设备条件允许，这里可能会显示来自Google或其他赞助商的广告
                 </p>
-                <a href="https://aigirlfriendstudio.com/?ref_id=e4d2eaab-d922-463b-b59b-c791a6b66a42" one-link-mark="yes" target="_blank">
+                <a href="https://aigirlfriendstudio.com/?ref_id=e4d2eaab-d922-463b-b59b-c791a6b66a42" one-link-mark="yes" target="_blank"  rel="nofollow">
                     <img src="https://blog.moeworld.tech/wp-content/uploads/2025/06/AI风月-700x160-1.png" style="max-width: 100%; height: auto;">
                 </a>
             </div>
