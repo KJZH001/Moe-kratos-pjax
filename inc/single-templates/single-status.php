@@ -33,7 +33,8 @@
             <?php } ?>
         </nav>
         <!-- 广告单元-文章横向 -->
-        <?php if ( ! moe_kratos_should_hide_ads() ) : ?>
+        <!-- 准备移除 -->
+        <?php if ( false && ! moe_kratos_should_hide_ads() ) : ?>
             <div style="margin-top: 15px;
                         background-color: #fff;
                         box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
