@@ -75,8 +75,8 @@
                                         <li class="current-menu-item">
                                             <a href="https://blog.moeworld.tech" aria-current="page"><i class="fa fa-home"></i> 首页</a>
                                             <ul class="sub-menu">
-                                                <li><a href="https://blog.moeworld.tech" target="_blank"><i class="fa fa-magic"></i> 晓空blog</a></li>
-                                                <li><a href="https://project.moeworld.tech" target="_blank"><i class="fa fa-magic"></i> 空梦Project</a></li>
+                                                <li><a href="https://blog.moeworld.tech" target="_blank"> 晓空blog</a></li>
+                                                <li><a href="https://project.moeworld.tech" target="_blank"> 空梦Project</a></li>
                                             </ul>
                                         </li>
 
