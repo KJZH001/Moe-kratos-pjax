@@ -111,7 +111,7 @@
                                             </ul>
                                         </li>
 
-                                        <li><a ><i class="fa fa-cogs"></i> 工具</a>
+                                        <li><a><i class="fa fa-cogs"></i> 工具</a>
                                             <ul class="sub-menu">
                                                 <!--<li><a href="https://blog.moeworld.tech/rcraft-api/" >Api接口</a></li>-->
                                                 <li>
@@ -131,14 +131,26 @@
                                             </ul>
                                         </li>
 
-                                        <li><a href="https://blog.moeworld.tech/friendshiplink/"><i class="fa fa-mars"></i> 友链</a></li>
-                                        <li><a href="https://blog.moeworld.tech/guestbook/"><i class="fa fa-pencil"></i> 留言</a></li>
-                                        <li><a href="https://www.travellings.cn/go.html" target="_blank"><i class="fa fa-paper-plane"></i> 开往</a>
+                                        <li>
+                                            <a href="https://blog.moeworld.tech/friendshiplink/"><i class="fa fa-mars"></i> 友链</a>
                                             <ul class="sub-menu">
+                                                <li>
+                                                    <a href="https://www.travellings.cn/go.html" target="_blank">
+                                                        <!-- <i class="fa fa-paper-plane"></i>  -->
+                                                        开往
+                                                    </a>
+                                                </li>
                                                 <li><a href="https://foreverblog.cn/go.html" target="_blank">虫洞</a></li>
                                                 <li><a href="https://bf.zzxworld.com/s/1353" target="_blank">BlogFinder</a></li>
                                             </ul>
                                         </li>
+                                        <li><a href="https://blog.moeworld.tech/guestbook/"><i class="fa fa-pencil"></i> 留言</a></li>
+                                        <!-- <li><a href="https://www.travellings.cn/go.html" target="_blank"><i class="fa fa-paper-plane"></i> 开往</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="https://foreverblog.cn/go.html" target="_blank">虫洞</a></li>
+                                                <li><a href="https://bf.zzxworld.com/s/1353" target="_blank">BlogFinder</a></li>
+                                            </ul>
+                                        </li> -->
 
                                         <li>
                                             <a href="https://blog.moeworld.tech/订阅本站/"><i class="fa fa-rss-square"></i> 订阅</a>
