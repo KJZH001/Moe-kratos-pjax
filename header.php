@@ -127,7 +127,10 @@
                                                 <li><a href="https://outlook.com/?realm=moeworld.top" target="_blank">域名邮箱</a></li>
                                                 <li><a href="https://blog.moeworld.tech/fortuneupup：测测今天的运势吧/" target="_blank">
                                                     幸运抽签</a></li>
-                                                <li><a href="https://afdian.com/a/kjzh001" target="_blank" rel="nofollow"><i class="fa fa-shopping-cart"></i> 爱发电</a></li>
+                                                <li><a href="https://afdian.com/a/kjzh001" target="_blank" rel="nofollow">
+                                                    <!-- <i class="fa fa-shopping-cart"></i>  -->
+                                                    爱发电
+                                                </a></li>
                                             </ul>
                                         </li>
 
