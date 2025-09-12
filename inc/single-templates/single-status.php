@@ -73,8 +73,8 @@
                 </script> -->
                 <!-- 结束粘贴来自谷歌的代码 -->
                 <!-- 第三方的广告 -->
-                <a href="https://su.colac.fun?path=register&code=EouHPd4L" target="_blank">
-                    <img src="https://blog.moeworld.tech/wp-content/uploads/2024/09/可乐云_AD横_watermark.jpg" style="max-width: 100%; height: auto;">
+                <a href="https://blog.moeworld.tech/ad.php?origin=bizhiliangcryp" target="_blank"  rel="nofollow">
+                    <img src="https://blog.moeworld.tech/wp-content/uploads/2025/09/bzl_ad_700x280.jpg" style="max-width: 100%; height: auto;">
                 </a>
             </div>
         <?php endif; ?>
