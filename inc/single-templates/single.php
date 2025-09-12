@@ -98,8 +98,7 @@
             <?php } ?>
         </nav>
         <!-- 广告单元-文章横向 -->
-        <!-- 准备移除 -->
-        <?php if ( false && ! moe_kratos_should_hide_ads() ) : ?>
+        <?php if (  moe_kratos_should_hide_ads() ) : ?>
             <div style="margin-top: 15px;
                         background-color: #fff;
                         box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
@@ -117,8 +116,8 @@
                     如果您的网络和设备条件允许，这里可能会显示来自Google或其他赞助商的广告
                 </p>
                 <!-- 第三方的广告 -->
-                <a href="https://su.colac.fun?path=register&code=EouHPd4L" target="_blank">
-                    <img src="https://blog.moeworld.tech/wp-content/uploads/2024/09/可乐云_AD横_watermark.jpg" style="max-width: 100%; height: auto;">
+                <a href="https://blog.moeworld.tech/ad.php?origin=bizhiliangcryp" target="_blank"  rel="nofollow">
+                    <img src="https://blog.moeworld.tech/wp-content/uploads/2025/09/bzl_ad_700x280.jpg" style="max-width: 100%; height: auto;">
                 </a>
             </div>
         <?php endif; ?>
