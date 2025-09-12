@@ -91,6 +91,8 @@
                  crossorigin="anonymous"></script> -->
             <script type='text/javascript'> 
             /* 延迟加载 AdSense JS */
+            /*
+            2025.9.2 暂时移除谷歌广告
             var lazyadsense = !1;
             window.addEventListener("scroll", function() {
                 (0 != document.documentElement.scrollTop && !1 === lazyadsense || 0 != document.body.scrollTop && !1 === lazyadsense) && (! function() {
@@ -99,16 +101,19 @@
                     e.id = "g_ads_js", e.type = "text/javascript", e.async = "async", e.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6472836894788623";
                     var a = document.getElementsByTagName("script")[0];
                     a.parentNode.insertBefore(e, a)
-
+            */
                     /* 以下为自动广告专用，如果没有开启，请删除*/
                     // var gads = document.getElementById("g_ads_js")
                     // gads.setAttribute("data-ad-client", "ca-pub-6472836894788623");
-
+            /*
                 }(), lazyadsense = !0)
             }, !0);
+            */
             </script>
             <!-- 延迟加载广告推送 -->
             <script>
+                /*
+                2025.9.2 暂时移除谷歌广告
                 try 
                 {
                     (adsbygoogle = window.adsbygoogle || []).onload = function () {
@@ -121,6 +126,7 @@
                 {
                     console.log('捕获到谷歌广告异常:', error.message);
                 }
+                */
             </script>
 
         <!-- Adsense 全局代码 结束 -->
