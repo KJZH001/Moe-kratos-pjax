@@ -146,6 +146,7 @@
                                                 </li>
                                                 <li><a href="https://foreverblog.cn/go.html" target="_blank">虫洞</a></li>
                                                 <li><a href="https://bf.zzxworld.com/s/1353" target="_blank">BlogFinder</a></li>
+                                                <li><a href="https://blog.moeworld.tech/friendshiplink/" target="_blank">友情链接</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="https://blog.moeworld.tech/guestbook/"><i class="fa fa-pencil"></i> 留言</a></li>
