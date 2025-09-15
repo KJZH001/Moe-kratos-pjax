@@ -182,13 +182,15 @@
                                             </ul>
                                         </li>
 
-                                        <li>
-                                            <a href="javascript:;" target="_blank"><i class="fa fa-magic"></i> Ai风月</a>
-                                            <ul class="sub-menu">
-                                                        <li><a href="http://coverstation.xyz?ref_id=e4d2eaab-d922-463b-b59b-c791a6b66a42" target="_blank" rel="nofollow">大陆服</a></li>
-                                                        <li><a href="https://aigirlfriendstudio.com/?ref_id=e4d2eaab-d922-463b-b59b-c791a6b66a42" target="_blank" rel="nofollow">国际服</a></li>
-                                            </ul>
-                                        </li>
+                                        <?php if ( !moe_kratos_should_hide_ads() ) : ?>
+                                            <li>
+                                                <a href="javascript:;" target="_blank"><i class="fa fa-magic"></i> Ai风月</a>
+                                                <ul class="sub-menu">
+                                                            <li><a href="http://coverstation.xyz?ref_id=e4d2eaab-d922-463b-b59b-c791a6b66a42" target="_blank" rel="nofollow">大陆服</a></li>
+                                                            <li><a href="https://aigirlfriendstudio.com/?ref_id=e4d2eaab-d922-463b-b59b-c791a6b66a42" target="_blank" rel="nofollow">国际服</a></li>
+                                                </ul>
+                                            </li>
+                                        <?php endif; ?>
                                     </ul>
                                 </nav>
                             </div>
