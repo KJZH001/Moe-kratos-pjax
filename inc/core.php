@@ -686,6 +686,7 @@ add_action('send_headers', function () {
 });
 
 // 服务器侧：判断是否应减少动效
+// 若应该关闭动画，则返回为true
 function kjz_reduce_motion_requested(): bool {
     // 1) 用户/系统减少动效（Client Hint, 需 HTTPS 与上面的 Accept-CH）
     $prm = $_SERVER['HTTP_SEC_CH_PREFERS_REDUCED_MOTION'] ?? '';
