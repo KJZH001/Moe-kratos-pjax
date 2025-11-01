@@ -675,7 +675,7 @@ function moe_kratos_should_hide_ads(): bool {
 }
 
 // 让浏览器在后续请求里携带 Sec-CH-Prefers-Reduced-Motion；并声明缓存会随之变化
-// 用于让服务器能够了解到客户端是否处于网络/图形性能受限状态
+// 用于让服务器能够了解到客户端是否处于网络/图形性能受限状态，以决定是否减少动效
 add_action('send_headers', function () {
     // 告诉客户端本站支持该 Client Hint
     header('Accept-CH: Sec-CH-Prefers-Reduced-Motion');
@@ -684,3 +684,19 @@ add_action('send_headers', function () {
     // 告诉浏览器/CDN：同一 URL 会因这些头而返回不同版本，需分别缓存
     header('Vary: Sec-CH-Prefers-Reduced-Motion, Save-Data');
 });
+
+// 服务器侧：判断是否应减少动效
+function kjz_reduce_motion_requested(): bool {
+    // 1) 用户/系统减少动效（Client Hint, 需 HTTPS 与上面的 Accept-CH）
+    $prm = $_SERVER['HTTP_SEC_CH_PREFERS_REDUCED_MOTION'] ?? '';
+    if (stripos($prm, 'reduce') !== false) return true;
+
+    // 2) 省流偏好（老牌请求头，Chrome/Edge 常见）
+    $saveData = $_SERVER['HTTP_SAVE_DATA'] ?? '';
+    if (strtolower($saveData) === 'on') return true;
+
+    // 3) 可选：高延迟等网络 Hint（实验性，覆盖面较窄）
+    if (!empty($_SERVER['HTTP_RTT']) && intval($_SERVER['HTTP_RTT']) >= 300) return true;
+
+    return false;
+}
