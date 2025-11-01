@@ -673,3 +673,14 @@ function moe_kratos_should_hide_ads(): bool {
 
     return false; // 未命中任何隐藏条件
 }
+
+// 让浏览器在后续请求里携带 Sec-CH-Prefers-Reduced-Motion；并声明缓存会随之变化
+// 用于让服务器能够了解到客户端是否处于网络/图形性能受限状态
+add_action('send_headers', function () {
+    // 告诉客户端本站支持该 Client Hint
+    header('Accept-CH: Sec-CH-Prefers-Reduced-Motion');
+    // 让浏览器把该 Hint 视为「关键」，以便立即重试并携带它（部分浏览器）
+    header('Critical-CH: Sec-CH-Prefers-Reduced-Motion');
+    // 告诉浏览器/CDN：同一 URL 会因这些头而返回不同版本，需分别缓存
+    header('Vary: Sec-CH-Prefers-Reduced-Motion, Save-Data');
+});
