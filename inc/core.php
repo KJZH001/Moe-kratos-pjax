@@ -671,10 +671,12 @@ function moe_kratos_should_hide_ads(): bool {
     // 例如基于 wp_is_mobile() 进一步细分
     // if ( wp_is_mobile() ) { ... }
 
-    // ------ 4. 中国区不显示广告 ------
-    if (isset(KRATOS_SITE_REGION) && KRATOS_SITE_REGION=='REGION_CN') {
+    // ------ 4. 中国大陆不显示广告 ------
+    if ( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) 
+    {
         return true;
     }
+    
 
     return false; // 未命中任何隐藏条件
 }

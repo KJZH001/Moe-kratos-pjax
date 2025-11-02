@@ -468,6 +468,7 @@ class kratos_widget_comments extends WP_Widget {
         }
         $output .= '</div>';
         $output .= $args['after_widget'];
+
         echo $output;
     }
     public function update($new_instance,$old_instance){
