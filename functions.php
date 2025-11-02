@@ -3,6 +3,7 @@
 define('KRATOS_VERSION','0.5.9');
 
 require_once(get_template_directory().'/inc/core.php');
+require_once(get_template_directory().'/inc/multipleDomain.php');
 require_once(get_template_directory().'/inc/shortcode.php');
 require_once(get_template_directory().'/inc/imgcfg.php');
 require_once(get_template_directory().'/inc/post.php');
