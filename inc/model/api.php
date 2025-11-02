@@ -13,8 +13,8 @@ $r18 = false;
 // header('Access-Control-Allow-Origin: moeworld.top,*.moeworld.top,moeworld.tech,*.moeworld.tech'); 
 
 // $allowed_domains = array(
-//     'moeworld.top',
-//     'moeworld.tech'
+//     'blog.moeworld.tech',
+//     'blog.kzmxj.com'
 // );
 
 // $origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';

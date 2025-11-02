@@ -19,5 +19,6 @@ else
     define('KRATOS_SITE_REGION','REGION_GLOBAL');
 }
 
+/** 允许跨域请求 */
 
 ?>
