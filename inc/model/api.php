@@ -12,18 +12,18 @@ $r18 = false;
 // header('Access-Control-Allow-Origin: *'); 
 // header('Access-Control-Allow-Origin: moeworld.top,*.moeworld.top,moeworld.tech,*.moeworld.tech'); 
 
-// $allowed_domains = array(
-//     'blog.moeworld.tech',
-//     'blog.kzmxj.com'
-// );
+$allowed_domains = array(
+    'blog.moeworld.tech',
+    'blog.kzmxj.com'
+);
 
-// $origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
+$origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
 
-// if (in_array(parse_url($origin, PHP_URL_HOST), $allowed_domains)) {
-//     header('Access-Control-Allow-Origin: ' . $origin);
-//     header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
-//     header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
-// }
+if (in_array(parse_url($origin, PHP_URL_HOST), $allowed_domains)) {
+    header('Access-Control-Allow-Origin: ' . $origin);
+    header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+    header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
+}
 // else
 // {
 //     // echo "不允许跨域的访问<br>";
