@@ -79,7 +79,14 @@
             </div>
         <?php endif; ?>
         <!-- 广告单元-文章横向 结束 -->
-        <?php comments_template(); ?>
+        <?php 
+            /** 渲染评论区 **/
+            // 仅在非大陆区显示评论区
+            if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ) 
+            {
+                comments_template(); 
+            }
+        ?>
     </article>
     <?php } ?>
 </section>
