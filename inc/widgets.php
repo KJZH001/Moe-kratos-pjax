@@ -468,7 +468,11 @@ class kratos_widget_comments extends WP_Widget {
         }
         $output .= '</div>';
         $output .= $args['after_widget'];
-
+        // 中国大陆不显示近期评论
+        if ( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) 
+        {
+            return true;
+        }
         echo $output;
     }
     public function update($new_instance,$old_instance){
