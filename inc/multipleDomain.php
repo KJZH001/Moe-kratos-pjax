@@ -21,4 +21,39 @@ else
 
 /** 允许跨域请求 */
 
+/** 根据区域显示文章列表 **/
+// “area-cn” 代表“区域：中国大陆”（海外不可见）
+// “area-international” 代表“区域：国际”（大陆不可见）
+// “area-global” 代表“区域：全球”（全区域可见）
+function kratos_filter_posts_by_area( $query ) {
+
+    // 海外不生效
+    if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ) 
+    {
+        return;
+    }
+
+    // 只在前端、主查询、文章列表类型（可按需加条件）执行
+    if ( is_admin() || ! $query->is_main_query() ) {
+        return;
+    }
+
+    // 你可能只想在首页或文章归档生效，按需加条件，如：
+    if ( is_home() || is_archive() || is_search() ) {
+         // 设置 tax_query 以排除不相关区域
+        $tax_query = array(
+            array(
+                'taxonomy' => 'post_tag',
+                'field'    => 'slug',
+                // 'terms'    => array( 'area-international', 'area-global' ),
+                'terms'    => array( 'area-international' ),
+                'operator' => 'IN',
+            ),
+        );
+        $query->set( 'tax_query', $tax_query );
+    }
+}
+// add_action( 'pre_get_posts', 'kratos_filter_posts_by_area', 10 );
+
+
 ?>
