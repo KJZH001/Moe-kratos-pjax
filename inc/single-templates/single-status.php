@@ -98,7 +98,7 @@
                 <ol class="comment-list">
                     <li class="comment byuser odd alt thread-odd thread-alt depth-1">
                         <div  class="comment-body">
-                            <h3>亲爱的读者，感谢您访问本站。</h3>
+                            <h3>亲爱的读者，感谢您访问本站</h3>
                             <hr>
                             <p>为了确保内容的分发符合所在地的备案规范，并专注于核心内容的创作与传播</p>
                             <p>本站点（分站）目前采用【非交互式】内容服务模式。因此，我们暂无法为您提供文章评论区功能</p>
