@@ -19,8 +19,6 @@ else
     define('KRATOS_SITE_REGION','REGION_GLOBAL');
 }
 
-/** 允许跨域请求 */
-
 /** 根据区域显示文章列表 **/
 //  area-cn                 代表    “区域：中国大陆”    （海外不可见）
 //  area-international      代表    “区域：国际”        （大陆不可见）
@@ -64,5 +62,39 @@ function kratos_filter_posts_by_area( $query ) {
 }
 add_action( 'pre_get_posts', 'kratos_filter_posts_by_area', 10 );
 
+/**
+ * 获取主题资源 URL，但强制替换为当前请求的域名
+ * 用于替换 get_template_directory_uri() 或 get_bloginfo('template_directory')
+ *
+ * @param string $path 主题目录下的相对路径（可空）
+ * @return string 完整 URL
+ */
+function kratos_multi_domain_theme_uri( $path = '' ) {
+    // 获取原始主题目录 URI（父主题目录）
+    $orig_uri = get_template_directory_uri();  // 或者 get_stylesheet_directory_uri()，按你子主题/父主题实际情况
+    
+    // 解析该 URI
+    $parts = wp_parse_url( $orig_uri );
+    if ( false === $parts ) {
+        // 解析失败，退回原始 URI
+        $uri = $orig_uri;
+    } else {
+        // 构造新的 URI，替换 host 为当前请求的 HTTP_HOST
+        $scheme = isset( $parts['scheme'] ) ? $parts['scheme'] : ( is_ssl() ? 'https' : 'http' );
+        $host   = $_SERVER['HTTP_HOST'] ?? $parts['host'];
+        $port   = isset( $parts['port'] ) ? ':' . $parts['port'] : '';
+        $path0  = isset( $parts['path'] ) ? rtrim( $parts['path'], '/' ) : '';
+        
+        $uri = $scheme . '://' . $host . $port . $path0;
+    }
+
+    // 添加额外的路径
+    if ( $path !== '' ) {
+        // 确保在 URL 和 Path 之间只有一个 “/”
+        $uri = rtrim( $uri, '/' ) . '/' . ltrim( $path, '/' );
+    }
+
+    return esc_url( $uri );
+}
 
 ?>
