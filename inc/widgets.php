@@ -430,7 +430,16 @@ class kratos_widget_posts extends WP_Widget {
                 </div>
                 <div class="tab-pane fade" id="hot">
                     <ul class="list-group">
-                        <?php if(function_exists('most_comm_posts')) most_comm_posts(180,$number); ?>
+                        <?php 
+                            if ( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) 
+                            {
+                                echo "<a class=\"list-group-item visible-lg\" title=\"本功能在当前区域不可用\" href=\"javascript:;\" rel=\"bookmark\"><i class=\"fa  fa-book\"></i> 本功能在当前区域不可用</a>";
+                            }
+                            else
+                            {
+                                if(function_exists('most_comm_posts')) most_comm_posts(180,$number); 
+                            }
+                        ?>
                     </ul>
                 </div>
                 <div class="tab-pane fade" id="rand">
