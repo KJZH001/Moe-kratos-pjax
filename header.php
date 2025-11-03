@@ -128,11 +128,9 @@
 
                                         <li><a><i class="fa fa-cogs"></i> 工具</a>
                                             <ul class="sub-menu">
-                                                <!--<li><a href="https://blog.moeworld.tech/rcraft-api/" >Api接口</a></li>-->
                                                 <li>
                                                     <a href="javascript:;" target="_blank">站点监控</a>
                                                     <ul class="sub-menu">
-                                                        <!-- <li><a href="https://uptime.lovemoe.net/" target="_blank">Kuma</a></li> -->
                                                         <li><a href="https://status.moeworld.top/" target="_blank">Uptime Selfhost</a></li>
                                                         <li><a href="https://stats.uptimerobot.com/J75mgc8yjM" target="_blank">Uptime Official</a></li>
                                                     </ul>
@@ -144,7 +142,6 @@
                                                 <li><a href="https://blog.moeworld.tech/fortuneupup：测测今天的运势吧/" target="_blank">
                                                     幸运抽签</a></li>
                                                 <li><a href="https://afdian.com/a/kjzh001" target="_blank" rel="nofollow">
-                                                    <!-- <i class="fa fa-shopping-cart"></i>  -->
                                                     爱发电
                                                 </a></li>
                                             </ul>
@@ -155,7 +152,6 @@
                                             <ul class="sub-menu">
                                                 <li>
                                                     <a href="https://www.travellings.cn/go.html" target="_blank">
-                                                        <!-- <i class="fa fa-paper-plane"></i>  -->
                                                         开往
                                                     </a>
                                                 </li>
@@ -165,12 +161,6 @@
                                             </ul>
                                         </li>
                                         <?php if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ){ ?><li><a href="https://blog.moeworld.tech/guestbook/"><i class="fa fa-pencil"></i> 留言</a></li><?php } ?>
-                                        <!-- <li><a href="https://www.travellings.cn/go.html" target="_blank"><i class="fa fa-paper-plane"></i> 开往</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="https://foreverblog.cn/go.html" target="_blank">虫洞</a></li>
-                                                <li><a href="https://bf.zzxworld.com/s/1353" target="_blank">BlogFinder</a></li>
-                                            </ul>
-                                        </li> -->
 
                                         <?php if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ){ ?>
                                         <li>
