@@ -161,10 +161,10 @@
                                                 </li>
                                                 <li><a href="https://foreverblog.cn/go.html" target="_blank">虫洞</a></li>
                                                 <li><a href="https://bf.zzxworld.com/s/1353" target="_blank">BlogFinder</a></li>
-                                                <li><a href="https://blog.moeworld.tech/friendshiplink/" target="_blank">友情链接</a></li>
+                                                <?php if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ){ ?><li><a href="https://blog.moeworld.tech/friendshiplink/" target="_blank">友情链接</a></li><?php } ?>
                                             </ul>
                                         </li>
-                                        <li><a href="https://blog.moeworld.tech/guestbook/"><i class="fa fa-pencil"></i> 留言</a></li>
+                                        <?php if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ){ ?><li><a href="https://blog.moeworld.tech/guestbook/"><i class="fa fa-pencil"></i> 留言</a></li><?php } ?>
                                         <!-- <li><a href="https://www.travellings.cn/go.html" target="_blank"><i class="fa fa-paper-plane"></i> 开往</a>
                                             <ul class="sub-menu">
                                                 <li><a href="https://foreverblog.cn/go.html" target="_blank">虫洞</a></li>
