@@ -387,7 +387,40 @@ class kratos_widget_posts extends WP_Widget {
             <div class="tab-content">
                 <div class="tab-pane fade in active" id="newest">
                     <ul class="list-group">
-                        <?php $myposts = get_posts('numberposts='.$number.' & offset=0');foreach($myposts as $post): ?>
+                        <?php /* $myposts = get_posts('numberposts='.$number.' & offset=0');foreach($myposts as $post): */ ?>
+                        <?php 
+                        if ( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) 
+                        {
+                            $myposts = $myposts = get_posts(array(
+                                'numberposts' => $number,
+                                'offset'      => 0,
+                                'tax_query'   => array(
+                                    array(
+                                        'taxonomy' => 'post_tag',
+                                        'field'    => 'slug',
+                                        'terms'    => array('area-cn','area-global'),
+                                        'operator' => 'IN',
+                                    ),
+                                ),
+                            ));
+                        }
+                        else
+                        {
+                            $myposts = $myposts = get_posts(array(
+                                'numberposts' => $number,
+                                'offset'      => 0,
+                                'tax_query'   => array(
+                                    array(
+                                        'taxonomy' => 'post_tag',
+                                        'field'    => 'slug',
+                                        'terms'    => array('area-cn'),
+                                        'operator' => 'NOT IN',
+                                    ),
+                                ),
+                            ));
+                        }
+                        foreach($myposts as $post): 
+                        ?>
                             <a class="list-group-item visible-lg" title="<?php echo $post->post_title; ?>" href="<?php echo get_permalink($post->ID); ?>" rel="bookmark"><i class="fa  fa-book"></i> <?php echo strip_tags($post->post_title) ?>
                             </a>
                             <a class="list-group-item visible-md" title="<?php echo $post->post_title; ?>" href="<?php echo get_permalink($post->ID); ?>" rel="bookmark"><i class="fa  fa-book"></i> <?php echo strip_tags($post->post_title) ?>
@@ -402,7 +435,40 @@ class kratos_widget_posts extends WP_Widget {
                 </div>
                 <div class="tab-pane fade" id="rand">
                     <ul class="list-group">
-                        <?php $myposts = get_posts('numberposts='.$number.' & offset=0 & orderby=rand');foreach($myposts as $post): ?>
+                    <?php /* $myposts = get_posts('numberposts='.$number.' & offset=0');foreach($myposts as $post): */ ?>
+                        <?php 
+                        if ( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) 
+                        {
+                            $myposts = $myposts = get_posts(array(
+                                'numberposts' => $number,
+                                'offset'      => 0,
+                                'tax_query'   => array(
+                                    array(
+                                        'taxonomy' => 'post_tag',
+                                        'field'    => 'slug',
+                                        'terms'    => array('area-cn','area-global'),
+                                        'operator' => 'IN',
+                                    ),
+                                ),
+                            ));
+                        }
+                        else
+                        {
+                            $myposts = $myposts = get_posts(array(
+                                'numberposts' => $number,
+                                'offset'      => 0,
+                                'tax_query'   => array(
+                                    array(
+                                        'taxonomy' => 'post_tag',
+                                        'field'    => 'slug',
+                                        'terms'    => array('area-cn'),
+                                        'operator' => 'NOT IN',
+                                    ),
+                                ),
+                            ));
+                        }
+                        foreach($myposts as $post): 
+                        ?>
                             <a class="list-group-item visible-lg" title="<?php echo $post->post_title; ?>" href="<?php echo get_permalink($post->ID); ?>" rel="bookmark"><i class="fa  fa-book"></i> <?php echo strip_tags($post->post_title) ?>
                             </a>
                             <a class="list-group-item visible-md" title="<?php echo $post->post_title; ?>" href="<?php echo get_permalink($post->ID); ?>" rel="bookmark"><i class="fa  fa-book"></i> <?php echo strip_tags($post->post_title) ?>
