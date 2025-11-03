@@ -96,33 +96,33 @@
                                         </li>
 
                                         <li>
-                                            <a href="https://blog.moeworld.tech/archives/"><i class="fa fa-pencil"></i> 分类</a>
+                                            <a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/archives/"><i class="fa fa-pencil"></i> 分类</a>
                                             <ul class="sub-menu">
-                                            <li><a href="https://blog.moeworld.tech/category/laboratory/">实验室</a></li>
-                                            <li><a href="https://blog.moeworld.tech/category/server/">服务器</a></li>
+                                            <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/category/laboratory/">实验室</a></li>
+                                            <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/category/server/">服务器</a></li>
                                             <li>
-                                                <a href="https://blog.moeworld.tech/category/%E5%BC%80%E5%8F%91/">实用教程</a>
+                                                <a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/category/%E5%BC%80%E5%8F%91/">实用教程</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="https://blog.moeworld.tech/category/%e5%bc%80%e5%8f%91/">开发</a></li>
-                                                    <li><a href="https://blog.moeworld.tech/category/%e5%bc%80%e5%8f%91/system/" >系统</a></li>
-                                                    <li><a href="https://blog.moeworld.tech/category/yingjian/">硬件</a></li>
-                                                    <li><a href="https://blog.moeworld.tech/category/%e5%bc%80%e5%8f%91/php/">php</a></li>
-                                                    <li><a href="https://blog.moeworld.tech/category/%e5%bc%80%e5%8f%91/iapp/">iApp</a></li>
-                                                    <li><a href="https://blog.moeworld.tech/category/%e5%bc%80%e5%8f%91/python/">Python</a></li>
-                                                    <li><a href="https://blog.moeworld.tech/category/%e5%bc%80%e5%8f%91/wordpress/">WorldPress</a></li>
-                                                    <li><a href="https://blog.moeworld.tech/category/%e5%bc%80%e5%8f%91/java-android/">Java&Android</a></li>
+                                                    <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/category/%e5%bc%80%e5%8f%91/">开发</a></li>
+                                                    <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/category/%e5%bc%80%e5%8f%91/system/" >系统</a></li>
+                                                    <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/category/yingjian/">硬件</a></li>
+                                                    <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/category/%e5%bc%80%e5%8f%91/php/">php</a></li>
+                                                    <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/category/%e5%bc%80%e5%8f%91/iapp/">iApp</a></li>
+                                                    <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/category/%e5%bc%80%e5%8f%91/python/">Python</a></li>
+                                                    <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/category/%e5%bc%80%e5%8f%91/wordpress/">WorldPress</a></li>
+                                                    <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/category/%e5%bc%80%e5%8f%91/java-android/">Java&Android</a></li>
                                                 </ul>
                                             </li>
                                                 <li>
-                                                    <a href="https://blog.moeworld.tech/category/daily/">日常杂谈</a>
+                                                    <a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/category/daily/">日常杂谈</a>
                                                     <ul class="sub-menu">
-                                                        <li><a href="https://blog.moeworld.tech/category/daily/%e5%a4%a7%e5%ad%a6/">大学</a></li>
-                                                        <li><a href="https://blog.moeworld.tech/category/daily/%e9%ab%98%e4%b8%ad/">高中</a></li>
-                                                        <li><a href="https://blog.moeworld.tech/category/%e8%8a%82%e6%97%a5/">节日</a></li>
+                                                        <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/category/daily/%e5%a4%a7%e5%ad%a6/">大学</a></li>
+                                                        <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/category/daily/%e9%ab%98%e4%b8%ad/">高中</a></li>
+                                                        <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/category/%e8%8a%82%e6%97%a5/">节日</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="https://blog.moeworld.tech/archives/">文章归档</a></li>
-                                                <li><a href="https://blog.moeworld.tech/sitemap.html">站点地图</a></li>
+                                                <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/archives/">文章归档</a></li>
+                                                <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/sitemap.html">站点地图</a></li>
                                             </ul>
                                         </li>
 
@@ -139,7 +139,7 @@
                                                 <li><a href="https://mikutap.moeworld.top/" target="_blank">Mikutap</a></li>
                                                 <?php if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ){ ?><li><a href="https://outlook.com/?realm=moeworld.top" target="_blank">域名邮箱</a></li><?php } ?>
                                                 <?php if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ){ ?><li><a href="https://blog.moeworld.tech/mirror.php" target="_blank">真&nbsp;·&nbsp;镜像站</a></li><?php } ?>
-                                                <li><a href="https://blog.moeworld.tech/fortuneupup：测测今天的运势吧/" target="_blank">
+                                                <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/fortuneupup：测测今天的运势吧/" target="_blank">
                                                     幸运抽签</a></li>
                                                 <li><a href="https://afdian.com/a/kjzh001" target="_blank" rel="nofollow">
                                                     爱发电
@@ -148,7 +148,7 @@
                                         </li>
 
                                         <li>
-                                            <a href="https://blog.moeworld.tech/friendshiplink/"><i class="fa fa-mars"></i> 友链</a>
+                                            <a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/friendshiplink/"><i class="fa fa-mars"></i> 友链</a>
                                             <ul class="sub-menu">
                                                 <li>
                                                     <a href="https://www.travellings.cn/go.html" target="_blank">
@@ -164,9 +164,9 @@
 
                                         <?php if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ){ ?>
                                         <li>
-                                            <a href="https://blog.moeworld.tech/订阅本站/"><i class="fa fa-rss-square"></i> 订阅</a>
+                                            <a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/订阅本站/"><i class="fa fa-rss-square"></i> 订阅</a>
                                             <ul class="sub-menu">    
-                                                <li><a href="https://blog.moeworld.tech/feed/" target="_blank">原生RSS</a></li>
+                                                <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/feed/" target="_blank">原生RSS</a></li>
                                                 <li><a href="https://rss.moeworld.tech/" target="_blank">RSSHub</a></li>
                                                 <li><a href="https://blog.moeworld.tech/article_json.php" 
                                                         target="_blank">Json API</a></li>
@@ -175,7 +175,7 @@
                                                         target="_blank">QQ群</a></li>
                                                 <li><a href="https://t.me/akatsukisora" target="_blank">TG频道</a></li>
                                                 <li><a href="https://t.me/amesekai" target="_blank">TG群组</a></li>
-                                                <li><a href="https://blog.moeworld.tech/订阅本站/">使用说明</a></li>
+                                                <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/订阅本站/">使用说明</a></li>
                                             </ul>
                                         </li>
                                         <?php } ?>
@@ -183,8 +183,8 @@
                                         <li>
                                             <a href="https://about.moeworld.top" target="_blank"><i class="fa fa-rocket"></i> 关于</a>
                                             <ul class="sub-menu">
-                                                        <li><a href="https://blog.moeworld.tech/about/">更多</a></li>
-                                                        <li><a href="https://blog.moeworld.tech/about-2020/">更多-2020</a></li>
+                                                        <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/about/">更多</a></li>
+                                                        <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/about-2020/">更多-2020</a></li>
                                                         <li><a href="https://about.moeworld.top/" target="_blank">个人页</a></li>
                                             </ul>
                                         </li>
