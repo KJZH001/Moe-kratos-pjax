@@ -172,6 +172,7 @@
                                             </ul>
                                         </li> -->
 
+                                        <?php if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ){ ?>
                                         <li>
                                             <a href="https://blog.moeworld.tech/订阅本站/"><i class="fa fa-rss-square"></i> 订阅</a>
                                             <ul class="sub-menu">    
@@ -187,6 +188,7 @@
                                                 <li><a href="https://blog.moeworld.tech/订阅本站/">使用说明</a></li>
                                             </ul>
                                         </li>
+                                        <?php } ?>
 
                                         <li>
                                             <a href="https://about.moeworld.top" target="_blank"><i class="fa fa-rocket"></i> 关于</a>
