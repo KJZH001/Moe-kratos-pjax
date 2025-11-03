@@ -22,9 +22,9 @@ else
 /** 允许跨域请求 */
 
 /** 根据区域显示文章列表 **/
-// “area-cn” 代表“区域：中国大陆”（海外不可见）
-// “area-international” 代表“区域：国际”（大陆不可见）
-// “area-global” 代表“区域：全球”（全区域可见）
+//  area-cn                 代表    “区域：中国大陆”    （海外不可见）
+//  area-international      代表    “区域：国际”        （大陆不可见）
+//  area-global             代表    “区域：全球”        （全区域可见）
 function kratos_filter_posts_by_area( $query ) {
     // 只在前端、主查询、文章列表类型（可按需加条件）执行
     if ( is_admin() || ! $query->is_main_query() ) 
