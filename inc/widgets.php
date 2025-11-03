@@ -256,7 +256,15 @@ class kratos_widget_about extends WP_Widget {
             </div>
         </div>
         <div class="textwidget">
-            <p class="text-center"><?php echo $profile; ?></p>
+            <p class="text-center">
+                <?php 
+                    echo $profile; 
+                    if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ) 
+                    {
+                        echo '<a href="https://'.$_SERVER['HTTP_HOST'].'/wp-login.php?redirect_to=https%3A%2F%2F'.$_SERVER['HTTP_HOST'].'">[登录/注册]</a>';
+                    }
+                ?>
+            </p>
         </div><?php
     }
         echo $after_widget;
