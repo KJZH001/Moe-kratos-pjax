@@ -76,32 +76,67 @@ add_filter('excerpt_length','kratos_excerpt_length');
 function kratos_excerpt_more($more){return '……';}
 add_filter('excerpt_more','kratos_excerpt_more');
 //Load scripts
+// function kratos_theme_scripts(){
+//     $url1 = 'https://cdn-js.moeworld.top/gh/KJZH001/Moe-kratos-pjax@'.KRATOS_VERSION;
+//     $url2 = get_template_directory_uri();   // 建议用 get_template_directory_uri()
+
+//     $jsdir  = ( kratos_option('js_out')  ? $url1 : $url2 );
+//     $cssdir = ( kratos_option('css_out') ? $url1 : $url2 );
+//     $owodir = ( kratos_option('owo_out') ? $url1 : $url2 );
+//     $fadir = kratos_option('fa_url')  ? kratos_option('fa_url') : $cssdir.'/static/css/font-awesome.min.css';
+//     $jqdir = kratos_option('jq_url')  ? kratos_option('jq_url') : $jsdir.'/static/js/jquery.min.js';
+
+//     if(!is_admin()){
+//         wp_enqueue_style('fontawe', $fadir, array(), '4.7.0');
+//         wp_enqueue_style('kratos',   $cssdir.'/static/css/kratos.min.css', array(), KRATOS_VERSION);
+//         wp_enqueue_script('theme-jq',$jqdir, array(), '2.1.4');
+//         wp_enqueue_script('theme',    $jsdir.'/static/js/theme.min.js',    array(), KRATOS_VERSION);
+//         wp_enqueue_script('kratos',   $jsdir.'/static/js/kratos.js',        array(), KRATOS_VERSION);
+//         if( kratos_option('page_pjax') ) {
+//             wp_enqueue_script('pjax', $jsdir.'/static/js/pjax.js', array(), KRATOS_VERSION);
+//         }
+//     }
+
+//     $site_sa_h = 0;
+//     if( kratos_option('site_sa') && !wp_is_mobile()){
+//         $site_sa_h = ( kratos_option('head_mode')=='pic' ? 61 : 103 );
+//     }
+
+//     $d2kratos = array(
+//          'thome'=> get_stylesheet_directory_uri(),
+//          'ctime'=> kratos_option('createtime'),
+//         'alipay'=> kratos_option('alipayqr_url'),
+//         'wechat'=> kratos_option('wechatpayqr_url'),
+//           'copy'=> kratos_option('copy_notice'),
+//       'ajax_url'=> admin_url('admin-ajax.php'),
+//          'order'=> get_option('comment_order'),
+//            'owo'=> get_bloginfo('template_directory'),
+//        'site_sh'=> $site_sa_h
+//     );
+//     wp_localize_script('kratos','xb',$d2kratos);
+// }
 function kratos_theme_scripts(){
     $url1 = 'https://cdn-js.moeworld.top/gh/KJZH001/Moe-kratos-pjax@'.KRATOS_VERSION;
-    $url2 = get_template_directory_uri();   // 建议用 get_template_directory_uri()
-
-    $jsdir  = ( kratos_option('js_out')  ? $url1 : $url2 );
-    $cssdir = ( kratos_option('css_out') ? $url1 : $url2 );
-    $owodir = ( kratos_option('owo_out') ? $url1 : $url2 );
-    $fadir = kratos_option('fa_url')  ? kratos_option('fa_url') : $cssdir.'/static/css/font-awesome.min.css';
-    $jqdir = kratos_option('jq_url')  ? kratos_option('jq_url') : $jsdir.'/static/js/jquery.min.js';
-
+    $url2 = get_bloginfo('template_directory');
+    if(kratos_option('js_out')) $jsdir = $url1; else $jsdir = $url2;
+    if(kratos_option('css_out')) $cssdir = $url1; else $cssdir = $url2;
+    if(kratos_option('owo_out')) $owodir = $url1; else $owodir = $url2;
+    if(kratos_option('fa_url')) $fadir = kratos_option('fa_url'); else $fadir = $url2.'/static/css/font-awesome.min.css';
+    if(kratos_option('jq_url')) $jqdir = kratos_option('jq_url'); else $jqdir = $url2.'/static/js/jquery.min.js';
     if(!is_admin()){
-        wp_enqueue_style('fontawe', $fadir, array(), '4.7.0');
-        wp_enqueue_style('kratos',   $cssdir.'/static/css/kratos.min.css', array(), KRATOS_VERSION);
-        wp_enqueue_script('theme-jq',$jqdir, array(), '2.1.4');
-        wp_enqueue_script('theme',    $jsdir.'/static/js/theme.min.js',    array(), KRATOS_VERSION);
-        wp_enqueue_script('kratos',   $jsdir.'/static/js/kratos.js',        array(), KRATOS_VERSION);
-        if( kratos_option('page_pjax') ) {
-            wp_enqueue_script('pjax', $jsdir.'/static/js/pjax.js', array(), KRATOS_VERSION);
-        }
+        wp_enqueue_style('fontawe',get_bloginfo('template_directory').'/static/css/font-awesome.min.css',array(),'4.7.0');
+        wp_enqueue_style('kratos',get_bloginfo('template_directory').'/static/css/kratos.min.css',array(),KRATOS_VERSION);
+        wp_enqueue_script('theme-jq',get_bloginfo('template_directory').'/static/js/jquery.min.js',array(),'2.1.4');
+        wp_enqueue_script('theme',get_bloginfo('template_directory').'/static/js/theme.min.js',array(),KRATOS_VERSION);
+        wp_enqueue_script('kratos',get_bloginfo('template_directory').'/static/js/kratos.js',array(),KRATOS_VERSION);
+        if(kratos_option('page_pjax')) wp_enqueue_script('pjax',get_bloginfo('template_directory').'/static/js/pjax.js',array(),KRATOS_VERSION);
     }
-
+    if(kratos_option('site_girl')&&!wp_is_mobile()){
+        wp_enqueue_script('live2d',get_bloginfo('template_directory').'/static/js/live2d.js',array(),'l2d');
+        wp_enqueue_script('waifu',get_bloginfo('template_directory').'/static/js/waifu-tips.js',array(),'1.3');
+    }
     $site_sa_h = 0;
-    if( kratos_option('site_sa') && !wp_is_mobile()){
-        $site_sa_h = ( kratos_option('head_mode')=='pic' ? 61 : 103 );
-    }
-
+    if(kratos_option('site_sa')&&!wp_is_mobile()){if(kratos_option('head_mode')=='pic') $site_sa_h = 61; else $site_sa_h = 103;}
     $d2kratos = array(
          'thome'=> get_stylesheet_directory_uri(),
          'ctime'=> kratos_option('createtime'),
