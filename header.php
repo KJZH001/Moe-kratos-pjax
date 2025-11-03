@@ -121,8 +121,8 @@
                                                         <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/category/%e8%8a%82%e6%97%a5/">节日</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/archives/">文章归档</a></li>
-                                                <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/sitemap.html">站点地图</a></li>
+                                                <?php if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ){ ?><li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/archives/">文章归档</a></li><?php } ?>
+                                                <?php if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ){ ?><li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/sitemap.html">站点地图</a></li><?php } ?>
                                             </ul>
                                         </li>
 
