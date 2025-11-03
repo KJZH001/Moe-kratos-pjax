@@ -25,18 +25,23 @@
         </div>
         <nav class="navigation post-navigation clearfix" role="navigation">
             <?php
-            $prev_post = get_previous_post();
-            if(!empty($prev_post)){ ?>
-            <div class="nav-previous clearfix">
-                <a title="<?php echo $prev_post->post_title;?>" href="<?php echo get_permalink($prev_post->ID); ?>">&lt; <?php _e('上一篇','moedog'); ?></a>
-            </div>
-            <?php }
-            $next_post = get_next_post();
-            if(!empty($next_post)){ ?>
-            <div class="nav-next">
-                <a title="<?php echo $next_post->post_title; ?>" href="<?php echo get_permalink($next_post->ID); ?>"><?php _e('下一篇','moedog'); ?> &gt;</a>
-            </div>
-            <?php } ?>
+            // 仅在国际区会显示上一篇和下一篇
+            if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ) 
+            {
+                $prev_post = get_previous_post();
+                if(!empty($prev_post)){ ?>
+                <div class="nav-previous clearfix">
+                    <a title="<?php echo $prev_post->post_title;?>" href="<?php echo get_permalink($prev_post->ID); ?>">&lt; <?php _e('上一篇','moedog'); ?></a>
+                </div>
+                <?php }
+                $next_post = get_next_post();
+                if(!empty($next_post)){ ?>
+                <div class="nav-next">
+                    <a title="<?php echo $next_post->post_title; ?>" href="<?php echo get_permalink($next_post->ID); ?>"><?php _e('下一篇','moedog'); ?> &gt;</a>
+                </div>
+                <?php } 
+            }
+            ?>
         </nav>
         <!-- 广告单元-文章横向 -->
         <!-- 准备移除 -->
