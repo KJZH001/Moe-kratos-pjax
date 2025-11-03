@@ -98,8 +98,10 @@ function kratos_theme_scripts(){
     }
 
     if(kratos_option('site_girl')&&!wp_is_mobile()){
-        wp_enqueue_script('live2d',get_bloginfo('template_directory').'/static/js/live2d.js',array(),'l2d');
-        wp_enqueue_script('waifu',get_bloginfo('template_directory').'/static/js/waifu-tips.js',array(),'1.3');
+        // wp_enqueue_script('live2d',get_bloginfo('template_directory').'/static/js/live2d.js',array(),'l2d');
+        // wp_enqueue_script('waifu',get_bloginfo('template_directory').'/static/js/waifu-tips.js',array(),'1.3');
+        wp_enqueue_script('live2d',kratos_multi_domain_theme_uri('/static/js/live2d.js'),array(),'l2d');
+        wp_enqueue_script('waifu',kratos_multi_domain_theme_uri('/static/js/waifu-tips.js'),array(),'1.3');
     }
 
     $site_sa_h = 0;
@@ -108,7 +110,8 @@ function kratos_theme_scripts(){
     }
 
     $d2kratos = array(
-         'thome'=> get_stylesheet_directory_uri(),
+        //  'thome'=> get_stylesheet_directory_uri(),
+         'thome'=> kratos_multi_domain_theme_uri(),
          'ctime'=> kratos_option('createtime'),
         'alipay'=> kratos_option('alipayqr_url'),
         'wechat'=> kratos_option('wechatpayqr_url'),
