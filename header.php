@@ -73,11 +73,26 @@
                                 <nav id="kratos-menu-wrap" class="menu-%e9%bb%98%e8%ae%a4%e8%8f%9c%e5%8d%95-container">
                                     <ul id="kratos-primary-menu" class="sf-menu">
                                         <li class="current-menu-item">
-                                            <a href="https://blog.moeworld.tech" aria-current="page"><i class="fa fa-home"></i> 首页</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="https://blog.moeworld.tech" target="_blank"> 晓空blog</a></li>
-                                                <li><a href="https://project.moeworld.tech" target="_blank"> 空梦Project</a></li>
-                                            </ul>
+                                            <?php 
+                                            if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) )
+                                            {   ?>
+                                                <a href="https://blog.moeworld.tech" aria-current="page"><i class="fa fa-home"></i> 首页</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="https://blog.kzmxj.com" target="_blank"> 中国站</a></li>
+                                                    <li><a href="https://blog.moeworld.tech" target="_blank"> 国际站</a></li>
+                                                    <li><a href="https://project.moeworld.tech" target="_blank"> 空梦Project</a></li>
+                                                </ul>
+                                                <?php 
+                                            }
+                                            else 
+                                            {   ?>
+                                                <a href="https://blog.kzmxj.com" aria-current="page"><i class="fa fa-home"></i> 首页</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="https://blog.kzmxj.com" target="_blank"> 晓空blog</a></li>
+                                                    <li><a href="https://project.moeworld.tech" target="_blank"> 空梦Project</a></li>
+                                                </ul>
+                                                <?php
+                                            }?>
                                         </li>
 
                                         <li>
