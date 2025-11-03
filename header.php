@@ -130,17 +130,17 @@
                                             <ul class="sub-menu">
                                                 <!--<li><a href="https://blog.moeworld.tech/rcraft-api/" >Api接口</a></li>-->
                                                 <li>
-                                                    <a href="https://blog.moeworld.tech/" target="_blank">站点监控</a>
+                                                    <a href="javascript:;" target="_blank">站点监控</a>
                                                     <ul class="sub-menu">
                                                         <!-- <li><a href="https://uptime.lovemoe.net/" target="_blank">Kuma</a></li> -->
                                                         <li><a href="https://status.moeworld.top/" target="_blank">Uptime Selfhost</a></li>
                                                         <li><a href="https://stats.uptimerobot.com/J75mgc8yjM" target="_blank">Uptime Official</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="https://tiebasign.moeworld.top/" target="_blank">云签到</a></li>
+                                                <?php if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ){ ?><li><a href="https://tiebasign.moeworld.top/" target="_blank">云签到</a></li><?php } ?>
                                                 <li><a href="https://mikutap.moeworld.top/" target="_blank">Mikutap</a></li>
-                                                <li><a href="https://outlook.com/?realm=moeworld.top" target="_blank">域名邮箱</a></li>
-                                                <li><a href="https://blog.moeworld.tech/mirror.php" target="_blank">真&nbsp;·&nbsp;镜像站</a></li>
+                                                <?php if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ){ ?><li><a href="https://outlook.com/?realm=moeworld.top" target="_blank">域名邮箱</a></li><?php } ?>
+                                                <?php if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ){ ?><li><a href="https://blog.moeworld.tech/mirror.php" target="_blank">真&nbsp;·&nbsp;镜像站</a></li><?php } ?>
                                                 <li><a href="https://blog.moeworld.tech/fortuneupup：测测今天的运势吧/" target="_blank">
                                                     幸运抽签</a></li>
                                                 <li><a href="https://afdian.com/a/kjzh001" target="_blank" rel="nofollow">
@@ -179,7 +179,7 @@
                                                 <li><a href="https://rss.moeworld.tech/" target="_blank">RSSHub</a></li>
                                                 <li><a href="https://blog.moeworld.tech/article_json.php" 
                                                         target="_blank">Json API</a></li>
-                                                        <li><a href="https://mp.weixin.qq.com/s/1LTNOCJYxeZnwMjiG2JlaA" target="_blank">微信公众号</a></li>
+                                                <li><a href="https://mp.weixin.qq.com/s/1LTNOCJYxeZnwMjiG2JlaA" target="_blank">微信公众号</a></li>
                                                 <li><a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=tkyHXGo3TtbM8NPi6ti6LR3_Ufv8MtKO&authKey=2nCz6u1d%2Be%2FvumpuFryDAAn5Jf98cyqpdKh%2BXXxbO18p6T5jjH%2FjvbZixEAaIVFu&noverify=0&group_code=923991620" 
                                                         target="_blank">QQ群</a></li>
                                                 <li><a href="https://t.me/akatsukisora" target="_blank">TG频道</a></li>
