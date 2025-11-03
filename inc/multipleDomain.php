@@ -26,34 +26,43 @@ else
 // “area-international” 代表“区域：国际”（大陆不可见）
 // “area-global” 代表“区域：全球”（全区域可见）
 function kratos_filter_posts_by_area( $query ) {
-
-    // 海外不生效
-    if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ) 
+    // 只在前端、主查询、文章列表类型（可按需加条件）执行
+    if ( is_admin() || ! $query->is_main_query() ) 
     {
         return;
     }
 
-    // 只在前端、主查询、文章列表类型（可按需加条件）执行
-    if ( is_admin() || ! $query->is_main_query() ) {
-        return;
-    }
-
     // 你可能只想在首页或文章归档生效，按需加条件，如：
-    if ( is_home() || is_archive() || is_search() ) {
-         // 设置 tax_query 以排除不相关区域
-        $tax_query = array(
-            array(
-                'taxonomy' => 'post_tag',
-                'field'    => 'slug',
-                // 'terms'    => array( 'area-international', 'area-global' ),
-                'terms'    => array( 'area-international' ),
-                'operator' => 'IN',
-            ),
-        );
+    if ( is_home() || is_archive() || is_search() ) 
+    {
+        // 中国大陆：只显示 大陆和全球
+        if ( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) 
+        {
+            $tax_query = array(
+                array(
+                    'taxonomy' => 'post_tag',
+                    'field'    => 'slug',
+                    'terms'    => array( 'area-cn','area-global' ),
+                    'operator' => 'IN',
+                ),
+            );
+        }
+        // 国际区：仅不显示 大陆，无tag依然可以显示
+        else
+        {
+            $tax_query = array(
+                array(
+                    'taxonomy' => 'post_tag',
+                    'field'    => 'slug',
+                    'terms'    => array( 'area-cn' ),
+                    'operator' => 'NOT IN',
+                ),
+            );
+        }
         $query->set( 'tax_query', $tax_query );
     }
 }
-// add_action( 'pre_get_posts', 'kratos_filter_posts_by_area', 10 );
+add_action( 'pre_get_posts', 'kratos_filter_posts_by_area', 10 );
 
 
 ?>
