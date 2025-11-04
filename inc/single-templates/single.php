@@ -123,6 +123,7 @@
                 <!-- 第三方的广告 -->
                 <a href="https://blog.moeworld.tech/ad.php?origin=bizhiliangcryp" target="_blank"  rel="nofollow">
                     <img src="https://blog.moeworld.tech/wp-content/uploads/2025/09/bzl_ad_700x280.jpg" style="max-width: 100%; height: auto;">
+                    <!-- <img src="https://iph.href.lu/720x150" style="max-width: 100%; height: auto;"> -->
                 </a>
             </div>
         <?php endif; ?>
