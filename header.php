@@ -196,7 +196,17 @@
                                         <?php } ?>
 
                                         <li>
-                                            <a href="https://about.moeworld.top" target="_blank"><i class="fa fa-rocket"></i> 关于</a>
+                                            <?php 
+                                            if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) )
+                                            {
+                                                echo '<a href="https://about.moeworld.top" target="_blank"><i class="fa fa-rocket"></i> 关于</a>';
+                                            }
+                                            else
+                                            {
+                                                echo '<a href="https://'.$_SERVER['HTTP_HOST'].'/关于-空域中国/"><i class="fa fa-rocket"></i> 关于</a>';
+                                            }
+                                            ?>
+                                            
                                             <ul class="sub-menu">
                                                 <?php 
                                                 if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) )
