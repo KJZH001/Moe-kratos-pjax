@@ -81,7 +81,7 @@
                                                 <a href="https://blog.moeworld.tech" aria-current="page"><i class="fa fa-home"></i> 首页</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="https://blog.kzmxj.com" target="_blank"> 中国站</a></li>
-                                                    <li><a href="https://blog.moeworld.tech" target="_blank"> 国际站</a></li>
+                                                    <li><a href="https://blog.moeworld.tech"> 国际站</a></li>
                                                     <li><a href="https://project.moeworld.tech" target="_blank"> 空梦Project</a></li>
                                                 </ul>
                                                 <?php 
@@ -90,7 +90,7 @@
                                             {   ?>
                                                 <a href="https://blog.kzmxj.com" aria-current="page"><i class="fa fa-home"></i> 首页</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="https://blog.kzmxj.com" target="_blank"> 晓空blog</a></li>
+                                                    <li><a href="https://blog.kzmxj.com"> 晓空blog</a></li>
                                                     <li><a href="https://project.moeworld.tech" target="_blank"> 空梦Project</a></li>
                                                 </ul>
                                                 <?php
@@ -98,7 +98,19 @@
                                         </li>
 
                                         <li>
-                                            <a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/archives/"><i class="fa fa-pencil"></i> 分类</a>
+                                            <?php 
+                                            if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) )
+                                            {
+                                                ?>
+                                                <a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/archives/"><i class="fa fa-pencil"></i> 分类</a>
+                                                <?php 
+                                            }
+                                            else
+                                            {
+                                                ?>
+                                                <a href="javascript:;"><i class="fa fa-pencil"></i> 分类</a>
+                                                <?php
+                                            }  ?>
                                             <ul class="sub-menu">
                                             <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/category/laboratory/">实验室</a></li>
                                             <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/category/server/">服务器</a></li>
