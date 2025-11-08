@@ -97,4 +97,33 @@ function kratos_multi_domain_theme_uri( $path = '' ) {
     return esc_url( $uri );
 }
 
+// 在中国大陆关闭RSS
+function kratos_disable_feeds_for_cn_domain() {
+    if ( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) 
+    {
+        // 当请求的是 feed 路径
+        if ( is_feed() ) {
+            //返回 404
+            global $wp_query;
+            $wp_query->set_404();
+            status_header(404);
+            nocache_headers();
+            include get_query_template('404');
+            exit;
+        }
+    }
+}
+add_action('template_redirect', 'kratos_disable_feeds_for_cn_domain', 1);
+
+// 移除 RSS 链接头
+function kratos_remove_feed_links_for_cn() {
+    if ( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) 
+    {
+        remove_action('wp_head', 'feed_links', 2);
+        remove_action('wp_head', 'feed_links_extra', 3);
+    }
+}
+add_action('init', 'kratos_remove_feed_links_for_cn');
+
+
 ?>
