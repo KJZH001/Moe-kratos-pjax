@@ -184,9 +184,18 @@
                                         <li>
                                             <a href="https://about.moeworld.top" target="_blank"><i class="fa fa-rocket"></i> 关于</a>
                                             <ul class="sub-menu">
-                                                        <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/about/">更多</a></li>
-                                                        <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/about-2020/">更多-2020</a></li>
-                                                        <li><a href="https://about.moeworld.top/" target="_blank">个人页</a></li>
+                                                <?php 
+                                                if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) )
+                                                {
+                                                    echo '<li><a href="https://'.$_SERVER['HTTP_HOST'].'/关于-空域中国/">更多</a></li>';
+                                                }
+                                                else
+                                                {
+                                                    echo '<li><a href="https://'.$_SERVER['HTTP_HOST'].'/about/">更多</a></li>';
+                                                    echo '<li><a href="https://'.$_SERVER['HTTP_HOST'].'/about-2020/">更多-2020</a></li>';
+                                                }
+                                                ?>
+                                                <li><a href="https://about.moeworld.top/" target="_blank">个人页</a></li>
                                             </ul>
                                         </li>
 
