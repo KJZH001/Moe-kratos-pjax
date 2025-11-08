@@ -157,7 +157,8 @@
                                                 </li>
                                                 <li><a href="https://foreverblog.cn/go.html" target="_blank">虫洞</a></li>
                                                 <li><a href="https://bf.zzxworld.com/s/1353" target="_blank">BlogFinder</a></li>
-                                                <?php if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ){ ?><li><a href="https://blog.moeworld.tech/friendshiplink/" target="_blank">友情链接</a></li><?php } ?>
+                                                <!-- <?php if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ){ ?><li><a href="https://blog.moeworld.tech/friendshiplink/" target="_blank">友情链接</a></li><?php } ?> -->
+                                                <li><a href="https://<?php echo $_SERVER['HTTP_HOST'];?>/friendshiplink/" target="_blank">友情链接</a></li>
                                             </ul>
                                         </li>
                                         <?php if ( !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ){ ?><li><a href="https://blog.moeworld.tech/guestbook/"><i class="fa fa-pencil"></i> 留言</a></li><?php } ?>
