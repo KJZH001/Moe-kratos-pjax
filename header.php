@@ -222,7 +222,7 @@
                     <div class="kratos-cover kratos-cover_2 text-center">
                         <div class="desc desc2 animate-box">
                             <a href="<?php echo get_bloginfo('url'); ?>"><h2><?php echo kratos_option('background_image_text1'); ?>
-                            <?php if ( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ){echo '中国';} ?>
+                            <?php if ( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ){echo '· 九州';} ?>
                             </h2><br><span><?php echo  kratos_option('background_image_text2'); ?></span></a>
                         </div>
                     </div>
