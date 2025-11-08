@@ -19,20 +19,22 @@
 		});
     }
     // pjax重载谷歌广告
-    var pushGoogeAds = function(){
-        try 
-        {
-            (adsbygoogle = window.adsbygoogle || []).onload = function () {
-                [].forEach.call(document.getElementsByClassName('adsbygoogle'), function () {
-                    adsbygoogle.push({})
-                })
-            }
-        } 
-        catch (error) 
-        {
-            console.log('捕获到谷歌广告异常:', error.message);
-        }
-    }
+    // var pushGoogeAds = function(){
+    //     try 
+    //     {
+    //         (adsbygoogle = window.adsbygoogle || []).onload = function () {
+    //             [].forEach.call(document.getElementsByClassName('adsbygoogle'), function () {
+    //                 adsbygoogle.push({})
+    //             })
+    //         }
+    //     } 
+    //     catch (error) 
+    //     {
+    //         console.log('捕获到谷歌广告异常:', error.message);
+    //     }
+    // }
+    // 2025.11.8 目前没打算使用谷歌广告了，那么注释掉就好
+    // 记得pjax reload也有一份引用被注释了
 
     // 重载layload图片
     var lazyloadImageReload = function() {
@@ -300,7 +302,7 @@
         showPhotos();
         OwOcfg();
         QRCode();
-        pushGoogeAds();
+        // pushGoogeAds();
         lazyloadImageReload();
     }
     // 初始化
