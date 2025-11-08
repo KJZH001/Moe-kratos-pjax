@@ -88,56 +88,57 @@
             <?php echo kratos_option('script_tongji');echo kratos_option('add_script'); ?>
         </script>
         <?php } ?>
-        <!-- 延迟加载Google Adsense_https://kerrynotes.com/implement-lazy-load-google-adsense/-->
-            <!-- 
-                滚动页面时再加载Google Adsense 
-                此部分代码只需加载一次
-                广告的原始位置只需保留ins部分即可
-                2024.5.21 晓空
-            -->
-            <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6472836894788623"
-                 crossorigin="anonymous"></script> -->
-            <script type='text/javascript'> 
-            /* 延迟加载 AdSense JS */
-            /*
-            2025.9.2 暂时移除谷歌广告
-            var lazyadsense = !1;
-            window.addEventListener("scroll", function() {
-                (0 != document.documentElement.scrollTop && !1 === lazyadsense || 0 != document.body.scrollTop && !1 === lazyadsense) && (! function() {
-                    var e = document.createElement("script");
-                    // e.id = "g_ads_js", e.type = "text/javascript", e.async = "async", e.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
-                    e.id = "g_ads_js", e.type = "text/javascript", e.async = "async", e.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6472836894788623";
-                    var a = document.getElementsByTagName("script")[0];
-                    a.parentNode.insertBefore(e, a)
-            */
-                    /* 以下为自动广告专用，如果没有开启，请删除*/
-                    // var gads = document.getElementById("g_ads_js")
-                    // gads.setAttribute("data-ad-client", "ca-pub-6472836894788623");
-            /*
-                }(), lazyadsense = !0)
-            }, !0);
-            */
-            </script>
-            <!-- 延迟加载广告推送 -->
-            <script>
+        <?php if ( moe_kratos_should_hide_ads() ) : ?>
+            <!-- 延迟加载Google Adsense_https://kerrynotes.com/implement-lazy-load-google-adsense/-->
+                <!-- 
+                    滚动页面时再加载Google Adsense 
+                    此部分代码只需加载一次
+                    广告的原始位置只需保留ins部分即可
+                    2024.5.21 晓空
+                -->
+                <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6472836894788623"
+                    crossorigin="anonymous"></script> -->
+                <script type='text/javascript'> 
+                /* 延迟加载 AdSense JS */
                 /*
                 2025.9.2 暂时移除谷歌广告
-                try 
-                {
-                    (adsbygoogle = window.adsbygoogle || []).onload = function () {
-                        [].forEach.call(document.getElementsByClassName('adsbygoogle'), function () {
-                            adsbygoogle.push({})
-                        })
-                    }
-                } 
-                catch (error) 
-                {
-                    console.log('捕获到谷歌广告异常:', error.message);
-                }
+                var lazyadsense = !1;
+                window.addEventListener("scroll", function() {
+                    (0 != document.documentElement.scrollTop && !1 === lazyadsense || 0 != document.body.scrollTop && !1 === lazyadsense) && (! function() {
+                        var e = document.createElement("script");
+                        // e.id = "g_ads_js", e.type = "text/javascript", e.async = "async", e.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+                        e.id = "g_ads_js", e.type = "text/javascript", e.async = "async", e.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6472836894788623";
+                        var a = document.getElementsByTagName("script")[0];
+                        a.parentNode.insertBefore(e, a)
                 */
-            </script>
-
-        <!-- Adsense 全局代码 结束 -->
+                        /* 以下为自动广告专用，如果没有开启，请删除*/
+                        // var gads = document.getElementById("g_ads_js")
+                        // gads.setAttribute("data-ad-client", "ca-pub-6472836894788623");
+                /*
+                    }(), lazyadsense = !0)
+                }, !0);
+                */
+                </script>
+                <!-- 延迟加载广告推送 -->
+                <script>
+                    /*
+                    2025.9.2 暂时移除谷歌广告
+                    try 
+                    {
+                        (adsbygoogle = window.adsbygoogle || []).onload = function () {
+                            [].forEach.call(document.getElementsByClassName('adsbygoogle'), function () {
+                                adsbygoogle.push({})
+                            })
+                        }
+                    } 
+                    catch (error) 
+                    {
+                        console.log('捕获到谷歌广告异常:', error.message);
+                    }
+                    */
+                </script>
+            <!-- Adsense 全局代码 结束 -->
+        <?php endif; ?>
 
         <!-- 图片 lazyload 检查 -->
          <script>
