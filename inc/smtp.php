@@ -151,13 +151,13 @@ function comment_mail_notify($comment_id){
                                                                                                             <td align="left" valign="top" style="font-size:18px; color:#595757; line-height: 25px; padding: 15px 0 0 0"> 作者：'.trim($comment->comment_author).' 回复的内容 </td>
                                                                                                         </tr>
                                                                                                         <tr>
-                                                                                                            <td align="left" valign="top" style="color:#595757; font-size:14px; line-height: 25px; font-family:Hiragino Sans GB; padding: 15px 0 0 0"> '.convert_smilies(trim($comment->comment_content)).' </td>
+                                                                                                            <td align="left" valign="top" style="color:#595757; font-size:14px; line-height: 25px; font-family:Hiragino Sans GB; padding: 15px 0 0 0"> '.nl2br(convert_smilies(trim($comment->comment_content))).' </td>
                                                                                                         </tr>
                                                                                                         <tr>
                                                                                                             <td align="left" valign="top" style="font-size:18px; color:#595757; line-height: 25px;  padding: 15px 0 0 0 "> 您的原文 </td>
                                                                                                         </tr>
                                                                                                         <tr>
-                                                                                                            <td align="left" valign="top" style="font-size:15px; color:#595757; font-size:14px; line-height: 25px; font-family:Hiragino Sans GB; padding: 15px 0 15px 0 "> '.convert_smilies(trim(get_comment($parent_id)->comment_content)).' </td>
+                                                                                                            <td align="left" valign="top" style="font-size:15px; color:#595757; font-size:14px; line-height: 25px; font-family:Hiragino Sans GB; padding: 15px 0 15px 0 "> '.nl2br(convert_smilies(trim(get_comment($parent_id)->comment_content))).' </td>
                                                                                                         </tr>
                                                                                                         
                                                                                                         <tr>
