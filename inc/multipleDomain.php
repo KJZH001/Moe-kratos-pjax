@@ -206,8 +206,8 @@ function kratos_custom_robots_txt_by_domain( $output, $public )
         $rules  .= "\n";
         $rules  .= "# END Cloudflare Managed Content\n";
         $rules  .= "\n";
-        $rules  .= "User-agent: Google-Extended\n";
-        $rules  .= "Disallow: /\n";
+        // $rules  .= "User-agent: Google-Extended\n";
+        // $rules  .= "Disallow: /\n";
         $rules  .= "User-agent: *\n";
         $rules  .= "Disallow: /wp-admin/\n";
         $rules  .= "Disallow: /wp-include/\n";
