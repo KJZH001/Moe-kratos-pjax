@@ -78,7 +78,7 @@
                 </script> -->
                 <!-- 结束粘贴来自谷歌的代码 -->
                 <!-- 第三方的广告 -->
-                <a href="https://blog.moeworld.tech/ad.php?origin=bizhiliangcryp" target="_blank"  rel="nofollow">
+                <a href="https://detail.tmall.com/item.htm?id=983084112000&spm=a21dvs.23580594.0.0.6ffb2c1byQAISY&skuId=5944994184417" target="_blank"  rel="nofollow">
                     <img src="https://blog.moeworld.tech/wp-content/uploads/2025/11/720x150.jpg" style="max-width: 100%; height: auto;">
                 </a>
             </div>

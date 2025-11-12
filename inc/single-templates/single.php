@@ -121,7 +121,7 @@
                     如果您的网络和设备条件允许，这里可能会显示来自Google或其他赞助商的广告
                 </p>
                 <!-- 第三方的广告 -->
-                <a href="https://blog.moeworld.tech/ad.php?origin=bizhiliangcryp" target="_blank"  rel="nofollow">
+                <a href="https://detail.tmall.com/item.htm?id=983084112000&spm=a21dvs.23580594.0.0.6ffb2c1byQAISY&skuId=5944994184417" target="_blank"  rel="nofollow">
                     <img src="https://blog.moeworld.tech/wp-content/uploads/2025/11/720x150.jpg" style="max-width: 100%; height: auto;">
                     <!-- <img src="https://iph.href.lu/720x150" style="max-width: 100%; height: auto;"> -->
                 </a>
