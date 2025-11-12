@@ -80,8 +80,8 @@
                                             {   ?>
                                                 <a href="https://blog.moeworld.tech" aria-current="page"><i class="fa fa-home"></i> 首页</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="https://blog.kzmxj.com" target="_blank"> 中国站</a></li>
                                                     <li><a href="https://blog.moeworld.tech"> 国际站</a></li>
+                                                    <li><a href="https://blog.kzmxj.com" target="_blank"> 中国站</a></li>
                                                     <li><a href="https://project.moeworld.tech" target="_blank"> 空梦Project</a></li>
                                                 </ul>
                                                 <?php 
