@@ -45,7 +45,7 @@
         </nav>
         <!-- 广告单元-文章横向 -->
         <!-- 准备移除 -->
-        <?php if ( false && !moe_kratos_should_hide_ads() ) : ?>
+        <?php if ( !moe_kratos_should_hide_ads() ) : ?>
             <div style="margin-top: 15px;
                         background-color: #fff;
                         box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
@@ -79,7 +79,7 @@
                 <!-- 结束粘贴来自谷歌的代码 -->
                 <!-- 第三方的广告 -->
                 <a href="https://blog.moeworld.tech/ad.php?origin=bizhiliangcryp" target="_blank"  rel="nofollow">
-                    <img src="https://blog.moeworld.tech/wp-content/uploads/2025/09/bzl_ad_700x280.jpg" style="max-width: 100%; height: auto;">
+                    <img src="https://blog.moeworld.tech/wp-content/uploads/2025/11/720x150.jpg" style="max-width: 100%; height: auto;">
                 </a>
             </div>
         <?php endif; ?>
