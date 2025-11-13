@@ -467,6 +467,7 @@ class kratos_widget_posts extends WP_Widget {
                                         'operator' => 'IN',
                                     ),
                                 ),
+                                'orderby'     => 'rand',
                             ));
                         }
                         else
@@ -482,6 +483,7 @@ class kratos_widget_posts extends WP_Widget {
                                         'operator' => 'NOT IN',
                                     ),
                                 ),
+                                'orderby'     => 'rand',
                             ));
                         }
                         foreach($myposts as $post): 
