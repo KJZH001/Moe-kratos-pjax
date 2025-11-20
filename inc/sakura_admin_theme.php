@@ -39,12 +39,12 @@ function kratos_sakura_admin_assets( $hook_suffix ) {
     wp_enqueue_style( 'dashicons' );
 
     // 2. 通用后台修正样式（对应 Sakura 的 dashboard-fix.css）
-    wp_enqueue_style(
-        'kratos-sakura-admin-dashboard-fix',
-        get_template_directory_uri() . '/static/css/dashboard-fix.css',
-        array(),
-        '1.0'
-    );
+    // wp_enqueue_style(
+    //     'kratos-sakura-admin-dashboard-fix',
+    //     get_template_directory_uri() . '/static/css/dashboard-fix.css',
+    //     array(),
+    //     '1.0'
+    // );
 
     // 3. “明亮”样式：控制全局背景、半透明 card 等
     // Sakura 原本只在 admin_color == "light" 时加载
