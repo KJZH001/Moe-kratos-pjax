@@ -33,6 +33,45 @@ function kratos_register_sakura_admin_scheme() {
 }
 add_action('admin_init', 'kratos_register_sakura_admin_scheme');
 
+// 后台样式和脚本（完全移植 Sakura 的用法）
+function kratos_sakura_admin_assets( $hook_suffix ) {
+    // 1. 后台图标（等价于原来直接引 dashicons.css）
+    wp_enqueue_style( 'dashicons' );
+
+    // 2. 通用后台修正样式（对应 Sakura 的 dashboard-fix.css）
+    wp_enqueue_style(
+        'kratos_sakura-admin-dashboard-fix',
+        get_template_directory_uri() . '/inc/css/dashboard-fix.css',
+        array(),
+        '1.0'
+    );
+
+    // 3. “明亮”样式：控制全局背景、半透明 card 等
+    // Sakura 原本只在 admin_color == "light" 时加载
+    // 你有两种选择：
+    //   A) 跟它保持一致，只在 "light" 方案时加载
+    //   B) 只要是你自定义的方案（比如 sakura/custom）就加载
+    // 这里先用 A 版，完全复刻逻辑
+    $admin_color = get_user_option( 'admin_color' );
+    if ( $admin_color === 'light' ) {
+        wp_enqueue_style(
+            'kratos_sakura-admin-dashboard-light',
+            get_template_directory_uri() . '/inc/css/dashboard-light.css',
+            array( 'kratos_sakura-admin-dashboard-fix' ),
+            '1.0'
+        );
+    }
+
+    // 4. 懒加载脚本（照抄 Sakura，实际上你不一定需要）
+    wp_enqueue_script(
+        'kratos_sakura-admin-lazyload',
+        'https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.min.js',
+        array(),
+        null,
+        true
+    );
+}
+add_action( 'admin_enqueue_scripts', 'kratos_sakura_admin_assets' );
 
 
 ?>
