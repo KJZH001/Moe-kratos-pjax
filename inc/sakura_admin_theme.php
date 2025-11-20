@@ -77,6 +77,7 @@ add_action( 'admin_enqueue_scripts', 'kratos_sakura_admin_assets' );
 
 // 后台字体（酌情考虑添加）
 // 毕竟谷歌字体的服务器在大陆是啥情况你也应该明白的……
+/*
 // 1) 后台整体字体
 function kratos_sakura_admin_font() {
     echo '<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" rel="stylesheet">' . PHP_EOL;
@@ -122,5 +123,6 @@ function kratos_sakura_login_font() {
     </style>' . PHP_EOL;
 }
 add_action( 'login_head', 'kratos_sakura_login_font' );
+*/
 
 ?>
