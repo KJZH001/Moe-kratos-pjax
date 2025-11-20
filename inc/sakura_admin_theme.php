@@ -51,9 +51,10 @@ function kratos_sakura_admin_assets( $hook_suffix ) {
     // 你有两种选择：
     //   A) 跟它保持一致，只在 "light" 方案时加载
     //   B) 只要是你自定义的方案（比如 sakura/custom）就加载
-    // 这里先用 A 版，完全复刻逻辑
     $admin_color = get_user_option( 'admin_color' );
+    // A 版，完全复刻逻辑
     // if ( $admin_color === 'light' ) {
+    // B 版，只要是sakura方案就加载light方案
     if ( in_array( $admin_color, array( 'light', 'sakura', 'custom' ), true ) ) {
         wp_enqueue_style(
             'kratos_sakura-admin-dashboard-light',
@@ -74,5 +75,52 @@ function kratos_sakura_admin_assets( $hook_suffix ) {
 }
 add_action( 'admin_enqueue_scripts', 'kratos_sakura_admin_assets' );
 
+// 后台字体（酌情考虑添加）
+// 毕竟谷歌字体的服务器在大陆是啥情况你也应该明白的……
+// 1) 后台整体字体
+function kratos_sakura_admin_font() {
+    echo '<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" rel="stylesheet">' . PHP_EOL;
+    echo '<style>
+        body,
+        #wpadminbar *:not([class="ab-icon"]),
+        .wp-core-ui,
+        .media-menu,
+        .media-frame *,
+        .media-modal * {
+            font-family: "Noto Serif SC","Source Han Serif SC","Source Han Serif",
+                         "source-han-serif-sc","PT Serif","SongTi SC","MicroSoft Yahei",
+                         Georgia,serif !important;
+        }
+    </style>' . PHP_EOL;
+}
+add_action( 'admin_head', 'kratos_sakura_admin_font' );
+
+// 2) 前台顶部工具条字体（只给管理员看）
+function kratos_sakura_adminbar_font_frontend() {
+    if ( current_user_can( 'administrator' ) ) {
+        echo '<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" rel="stylesheet">' . PHP_EOL;
+        echo '<style>
+            #wpadminbar *:not([class="ab-icon"]) {
+                font-family: "Noto Serif SC","Source Han Serif SC","Source Han Serif",
+                             "source-han-serif-sc","PT Serif","SongTi SC","MicroSoft Yahei",
+                             Georgia,serif !important;
+            }
+        </style>' . PHP_EOL;
+    }
+}
+add_action( 'wp_head', 'kratos_sakura_adminbar_font_frontend' );
+
+// 3) 登录页字体
+function kratos_sakura_login_font() {
+    echo '<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" rel="stylesheet">' . PHP_EOL;
+    echo '<style>
+        body {
+            font-family: "Noto Serif SC","Source Han Serif SC","Source Han Serif",
+                         "source-han-serif-sc","PT Serif","SongTi SC","MicroSoft Yahei",
+                         Georgia,serif !important;
+        }
+    </style>' . PHP_EOL;
+}
+add_action( 'login_head', 'kratos_sakura_login_font' );
 
 ?>
