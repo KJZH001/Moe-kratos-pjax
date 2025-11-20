@@ -4,6 +4,7 @@ define('KRATOS_VERSION','0.6.1');
 
 require_once(get_template_directory().'/inc/core.php');
 require_once(get_template_directory().'/inc/multipleDomain.php');
+require_once(get_template_directory().'/inc/sakura_admin_theme.php');
 require_once(get_template_directory().'/inc/shortcode.php');
 require_once(get_template_directory().'/inc/imgcfg.php');
 require_once(get_template_directory().'/inc/post.php');
