@@ -60,6 +60,8 @@
 **文档**
 - [https://moedog.org/787.html](https://moedog.org/787.html)
 
+> *这是上游的文档，理论上本分支没有也不会有文档
+
 **建议和 BUG 报告<br>注：上游分支已经不再维护，本分支目前也仅接受在本站上复现产生的bug**
 - <del>[https://github.com/xb2016/kratos-pjax/issues](https://github.com/xb2016/kratos-pjax/issues)</del>
 - [https://github.com/KJZH001/Moe-kratos-pjax/issues](https://github.com/KJZH001/Moe-kratos-pjax/issues)
