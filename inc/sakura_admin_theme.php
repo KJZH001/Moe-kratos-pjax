@@ -41,7 +41,7 @@ function kratos_sakura_admin_assets( $hook_suffix ) {
     // 2. 通用后台修正样式（对应 Sakura 的 dashboard-fix.css）
     wp_enqueue_style(
         'kratos_sakura-admin-dashboard-fix',
-        get_template_directory_uri() . '/inc/css/dashboard-fix.css',
+        get_template_directory_uri() . '/static/css/dashboard-fix.css',
         array(),
         '1.0'
     );
@@ -53,23 +53,24 @@ function kratos_sakura_admin_assets( $hook_suffix ) {
     //   B) 只要是你自定义的方案（比如 sakura/custom）就加载
     // 这里先用 A 版，完全复刻逻辑
     $admin_color = get_user_option( 'admin_color' );
-    if ( $admin_color === 'light' ) {
+    // if ( $admin_color === 'light' ) {
+    if ( in_array( $admin_color, array( 'light', 'sakura', 'custom' ), true ) ) {
         wp_enqueue_style(
             'kratos_sakura-admin-dashboard-light',
-            get_template_directory_uri() . '/inc/css/dashboard-light.css',
+            get_template_directory_uri() . '/static/css/dashboard-light.css',
             array( 'kratos_sakura-admin-dashboard-fix' ),
             '1.0'
         );
     }
 
     // 4. 懒加载脚本（照抄 Sakura，实际上你不一定需要）
-    wp_enqueue_script(
-        'kratos_sakura-admin-lazyload',
-        'https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.min.js',
-        array(),
-        null,
-        true
-    );
+    // wp_enqueue_script(
+    //     'kratos_sakura-admin-lazyload',
+    //     'https://cdn-js.moeworld.top/npm/lazyload@2.0.0-beta.2/lazyload.min.js',
+    //     array(),
+    //     null,
+    //     true
+    // );
 }
 add_action( 'admin_enqueue_scripts', 'kratos_sakura_admin_assets' );
 
