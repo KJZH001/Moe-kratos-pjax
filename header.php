@@ -227,7 +227,7 @@
                                             <li>
                                                 <a href="javascript:;" target="_blank"><i class="fa fa-magic"></i> Ai风月</a>
                                                 <ul class="sub-menu">
-                                                            <li><a href="http://coverstation.xyz?ref_id=e4d2eaab-d922-463b-b59b-c791a6b66a42" target="_blank" rel="nofollow">大陆服</a></li>
+                                                            <li><a href="https://coverstation.xyz?ref_id=e4d2eaab-d922-463b-b59b-c791a6b66a42" target="_blank" rel="nofollow">大陆服</a></li>
                                                             <li><a href="https://dearestie.xyz?ref_id=e4d2eaab-d922-463b-b59b-c791a6b66a42" target="_blank" rel="nofollow">国际服</a></li>
                                                 </ul>
                                             </li>
