@@ -1,6 +1,6 @@
 <?php
 
-define('KRATOS_VERSION','0.6.2');
+define('KRATOS_VERSION','0.6.3');
 
 require_once(get_template_directory().'/inc/core.php');
 require_once(get_template_directory().'/inc/multipleDomain.php');
