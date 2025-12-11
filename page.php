@@ -18,7 +18,7 @@
                         <div class="kratos-post-content"><?php the_content(); ?></div>
                         <?php if(kratos_option('page_cc')){ ?>
                         <div class="kratos-copyright text-center clearfix">
-                            <h5><?php _e('本作品采用 <a rel="license nofollow" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可','moedog'); ?></h5>
+                            <h5><?php _e('本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a> 进行许可','moedog'); ?></h5>
                         </div>
                         <?php } ?>
                         <?php if(kratos_option('page_like_donate')||kratos_option('page_share')){ ?>
