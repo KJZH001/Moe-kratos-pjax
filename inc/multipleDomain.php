@@ -12,6 +12,8 @@
 // 定义面向中国大陆的域名
 $kratos_china_host="blog.kzmxj.com";
 $kratos_global_host="blog.moeworld.tech";
+
+// 多数情况下应当使用常量判断区域，并留出兜底行为，以防止在单域名站点出现问题
 if (isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST']==$kratos_china_host) {
     define('KRATOS_SITE_REGION','REGION_CN');
 }
