@@ -11,6 +11,7 @@
 
 // 定义面向中国大陆的域名
 $kratos_china_host="blog.kzmxj.com";
+$kratos_global_host="blog.moeworld.tech";
 if (isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST']==$kratos_china_host) {
     define('KRATOS_SITE_REGION','REGION_CN');
 }
@@ -240,8 +241,8 @@ function kratos_restrict_single_post_by_tag() {
 
     // 配置各域名允许看到哪些标签 slug
     $rules = [
-        'blog.kzmxj.com' => ['area-cn','area-global'],
-        'blog.moeworld.tech' => ['area-international','area-global'],
+        $kratos_china_host => ['area-cn','area-global'],
+        $kratos_global_host => ['area-international','area-global'],
     ];
 
     // 如果这个域名没配置规则，则默认不限制
