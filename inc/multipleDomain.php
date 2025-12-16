@@ -226,4 +226,45 @@ function kratos_custom_robots_txt_by_domain( $output, $public )
 
 add_filter( 'robots_txt', 'kratos_custom_robots_txt_by_domain', 10, 2 );
 
+/**
+ * 限制域名只能访问到对应区域的文章
+ * 单篇访问时按域名 + 标签做强制访问控制
+ */
+function kratos_restrict_single_post_by_tag() {
+    if ( ! is_singular( 'post' ) ) {
+        return;
+    }
+
+    // 当前访问域名
+    $host = $_SERVER['HTTP_HOST'] ?? '';
+
+    // 配置各域名允许看到哪些标签 slug
+    $rules = [
+        'blog.kzmxj.com' => ['area-cn','area-global'],
+        'blog.moeworld.tech' => ['area-international','area-global'],
+    ];
+
+    // 如果这个域名没配置规则，则默认不限制
+    if ( empty( $rules[$host] ) ) {
+        return;
+    }
+
+    // 获取当前文章实际的标签 slug
+    $post_tags = wp_get_post_tags( get_the_ID(), ['fields'=>'slugs'] );
+
+    // 若文章不存在允许集合中，则返回 404
+    $allowed_tags = $rules[$host];
+    $intersect = array_intersect( $post_tags, $allowed_tags );
+    if ( empty( $intersect ) ) {
+        global $wp_query;
+        $wp_query->set_404();
+        status_header(404);
+        nocache_headers();
+        include get_query_template( '404' );
+        exit;
+    }
+}
+add_action( 'template_redirect', 'kratos_restrict_single_post_by_tag', 1 );
+
+
 ?>
