@@ -100,7 +100,7 @@ function kratos_multi_domain_theme_uri( $path = '' ) {
     return esc_url( $uri );
 }
 
-// 在中国大陆关闭RSS
+/** 在中国大陆关闭RSS **/
 function kratos_disable_feeds_for_cn_domain() {
     if ( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) 
     {
@@ -128,7 +128,10 @@ function kratos_remove_feed_links_for_cn() {
 }
 add_action('init', 'kratos_remove_feed_links_for_cn');
 
-
+/** 
+ * 为多域名适配动态robots规则 
+ * 实际上这份大陆的也是从cf抄的
+ */
 function kratos_custom_robots_txt_by_domain( $output, $public ) 
 {
     /*
