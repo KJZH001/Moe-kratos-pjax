@@ -18,7 +18,7 @@
             <div class="text">
                 <h1>451</h1>
                 <h2>Unavailable For Legal Reasons</h2>
-                <p><?php _e('欸？我的萝莉怎么不见了？！','moedog'); ?><a href="https://blog.moeworld.tech/http-451-unavailable-for-legal-reasons/">怎么回事呢？</a></p>
+                <p><?php _e('欸？我的萝莉怎么不见了？！','moedog'); ?><a href="https://blog.kzmxj.com/http-451-unavailable-for-legal-reasons/">怎么回事呢？</a></p>
             </div>
         </div>
         <div class="footer">

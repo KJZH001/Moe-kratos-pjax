@@ -252,15 +252,16 @@ function kratos_restrict_single_post_by_tag() {
     // 获取当前文章实际的标签 slug
     $post_tags = wp_get_post_tags( get_the_ID(), ['fields'=>'slugs'] );
 
-    // 若文章不存在允许集合中，则返回 404
+    // 若文章不存在允许集合中，则返回 404/451
     $allowed_tags = $rules[$host];
     $intersect = array_intersect( $post_tags, $allowed_tags );
     if ( empty( $intersect ) ) {
         global $wp_query;
-        $wp_query->set_404();
-        status_header(404);
+        // $wp_query->set_404();
+        // status_header(404);
+        status_header(451);
         nocache_headers();
-        include get_query_template( '404' );
+        include get_query_template( '451' );
         exit;
     }
 }
