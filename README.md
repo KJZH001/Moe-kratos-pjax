@@ -41,6 +41,8 @@ I accept donations through: Alipay / Wechat Pay / QQ Pay , thank you!
 **Projects**
 
   - [Kratos](https://github.com/seatonjiang/kratos)
+  - [Moe-Kratos-pjax](https://github.com/KJZH001/Moe-kratos-pjax)
+  - [Sakura🌸](https://github.com/mashirozx/Sakura)
   - [Bootstrap](https://github.com/twbs/bootstrap)
   - [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
   - [OwO](https://github.com/diygod/owo)
