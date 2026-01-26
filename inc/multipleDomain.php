@@ -35,7 +35,7 @@ function kratos_filter_posts_by_area( $query ) {
     }
 
     // 你可能只想在首页或文章归档生效，按需加条件，如：
-    if ( is_home() || is_archive() || is_search() ) 
+    if ( ! is_admin() && $query->is_main_query() && ( $query->is_home() || $query->is_archive() || $query->is_search() ) )
     {
         // 中国大陆：只显示 大陆和全球
         if ( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) 
