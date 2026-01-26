@@ -22,6 +22,11 @@
 
 ## 在开始之前
 
+>
+>> [DEPRECATED] Please use [Kratos V4](https://github.com/seatonjiang/kratos)
+>
+> 此项目基于 Kratos V2，**当前仅针对自用做出最基本限度的安全维护和功能更新**，请使用 [Kratos V4 原项目](https://github.com/seatonjiang/kratos) 以获得支持与最佳体验
+
 请给这个项目一个星标，谢谢！
 
 任何人都可以**免费使用**这个主题，但希望可以保留主题页脚的版权信息。
