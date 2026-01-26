@@ -1,7 +1,7 @@
 <?php if (post_password_required()) return; ?>
 <div id="comments" class="comments-area">
     <ol class="comment-list">
-    <?php if (comments_open() && have_comments() ) { ?>
+    <?php if (have_comments() && (comments_open() || !is_page())) { ?>
         <?php wp_list_comments(array('style' => 'ol', 'short_ping' => true, 'avatar_size' => 50)); ?>
     </ol>
         <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) { ?>
