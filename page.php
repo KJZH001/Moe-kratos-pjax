@@ -33,12 +33,8 @@
                         </footer>
                         <?php } ?>
                     </div>
-                    <!-- 暂时绕开bug，页面的评论区不显示，仅显示了评论框 -->
-                    <!-- 晓空 2026.1.25 -->
-                    <?php //comments_template(); ?>
-                    <?php
-                        kratos_comments_template();
-                    ?>
+                    <?php comments_template(); ?>
+
                 </article>
             <?php } ?>
             </section>
