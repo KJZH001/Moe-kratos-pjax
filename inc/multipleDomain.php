@@ -242,8 +242,9 @@ function kratos_restrict_single_post_by_tag() {
         return;
     }
 
-    // 当前访问域名
-    $host = $_SERVER['HTTP_HOST'] ?? '';
+    // 获取当前访问域名（不带端口号）
+    $host = strtolower($_SERVER['HTTP_HOST'] ?? '');
+    $host = preg_replace('/:\d+$/', '', $host);
 
     // 配置各域名允许看到哪些标签 slug
     $rules = [
@@ -264,8 +265,6 @@ function kratos_restrict_single_post_by_tag() {
     $intersect = array_intersect( $post_tags, $allowed_tags );
     if ( empty( $intersect ) ) {
         global $wp_query;
-        // $wp_query->set_404();
-        // status_header(404);
         status_header(451);
         nocache_headers();
         include get_query_template( '451' );
