@@ -23,7 +23,7 @@
 ## 在开始之前
 
 >
->> [DEPRECATED] Please use [Kratos V4](https://github.com/seatonjiang/kratos)
+> ***[DEPRECATED] Please use [Kratos V4](https://github.com/seatonjiang/kratos)***
 >
 > 此项目基于 Kratos V2，**当前仅针对自用做出最基本限度的安全维护和功能更新**，请使用 [Kratos V4 原项目](https://github.com/seatonjiang/kratos) 以获得支持与最佳体验
 
