@@ -242,29 +242,38 @@ function kratos_restrict_single_post_by_tag() {
         return;
     }
 
-    // 获取当前访问域名（不带端口号）
+    // 当前访问域名（去端口）
     $host = strtolower($_SERVER['HTTP_HOST'] ?? '');
     $host = preg_replace('/:\d+$/', '', $host);
 
-    // 配置各域名允许看到哪些标签 slug
+    // 域名 → 允许的标签
     $rules = [
         KRATOS_CHINA_HOST  => ['area-cn', 'area-global'],
         KRATOS_GLOBAL_HOST => ['area-international', 'area-global'],
     ];
 
-    // 如果这个域名没配置规则，则默认不限制
+    // 未配置规则的域名：不限制
     if ( empty( $rules[$host] ) ) {
         return;
     }
 
-    // 获取当前文章实际的标签 slug
-    $post_tags = wp_get_post_tags( get_the_ID(), ['fields'=>'slugs'] );
+    // 获取文章标签
+    $post_tags = wp_get_post_tags( get_the_ID(), ['fields' => 'slugs'] );
 
-    // 若文章不存在允许集合中，则返回 404/451
+    // 检查标签区域
     $allowed_tags = $rules[$host];
     $intersect = array_intersect( $post_tags, $allowed_tags );
+
+    /**
+     * ✅ 特例：国际域名 + 无国别标签 → 直接放行
+     */
+    if ( $host === KRATOS_GLOBAL_HOST && empty( $intersect ) ) {
+        return;
+    }
+
+    // 存在国别标签的情况
+    // 若文章不存在允许集合中，则返回 404/451
     if ( empty( $intersect ) ) {
-        global $wp_query;
         status_header(451);
         nocache_headers();
         include get_query_template( '451' );
