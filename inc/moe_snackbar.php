@@ -1,3 +1,9 @@
+<!--
+用于为动画减弱模式弹出提示
+项目地址 https://github.com/KJZH001/Moe-kratos-pjax
+by 晓空 2026.2.25
+-->
+
 <style>
 /* ===== moe-snack-toast- (scoped) ===== */
 #moe-snack-toast-root{
