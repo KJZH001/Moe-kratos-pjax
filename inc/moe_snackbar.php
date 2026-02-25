@@ -29,7 +29,7 @@
   opacity:1;
 }
 
-.moe-snack-toast__msg{ line-height:1.35; font-size:14px; }
+.moe-snack-toast__msg{ line-height:1.35; font-size:14px;padding:4px; }
 .moe-snack-toast__btn{
   border:0; background:transparent; color:#fff;
   opacity:.85; cursor:pointer; padding:0 4px; font-size:16px;
@@ -75,7 +75,7 @@
   function show(message, opts){
     opts = opts || {};
     var duration = (opts.duration == null ? 4500 : opts.duration);
-    var dismissText = (opts.dismissText == null ? "×" : opts.dismissText);
+    // var dismissText = (opts.dismissText == null ? "×" : opts.dismissText);
 
     if(timer){ clearTimeout(timer); timer = null; }
     root.innerHTML = "";
@@ -89,15 +89,15 @@
     msg.className = "moe-snack-toast__msg";
     msg.textContent = message;
 
-    var btn = document.createElement("button");
-    btn.className = "moe-snack-toast__btn";
-    btn.type = "button";
-    btn.setAttribute("aria-label", "关闭提示");
-    btn.textContent = dismissText;
+    // var btn = document.createElement("button");
+    // btn.className = "moe-snack-toast__btn";
+    // btn.type = "button";
+    // btn.setAttribute("aria-label", "关闭提示");
+    // btn.textContent = dismissText;
 
-    btn.onclick = close;
+    // btn.onclick = close;
     el.appendChild(msg);
-    el.appendChild(btn);
+    // el.appendChild(btn);
     root.appendChild(el);
 
     // 让 DOM 先挂载再进入态，读屏/动画表现更稳定 :contentReference[oaicite:3]{index=3}
