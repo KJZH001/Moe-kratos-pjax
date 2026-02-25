@@ -78,7 +78,12 @@
                         <div class="xb-snow">
                             <canvas id="Snow" data-count="<?php echo kratos_option('snow_xb2016_flakecount'); ?>" data-dist="<?php echo kratos_option('snow_xb2016_mindist'); ?>" data-color="<?php echo kratos_option('snow_xb2016_snowcolor'); ?>" data-size="<?php echo kratos_option('snow_xb2016_size'); ?>" data-speed="<?php echo kratos_option('snow_xb2016_speed'); ?>" data-opacity="<?php echo kratos_option('snow_xb2016_opacity'); ?>" data-step="<?php echo kratos_option('snow_xb2016_stepsize'); ?>"></canvas>
                         </div>
-                        <?php } ?>
+                        <?php } 
+                            if( moe_reduce_motion_requested()==true )
+                            {
+                                
+                            }
+                        ?>
                     </div>
                 </footer>
             </div>
