@@ -78,10 +78,11 @@
                         <div class="xb-snow">
                             <canvas id="Snow" data-count="<?php echo kratos_option('snow_xb2016_flakecount'); ?>" data-dist="<?php echo kratos_option('snow_xb2016_mindist'); ?>" data-color="<?php echo kratos_option('snow_xb2016_snowcolor'); ?>" data-size="<?php echo kratos_option('snow_xb2016_size'); ?>" data-speed="<?php echo kratos_option('snow_xb2016_speed'); ?>" data-opacity="<?php echo kratos_option('snow_xb2016_opacity'); ?>" data-step="<?php echo kratos_option('snow_xb2016_stepsize'); ?>"></canvas>
                         </div>
-                        <?php } 
+                        <?php }
+                            // 在动画减弱模式下弹出提示 
                             if( moe_reduce_motion_requested()==true )
                             {
-                                
+                                require_once(get_template_directory().'/inc/moe_snackbar.php');
                             }
                         ?>
                     </div>
