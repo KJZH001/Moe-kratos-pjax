@@ -89,7 +89,13 @@
   - **ru_RU** [JuniorDEV](https://github.com/jun-dev)
   - **zh_TW** [Leko](https://github.com/lekoOwO)
 
-**Projects**
+## 捐赠
+
+我接受通过支付宝 / 微信支付 / QQ 支付的捐赠，谢谢！
+- [晓空-https://about.moeworld.top](https://about.moeworld.top/) ：二维码位于`DONATE`中
+- [上游作者 MoeDog-https://pay.fczbl.vip](https://pay.fczbl.vip)
+
+## 使用的开源项目
 
   - [Kratos](https://github.com/seatonjiang/kratos)
   - [Moe-Kratos-pjax](https://github.com/KJZH001/Moe-kratos-pjax)
@@ -101,24 +107,6 @@
   - [Simple Local Avatars](https://wordpress.org/plugins/simple-local-avatars/)
   - [User Domain Whitelist](https://wordpress.org/plugins/user-domain-whitelist/)
   - [Limit Login Attempts](https://wordpress.org/plugins/WP-UserAgent/)
-## 捐赠
-
-我接受通过支付宝 / 微信支付 / QQ 支付的捐赠，谢谢！
-- [晓空-https://about.moeworld.top](https://about.moeworld.top/) ：二维码位于`DONATE`中
-- [上游作者 MoeDog-https://pay.fczbl.vip](https://pay.fczbl.vip)
-
-## 使用的开源项目
-
-- [Kratos](https://github.com/Vtrois/Kratos)
-- [Kratos-pjax](https://github.com/xb2016/kratos-pjax)
-- [Sakura🌸](https://github.com/mashirozx/Sakura)
-- [Bootstrap](https://github.com/twbs/bootstrap)
-- [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
-- [OwO](https://github.com/diygod/owo)
-- [APlayer](https://github.com/MoePlayer/APlayer)
-- [Simple Local Avatars](https://wordpress.org/plugins/simple-local-avatars/)
-- [User Domain Whitelist](https://wordpress.org/plugins/user-domain-whitelist/)
-- [Limit Login Attempts](https://wordpress.org/plugins/WP-UserAgent/)
 
 ## 许可
 
