@@ -6,7 +6,18 @@
  */
 
 body {
-    background-image: url(https://view.moezx.cc/images/2018/01/29/FLOWER.jpg) !important;
+	/* 
+	 * 这张背景图片的副本位于仓库的 /static/images/FLOWER.jpg 
+	 * css里也没有很方便能动态定位主题目录的办法，所以这里写死了静态地址
+	 * 你也可以把它改到自己的站点去来加快速度
+	 */
+    background-image: url(https://blog.moeworld.tech/wp-content/themes/kratos-pjax-master/static/images/FLOWER.jpg) !important;
+	/* 
+	 * 下面的是上游的原始URL，也可以使用
+	 * 但是速度比较玄学，有些时候也比较容易抽风w
+	 * 用哪个自己开心就好，留一个就行
+	 */
+    /* background-image: url(https://view.moezx.cc/images/2018/01/29/FLOWER.jpg) !important; */
 }
 
 #adminmenu, #adminmenuback, #adminmenuwrap {
