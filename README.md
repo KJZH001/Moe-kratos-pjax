@@ -89,6 +89,18 @@
   - **ru_RU** [JuniorDEV](https://github.com/jun-dev)
   - **zh_TW** [Leko](https://github.com/lekoOwO)
 
+**Projects**
+
+  - [Kratos](https://github.com/seatonjiang/kratos)
+  - [Moe-Kratos-pjax](https://github.com/KJZH001/Moe-kratos-pjax)
+  - [Sakura🌸](https://github.com/mashirozx/Sakura)
+  - [Bootstrap](https://github.com/twbs/bootstrap)
+  - [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
+  - [OwO](https://github.com/diygod/owo)
+  - [APlayer](https://github.com/MoePlayer/APlayer)
+  - [Simple Local Avatars](https://wordpress.org/plugins/simple-local-avatars/)
+  - [User Domain Whitelist](https://wordpress.org/plugins/user-domain-whitelist/)
+  - [Limit Login Attempts](https://wordpress.org/plugins/WP-UserAgent/)
 ## 捐赠
 
 我接受通过支付宝 / 微信支付 / QQ 支付的捐赠，谢谢！
