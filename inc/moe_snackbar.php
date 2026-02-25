@@ -110,6 +110,6 @@
   window.moeSnackToast.close = close;
 
   // —— 已经是“服务端判断后才输出整段”，所以直接自动弹一次即可：
-  show("系统已自动关闭部分动效（减少动画/计费网络模式）。", { duration: 5000 });
+  show("动画减弱模式已启用", { duration: 5000 });
 })();
 </script>
