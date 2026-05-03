@@ -9,7 +9,7 @@
     <?php if(have_posts()){the_post();update_post_caches($posts); ?>
     <article>
         <!-- 广告单元-文章顶部 -->
-        <?php if ( ! moe_kratos_should_hide_ads() ) : ?>
+        <?php if ( false && ! moe_kratos_should_hide_ads() ) : ?>
             <div style="margin-top: 15px;
                 margin-bottom: 16px;
                 background-color: #fff;

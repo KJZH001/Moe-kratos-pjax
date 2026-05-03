@@ -223,7 +223,7 @@
                                             </ul>
                                         </li>
 
-                                        <?php if ( !moe_kratos_should_hide_ads() ) : ?>
+                                        <?php if ( false && !moe_kratos_should_hide_ads() ) : ?>
                                             <li>
                                                 <a href="javascript:;" target="_blank"><i class="fa fa-magic"></i> Ai风月</a>
                                                 <ul class="sub-menu">
