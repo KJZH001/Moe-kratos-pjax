@@ -15,7 +15,10 @@
                                     <p> © <?php echo date('Y'); ?> <a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a>. All Rights Reserved. | <a href="https://icp.gov.moe/?keyword=20220268" target="_blank">萌ICP备20220268号</a> | <?php _e('已在风雨中度过','moedog'); ?> <span id="span_dt_dt">Loading...</span><br>Theme <a href="https://moedog.org/787.html" target="_blank" rel="nofollow">Kratos</a> Made by <a href="https://www.vtrois.com" target="_blank" rel="nofollow">Vtrois</a> Modified by <a href="https://moedog.org" target="_blank" rel="nofollow">Moedog</a> & <a href="https://blog.moeworld.tech" target="_blank" rel="nofollow">晓空</a>
                                         <?php if(kratos_option('sitemap') && !( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) ) echo ' | <a href="'.get_option('home').'/sitemap.html" target="_blank">Sitemap</a>'; ?>
                                         <?php 
-                                            /** 仅在大陆显示备案号 **/
+                                            /** 
+                                             * 仅在大陆显示备案号
+                                             * 注意：ICP备案和公安备案的备案号仍需在主题后台设置中填入
+                                             *  **/
                                             if ( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) 
                                             {
                                                 if(kratos_option('icp_num')) echo '<br><a href="https://beian.miit.gov.cn" rel="external nofollow" target="_blank">'.kratos_option('icp_num').'</a>';
