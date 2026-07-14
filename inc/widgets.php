@@ -442,6 +442,10 @@ class kratos_widget_posts extends WP_Widget {
                             if ( defined('KRATOS_SITE_REGION') && KRATOS_SITE_REGION === 'REGION_CN' ) 
                             {
                                 echo '<a class="list-group-item visible-lg" title="本功能在当前区域不可用" href="https://'.$_SERVER['HTTP_HOST'].'/http-451-unavailable-for-legal-reasons/" rel="bookmark"><i class="fa  fa-book"></i> 本功能在当前区域不可用</a>';
+                                echo '<a class="list-group-item visible-lg" title="本功能在当前区域不可用" href="https://'.$_SERVER['HTTP_HOST'].'/http-451-unavailable-for-legal-reasons/" rel="bookmark"><i class="fa  fa-book"></i> 本功能在当前区域不可用</a>';
+                                echo '<a class="list-group-item visible-lg" title="本功能在当前区域不可用" href="https://'.$_SERVER['HTTP_HOST'].'/http-451-unavailable-for-legal-reasons/" rel="bookmark"><i class="fa  fa-book"></i> 本功能在当前区域不可用</a>';
+                                echo '<a class="list-group-item visible-lg" title="本功能在当前区域不可用" href="https://'.$_SERVER['HTTP_HOST'].'/http-451-unavailable-for-legal-reasons/" rel="bookmark"><i class="fa  fa-book"></i> 本功能在当前区域不可用</a>';
+                                echo '<a class="list-group-item visible-lg" title="本功能在当前区域不可用" href="https://'.$_SERVER['HTTP_HOST'].'/http-451-unavailable-for-legal-reasons/" rel="bookmark"><i class="fa  fa-book"></i> 本功能在当前区域不可用</a>';
                             }
                             else
                             {
