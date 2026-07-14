@@ -25,6 +25,7 @@
                                                 if(kratos_option('icp_num')) echo '<a href="https://beian.miit.gov.cn" rel="external nofollow" target="_blank">'.kratos_option('icp_num').'</a>';
                                                 if(kratos_option('gov_num')) echo ' | <a href="'.kratos_option('gov_link').'" rel="external nofollow" target="_blank"><i class="govimg"></i>'.kratos_option('gov_num').'</a>'; 
                                             }
+                                            echo ' | <a href="https://icp.gov.moe/?keyword=20220268" target="_blank">萌ICP备20220268号</a>';
                                             
                                         ?>
                                     </p>
