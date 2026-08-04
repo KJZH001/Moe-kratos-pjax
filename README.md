@@ -98,6 +98,7 @@
 ## 使用的开源项目
 
   - [Kratos](https://github.com/seatonjiang/kratos)
+  - [Kratos-pjax](https://github.com/xb2016/kratos-pjax)
   - [Moe-Kratos-pjax](https://github.com/KJZH001/Moe-kratos-pjax)
   - [Sakura🌸](https://github.com/mashirozx/Sakura)
   - [Bootstrap](https://github.com/twbs/bootstrap)
