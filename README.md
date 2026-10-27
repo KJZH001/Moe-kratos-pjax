@@ -92,12 +92,13 @@
 ## 捐赠
 
 我接受通过支付宝 / 微信支付 / QQ 支付的捐赠，谢谢！
-- [晓空-https://about.moeworld.top](https://about.moeworld.top/) ：二维码位于`DONATE`中
-- [上游作者 MoeDog-https://pay.fczbl.vip](https://pay.fczbl.vip)
+- （本分支）晓空：[https://about.moeworld.top](https://about.moeworld.top/) 二维码位于`DONATE`中
+- （上游作者）MoeDog：[https://pay.fczbl.vip](https://pay.fczbl.vip)
 
 ## 使用的开源项目
 
   - [Kratos](https://github.com/seatonjiang/kratos)
+  - [Kratos-pjax](https://github.com/xb2016/kratos-pjax)
   - [Moe-Kratos-pjax](https://github.com/KJZH001/Moe-kratos-pjax)
   - [Sakura🌸](https://github.com/mashirozx/Sakura)
   - [Bootstrap](https://github.com/twbs/bootstrap)
