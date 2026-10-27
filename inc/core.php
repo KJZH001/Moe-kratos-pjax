@@ -753,5 +753,22 @@ function moe_reduce_motion_requested(): bool {
     // 3) 可选：高延迟等网络 Hint（实验性，覆盖面较窄）
     if (!empty($_SERVER['HTTP_RTT']) && intval($_SERVER['HTTP_RTT']) >= 300) return true;
 
+    // 4) 临时兼容：Chrome 155 禁用动画
+    // 原因：部分用户反馈 Chrome 155 雪花 Canvas 渲染异常
+    // 仅匹配 155.x，不影响 Chrome 154、156 等版本
+    $ua = $_SERVER['HTTP_USER_AGENT'] ?? '';
+
+    $isChrome155 = preg_match('~\bChrome/155\.~i', $ua);
+
+    // 排除 Edge、Opera、Vivaldi 等 Chromium 浏览器
+    $isOtherBrowser = preg_match(
+        '~\b(?:Edg|EdgA|EdgiOS|OPR|Vivaldi|SamsungBrowser|YaBrowser|Whale)/~i',
+        $ua
+    );
+
+    if ($isChrome155 && !$isOtherBrowser) {
+        return true;
+    }
+
     return false;
 }
